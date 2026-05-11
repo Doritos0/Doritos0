@@ -91,20 +91,20 @@
   <line x1="200" y1="176" x2="380" y2="176" stroke="#5B1117" stroke-width="0.4" opacity="0.7"/>
 
   <!-- Illuminated drop-cap -->
-  <g transform="translate(130,200)">
-    <rect width="46" height="46" fill="#3B0A12" stroke="#C9A86A" stroke-width="1"/>
-    <text x="23" y="38" font-family="UnifrakturMaguntia, serif" font-size="40" fill="#E7DCC8" text-anchor="middle">D</text>
+  <g transform="translate(130,196)">
+    <rect width="42" height="42" fill="#3B0A12" stroke="#C9A86A" stroke-width="1"/>
+    <text x="21" y="34" font-family="UnifrakturMaguntia, serif" font-size="34" fill="#E7DCC8" text-anchor="middle">D</text>
   </g>
 
   <!-- Left page body -->
   <g font-family="'IM Fell English', 'Cormorant Garamond', Georgia, serif" fill="#B5A99A" font-size="13">
-    <text x="186" y="210">esarrollador full-stack que</text>
-    <text x="130" y="230">edifica catedrales digitales con</text>
-    <text x="130" y="250">codigo nitido: interfaces en</text>
-    <text x="130" y="270">React y Angular, servidores en</text>
-    <text x="130" y="290">Django y FastAPI, y la liturgia</text>
-    <text x="130" y="310">silenciosa de las bases de datos.</text>
-    <text x="130" y="340" fill="#E7DCC8" font-style="italic">— Cada commit, un grimorio.</text>
+    <text x="180" y="212">esarrollador full-stack que</text>
+    <text x="180" y="232">edifica catedrales digitales</text>
+    <text x="130" y="256">con codigo nitido: interfaces en</text>
+    <text x="130" y="276">React y Angular, servidores en</text>
+    <text x="130" y="296">Django y FastAPI, y la liturgia</text>
+    <text x="130" y="316">silenciosa de las bases de datos.</text>
+    <text x="130" y="346" fill="#E7DCC8" font-style="italic">— Cada commit, un grimorio.</text>
   </g>
 
   <!-- Left page glyphs (small) -->

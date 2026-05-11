@@ -121,15 +121,15 @@ Soy <b>Doritos0</b>, desarrollador web full stack. Construyo interfaces que resp
 ## <samp>𖤐 &nbsp; III. Cr&oacute;nica Visible &nbsp; 𖤐</samp>
 
 <div align="center">
-  <img width="460" src="https://github-readme-stats.vercel.app/api?username=Doritos0&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=00000000&title_color=C9A86A&text_color=B5A99A&icon_color=8E1B2A&ring_color=8E1B2A" alt="GitHub statistics" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api?username=Doritos0&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=0a0203&title_color=C9A86A&text_color=B5A99A&icon_color=8E1B2A&ring_color=8E1B2A" alt="GitHub statistics" />
   &nbsp;
-  <img width="460" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Doritos0&layout=donut-vertical&hide_border=true&bg_color=00000000&title_color=C9A86A&text_color=B5A99A&langs_count=8" alt="Top languages donut" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Doritos0&layout=donut-vertical&hide_border=true&bg_color=0a0203&title_color=C9A86A&text_color=B5A99A&icon_color=C9A86A&langs_count=8" alt="Top languages donut" />
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Doritos0&hide_border=true&background=00000000&stroke=3B0A12&ring=8E1B2A&fire=C9A86A&currStreakNum=E7DCC8&sideNums=E7DCC8&currStreakLabel=B5A99A&sideLabels=B5A99A&dates=7E7478" alt="GitHub streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Doritos0&hide_border=true&background=0a0203&stroke=3B0A12&ring=8E1B2A&fire=C9A86A&currStreakNum=E7DCC8&sideNums=E7DCC8&currStreakLabel=B5A99A&sideLabels=B5A99A&dates=7E7478" alt="GitHub streak" />
 </div>
 
 <br/>
@@ -151,13 +151,17 @@ Soy <b>Doritos0</b>, desarrollador web full stack. Construyo interfaces que resp
 ## <samp>☧ &nbsp; IV. Vestigios del Camino &nbsp; ☧</samp>
 
 <div align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Doritos0&theme=react-dark&bg_color=00000000&color=E7DCC8&line=8E1B2A&point=C9A86A&area=true&area_color=3B0A12&hide_border=true&radius=4&custom_title=Constelaci%C3%B3n%20de%20commits" alt="Contribution activity graph" />
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Doritos0&bg_color=0a0203&color=E7DCC8&line=8E1B2A&point=C9A86A&area=true&area_color=3B0A12&hide_border=true&radius=4&custom_title=Cr%C3%B3nica%20de%20contribuciones&title_color=C9A86A" alt="Contribution activity graph" />
 </div>
 
 <br/>
 
 <div align="center">
-  <img width="100%" src="./assets/constellation.svg" alt="Constellation of commits over a gothic skyline" />
+  <img width="100%" src="./assets/constellation.svg" alt="Decorative star chart with four symbolic constellations" />
+</div>
+
+<div align="center">
+  <sub><i>Cuatro constelaciones simbólicas — <b>Crux</b>, <b>Cultellus</b>, <b>Calix</b> y <b>Clavis</b> — trazadas como emblema del oficio. No son métricas; son un pequeño firmamento decorativo.</i></sub>
 </div>
 
 <br/>
