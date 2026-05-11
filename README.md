@@ -121,9 +121,9 @@ Soy <b>Doritos0</b>, desarrollador web full stack. Construyo interfaces que resp
 ## <samp>𖤐 &nbsp; III. Cr&oacute;nica Visible &nbsp; 𖤐</samp>
 
 <div align="center">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=Doritos0&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=0a0203&title_color=C9A86A&text_color=B5A99A&icon_color=8E1B2A&ring_color=8E1B2A" alt="GitHub statistics" />
+  <img height="195" src="https://github-readme-stats.shion.dev/api?username=Doritos0&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=0a0203&title_color=C9A86A&text_color=B5A99A&icon_color=8E1B2A&ring_color=8E1B2A&card_width=480" alt="GitHub statistics" />
   &nbsp;
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Doritos0&layout=donut-vertical&hide_border=true&bg_color=0a0203&title_color=C9A86A&text_color=B5A99A&icon_color=C9A86A&langs_count=8" alt="Top languages donut" />
+  <img height="195" src="https://github-readme-stats.shion.dev/api/top-langs/?username=Doritos0&layout=donut-vertical&hide_border=true&bg_color=0a0203&title_color=C9A86A&text_color=B5A99A&icon_color=C9A86A&langs_count=8&card_width=320" alt="Top languages donut" />
 </div>
 
 <br/>
