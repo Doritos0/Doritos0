@@ -1,0 +1,106 @@
+<svg width="1000" height="360" viewBox="0 0 1000 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Doritos0 gothic portal</title>
+  <desc id="desc">A dark gothic profile banner with pointed arches, pinnacles, moonlight, and red ornamental lines.</desc>
+  <defs>
+    <radialGradient id="moonGlow" cx="50%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#E7DCC8" stop-opacity="0.22"/>
+      <stop offset="38%" stop-color="#6B1A22" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#050505" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#171317"/>
+      <stop offset="50%" stop-color="#050505"/>
+      <stop offset="100%" stop-color="#241015"/>
+    </linearGradient>
+    <linearGradient id="redLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3B0A12"/>
+      <stop offset="50%" stop-color="#9F1239"/>
+      <stop offset="100%" stop-color="#3B0A12"/>
+    </linearGradient>
+    <filter id="softGlow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="360" fill="#050505"/>
+  <rect width="1000" height="360" fill="url(#moonGlow)"/>
+  <rect x="18" y="18" width="964" height="324" fill="none" stroke="#2A2023" stroke-width="2"/>
+  <rect x="28" y="28" width="944" height="304" fill="none" stroke="#3B0A12" stroke-width="1"/>
+
+  <circle cx="500" cy="108" r="54" fill="#D8CCB6" opacity="0.12"/>
+  <circle cx="520" cy="92" r="45" fill="#050505" opacity="0.55"/>
+
+  <g opacity="0.34" stroke="#2A2023" stroke-width="1">
+    <path d="M90 312H910"/>
+    <path d="M130 292H870"/>
+    <path d="M170 272H830"/>
+    <path d="M210 252H790"/>
+  </g>
+
+  <g fill="url(#stone)" stroke="#5B1117" stroke-width="2">
+    <path d="M76 328V170L104 126L132 170V328H76Z"/>
+    <path d="M868 328V170L896 126L924 170V328H868Z"/>
+    <path d="M148 328V138L182 82L216 138V328H148Z"/>
+    <path d="M784 328V138L818 82L852 138V328H784Z"/>
+    <path d="M258 328V128L500 44L742 128V328H258Z"/>
+  </g>
+
+  <g fill="#050505" stroke="#8E1B2A" stroke-width="2">
+    <path d="M318 328V205C318 112 500 72 500 72C500 72 682 112 682 205V328H318Z"/>
+    <path d="M356 328V214C356 150 500 110 500 110C500 110 644 150 644 214V328H356Z"/>
+    <path d="M404 328V227C404 188 500 148 500 148C500 148 596 188 596 227V328H404Z"/>
+  </g>
+
+  <g stroke="#6B1A22" stroke-width="2" stroke-linecap="round">
+    <path d="M500 74V39"/>
+    <path d="M182 84V48"/>
+    <path d="M818 84V48"/>
+    <path d="M104 128V95"/>
+    <path d="M896 128V95"/>
+    <path d="M288 126L288 86"/>
+    <path d="M712 126L712 86"/>
+  </g>
+
+  <g fill="#8E1B2A" filter="url(#softGlow)">
+    <circle cx="500" cy="39" r="4"/>
+    <circle cx="182" cy="48" r="4"/>
+    <circle cx="818" cy="48" r="4"/>
+    <circle cx="104" cy="95" r="3"/>
+    <circle cx="896" cy="95" r="3"/>
+    <circle cx="288" cy="86" r="3"/>
+    <circle cx="712" cy="86" r="3"/>
+  </g>
+
+  <g stroke="#33282C" stroke-width="1" opacity="0.76">
+    <path d="M258 328L258 128"/>
+    <path d="M288 328L288 116"/>
+    <path d="M318 328L318 105"/>
+    <path d="M682 328L682 105"/>
+    <path d="M712 328L712 116"/>
+    <path d="M742 328L742 128"/>
+    <path d="M148 328H216"/>
+    <path d="M784 328H852"/>
+    <path d="M76 328H132"/>
+    <path d="M868 328H924"/>
+  </g>
+
+  <g stroke="url(#redLine)" stroke-width="2" opacity="0.9">
+    <path d="M106 306C194 272 270 270 340 298"/>
+    <path d="M894 306C806 272 730 270 660 298"/>
+    <path d="M250 64C330 34 409 28 500 48C591 28 670 34 750 64"/>
+  </g>
+
+  <text x="500" y="206" text-anchor="middle" fill="#E7DCC8" font-family="'Old English Text MT', 'UnifrakturMaguntia', Georgia, serif" font-size="72" letter-spacing="3">
+    Doritos0
+  </text>
+  <text x="500" y="246" text-anchor="middle" fill="#B5A99A" font-family="Georgia, 'Times New Roman', serif" font-size="18" letter-spacing="4">
+    CODEX NOCTURNA
+  </text>
+  <text x="500" y="285" text-anchor="middle" fill="#7E7478" font-family="Georgia, 'Times New Roman', serif" font-size="15" letter-spacing="2">
+    gothic interfaces . backend rites . old ink for new machines
+  </text>
+</svg>
