@@ -1,15 +1,15 @@
 <svg width="760" height="170" viewBox="0 0 760 170" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="1" y="1" width="758" height="168" rx="8" fill="#0B1120" stroke="#38BDF8" stroke-width="2"/>
-  <rect x="1" y="1" width="758" height="34" rx="8" fill="#111827"/>
-  <circle cx="24" cy="18" r="6" fill="#F87171"/>
-  <circle cx="45" cy="18" r="6" fill="#FBBF24"/>
-  <circle cx="66" cy="18" r="6" fill="#34D399"/>
-  <text x="380" y="23" fill="#93C5FD" font-family="Consolas, 'Courier New', monospace" font-size="13" text-anchor="middle">profile.exe</text>
-  <text x="28" y="72" fill="#38BDF8" font-family="Consolas, 'Courier New', monospace" font-size="18">C:\profile&gt; whoami</text>
-  <text x="28" y="101" fill="#F8FAFC" font-family="Consolas, 'Courier New', monospace" font-size="18">Doritos0</text>
-  <text x="28" y="131" fill="#38BDF8" font-family="Consolas, 'Courier New', monospace" font-size="18">C:\stack&gt; focus</text>
-  <text x="205" y="131" fill="#F8FAFC" font-family="Consolas, 'Courier New', monospace" font-size="18">python | typescript | react | django | fastapi</text>
-  <rect x="692" y="116" width="12" height="21" fill="#38BDF8">
+  <rect x="1" y="1" width="758" height="168" rx="8" fill="#050505" stroke="#3B0A12" stroke-width="2"/>
+  <rect x="1" y="1" width="758" height="34" rx="8" fill="#111111"/>
+  <circle cx="24" cy="18" r="6" fill="#7F1D1D"/>
+  <circle cx="45" cy="18" r="6" fill="#52525B"/>
+  <circle cx="66" cy="18" r="6" fill="#9F1239"/>
+  <text x="380" y="23" fill="#A1A1AA" font-family="Consolas, 'Courier New', monospace" font-size="13" text-anchor="middle">profile.exe</text>
+  <text x="28" y="72" fill="#9F1239" font-family="Consolas, 'Courier New', monospace" font-size="18">C:\profile&gt; whoami</text>
+  <text x="28" y="101" fill="#F5F5F4" font-family="Consolas, 'Courier New', monospace" font-size="18">Doritos0</text>
+  <text x="28" y="131" fill="#9F1239" font-family="Consolas, 'Courier New', monospace" font-size="18">C:\stack&gt; focus</text>
+  <text x="205" y="131" fill="#F5F5F4" font-family="Consolas, 'Courier New', monospace" font-size="18">python | typescript | react | django | fastapi</text>
+  <rect x="692" y="116" width="12" height="21" fill="#9F1239">
     <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
   </rect>
 </svg>
