@@ -43,6 +43,12 @@
   <img src="https://skillicons.dev/icons?i=python,ts,js,react,angular,html,css,git,github,django,fastapi,postgresql,mysql,vscode&perline=7" />
 </p>
 
+<picture>
+  <source srcset="https://sakura-garden.vercel.app/api/svg?username=Doritos0&theme=dark" media="(prefers-color-scheme: dark)"/>
+  <source srcset="https://sakura-garden.vercel.app/api/svg?username=Doritos0&theme=light" media="(prefers-color-scheme: light)"/>
+  <img src="https://sakura-garden.vercel.app/api/svg?username=Doritos0&theme=light" alt="sakura contributions" width="1000"/>
+</picture>
+
 <p align="center">
   <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=110&section=footer&color=0:3B0A12,45:16161A,100:000000" />
 </p>
