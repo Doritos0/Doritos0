@@ -1,0 +1,94 @@
+<svg width="1200" height="220" viewBox="0 0 1200 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="sg2-title sg2-desc">
+  <title id="sg2-title">Doritos0 closing sigil</title>
+  <desc id="sg2-desc">A wide footer sigil with a heraldic shield, raven silhouette, crossed quill and dagger, and a latin motto.</desc>
+  <defs>
+    <linearGradient id="sl-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050505"/>
+      <stop offset="50%" stop-color="#0A0203"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="sl-shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A0408"/>
+      <stop offset="100%" stop-color="#0A0203"/>
+    </linearGradient>
+    <linearGradient id="sl-gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7A5A2E"/>
+      <stop offset="50%" stop-color="#C9A86A"/>
+      <stop offset="100%" stop-color="#7A5A2E"/>
+    </linearGradient>
+    <radialGradient id="sl-spot" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8E1B2A" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#050505" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="220" fill="url(#sl-bg)"/>
+  <rect width="1200" height="220" fill="url(#sl-spot)"/>
+
+  <!-- Long thin horizontal ornaments -->
+  <g stroke="#5B1117" stroke-width="0.8" fill="none">
+    <line x1="60" y1="110" x2="440" y2="110"/>
+    <line x1="760" y1="110" x2="1140" y2="110"/>
+  </g>
+  <g fill="#3B0A12">
+    <circle cx="60" cy="110" r="3"/>
+    <circle cx="1140" cy="110" r="3"/>
+    <polygon points="440,110 450,104 460,110 450,116"/>
+    <polygon points="760,110 750,104 740,110 750,116"/>
+  </g>
+
+  <!-- Heraldic shield centered -->
+  <g transform="translate(600,110)">
+    <!-- Shield body -->
+    <path d="M -70 -70 L 70 -70 L 70 10 Q 70 60 0 80 Q -70 60 -70 10 Z"
+          fill="url(#sl-shield)" stroke="url(#sl-gold)" stroke-width="2"/>
+    <path d="M -62 -62 L 62 -62 L 62 8 Q 62 54 0 72 Q -62 54 -62 8 Z"
+          fill="none" stroke="#5B1117" stroke-width="0.7"/>
+
+    <!-- Crossed quill and dagger -->
+    <g>
+      <!-- Quill -->
+      <g transform="rotate(-25)">
+        <path d="M -2 -55 Q -10 -30 -2 30 Q 4 30 6 -30 Q 0 -52 -2 -55 Z" fill="#E7DCC8"/>
+        <line x1="0" y1="20" x2="0" y2="50" stroke="#C9A86A" stroke-width="1.6"/>
+      </g>
+      <!-- Dagger -->
+      <g transform="rotate(25)">
+        <rect x="-2" y="-50" width="4" height="70" fill="#B5A99A"/>
+        <polygon points="0,-58 -3,-50 3,-50" fill="#E7DCC8"/>
+        <rect x="-12" y="20" width="24" height="3.5" fill="#C9A86A"/>
+        <rect x="-2" y="23.5" width="4" height="14" fill="#8E1B2A"/>
+        <circle cy="40" r="3.6" fill="#C9A86A"/>
+      </g>
+    </g>
+
+    <!-- Raven perched at top of shield (small) -->
+    <g transform="translate(0,-78)" fill="#050505" stroke="#3B0A12" stroke-width="0.6">
+      <ellipse cx="0" cy="-2" rx="16" ry="8"/>
+      <circle cx="11" cy="-7" r="5"/>
+      <polygon points="14,-9 22,-7 14,-5" fill="#C9A86A"/>
+      <circle cx="12" cy="-8" r="1" fill="#8E1B2A"/>
+      <!-- wing -->
+      <path d="M -10 -4 Q -6 -12 4 -8 Q -2 -2 -10 -4 Z"/>
+    </g>
+
+    <!-- Initial -->
+    <text y="-20" font-family="UnifrakturMaguntia, serif" font-size="28" fill="#C9A86A" text-anchor="middle">D</text>
+  </g>
+
+  <!-- Banner motto -->
+  <g transform="translate(600,178)">
+    <path d="M -180 0 L 180 0 L 168 14 L -168 14 Z" fill="#3B0A12" stroke="#5B1117" stroke-width="0.8"/>
+    <text y="11" font-family="'IM Fell English', Georgia, serif" font-size="11" fill="#E7DCC8" text-anchor="middle" letter-spacing="3" font-style="italic">— ex tenebris, codicem —</text>
+  </g>
+
+  <!-- Side flame brackets -->
+  <g transform="translate(120,110)">
+    <path d="M 0 -22 Q 8 -10 0 0 Q -8 -10 0 -22 Z" fill="#8E1B2A" opacity="0.9"/>
+    <path d="M 0 -14 Q 4 -6 0 0 Q -4 -6 0 -14 Z" fill="#C9A86A" opacity="0.95"/>
+  </g>
+  <g transform="translate(1080,110)">
+    <path d="M 0 -22 Q 8 -10 0 0 Q -8 -10 0 -22 Z" fill="#8E1B2A" opacity="0.9"/>
+    <path d="M 0 -14 Q 4 -6 0 0 Q -4 -6 0 -14 Z" fill="#C9A86A" opacity="0.95"/>
+  </g>
+</svg>

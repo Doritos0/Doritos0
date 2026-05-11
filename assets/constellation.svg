@@ -1,0 +1,153 @@
+<svg width="1200" height="280" viewBox="0 0 1200 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="cn-title cn-desc">
+  <title id="cn-title">Constellation of commits</title>
+  <desc id="cn-desc">A wide gothic night sky where commits are rendered as stars connected by ley lines, framed by silhouetted spires and a crescent moon.</desc>
+  <defs>
+    <linearGradient id="cn-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0A0203"/>
+      <stop offset="55%" stop-color="#050505"/>
+      <stop offset="100%" stop-color="#1A0408"/>
+    </linearGradient>
+    <radialGradient id="cn-moon" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F4E4B8" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#5B1117" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#050505" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cn-star" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F4E4B8"/>
+      <stop offset="60%" stop-color="#C9A86A"/>
+      <stop offset="100%" stop-color="#5B1117" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cn-star-red" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E7DCC8"/>
+      <stop offset="50%" stop-color="#8E1B2A"/>
+      <stop offset="100%" stop-color="#3B0A12" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="cn-blur"><feGaussianBlur stdDeviation="1.4"/></filter>
+  </defs>
+
+  <rect width="1200" height="280" fill="url(#cn-sky)"/>
+
+  <!-- Far star dust -->
+  <g fill="#E7DCC8">
+    <circle cx="60" cy="40" r="0.6" opacity="0.7"/>
+    <circle cx="120" cy="80" r="0.5" opacity="0.5"/>
+    <circle cx="180" cy="30" r="0.7" opacity="0.6"/>
+    <circle cx="260" cy="60" r="0.5" opacity="0.5"/>
+    <circle cx="340" cy="22" r="0.6" opacity="0.6"/>
+    <circle cx="420" cy="50" r="0.5" opacity="0.5"/>
+    <circle cx="500" cy="34" r="0.6" opacity="0.6"/>
+    <circle cx="580" cy="64" r="0.5" opacity="0.5"/>
+    <circle cx="660" cy="28" r="0.7" opacity="0.7"/>
+    <circle cx="740" cy="58" r="0.5" opacity="0.5"/>
+    <circle cx="820" cy="38" r="0.6" opacity="0.6"/>
+    <circle cx="900" cy="22" r="0.5" opacity="0.5"/>
+    <circle cx="980" cy="56" r="0.6" opacity="0.6"/>
+    <circle cx="1060" cy="34" r="0.5" opacity="0.5"/>
+    <circle cx="1140" cy="64" r="0.7" opacity="0.7"/>
+    <circle cx="80" cy="160" r="0.5" opacity="0.4"/>
+    <circle cx="220" cy="200" r="0.6" opacity="0.5"/>
+    <circle cx="380" cy="210" r="0.5" opacity="0.4"/>
+    <circle cx="560" cy="190" r="0.6" opacity="0.5"/>
+    <circle cx="700" cy="220" r="0.5" opacity="0.4"/>
+    <circle cx="860" cy="200" r="0.6" opacity="0.5"/>
+    <circle cx="1020" cy="180" r="0.5" opacity="0.4"/>
+  </g>
+
+  <!-- Crescent moon, top right -->
+  <g transform="translate(1080,70)">
+    <circle r="42" fill="url(#cn-moon)"/>
+    <circle r="22" fill="#E7DCC8" opacity="0.85"/>
+    <circle r="22" cx="9" cy="-3" fill="#0A0203"/>
+  </g>
+
+  <!-- Cathedral spires silhouette baseline -->
+  <g fill="#050505">
+    <polygon points="0,280 0,230 30,230 30,280"/>
+    <polygon points="40,280 40,200 60,170 80,200 80,280"/>
+    <polygon points="100,280 100,220 120,220 120,280"/>
+    <polygon points="140,280 140,180 165,150 190,180 190,280"/>
+    <polygon points="210,280 210,210 240,210 240,280"/>
+    <polygon points="260,280 260,170 285,140 310,170 310,280"/>
+    <polygon points="330,280 330,220 360,220 360,280"/>
+    <polygon points="380,280 380,200 410,170 440,200 440,280"/>
+    <polygon points="460,280 460,230 480,230 480,280"/>
+    <polygon points="500,280 500,180 530,150 560,180 560,280"/>
+    <polygon points="580,280 580,210 610,210 610,280"/>
+    <polygon points="630,280 630,160 660,130 690,160 690,280"/>
+    <polygon points="710,280 710,220 740,220 740,280"/>
+    <polygon points="760,280 760,190 790,160 820,190 820,280"/>
+    <polygon points="840,280 840,225 870,225 870,280"/>
+    <polygon points="890,280 890,170 920,140 950,170 950,280"/>
+    <polygon points="970,280 970,215 1000,215 1000,280"/>
+    <polygon points="1020,280 1020,200 1050,170 1080,200 1080,280"/>
+    <polygon points="1100,280 1100,225 1130,225 1130,280"/>
+    <polygon points="1150,280 1150,200 1175,175 1200,200 1200,280"/>
+  </g>
+  <!-- Faint stone band over silhouette -->
+  <rect x="0" y="265" width="1200" height="15" fill="#1A0408" opacity="0.6"/>
+
+  <!-- Ley lines connecting commit-stars -->
+  <g stroke="#8E1B2A" stroke-width="0.8" fill="none" opacity="0.65">
+    <polyline points="80,140 180,110 280,160 380,100 460,150 540,110 620,170 720,120 820,150 920,100 1010,150"/>
+  </g>
+  <g stroke="#C9A86A" stroke-width="0.4" fill="none" opacity="0.4">
+    <polyline points="80,140 180,110 280,160 380,100 460,150 540,110 620,170 720,120 820,150 920,100 1010,150"/>
+  </g>
+
+  <!-- Commit-stars (varied size to suggest commit weight) -->
+  <g>
+    <circle cx="80"  cy="140" r="14" fill="url(#cn-star)" filter="url(#cn-blur)"/>
+    <circle cx="80"  cy="140" r="3"  fill="#F4E4B8"/>
+
+    <circle cx="180" cy="110" r="10" fill="url(#cn-star)" filter="url(#cn-blur)"/>
+    <circle cx="180" cy="110" r="2.4" fill="#F4E4B8"/>
+
+    <circle cx="280" cy="160" r="16" fill="url(#cn-star-red)" filter="url(#cn-blur)"/>
+    <circle cx="280" cy="160" r="3.4" fill="#E7DCC8"/>
+
+    <circle cx="380" cy="100" r="12" fill="url(#cn-star)" filter="url(#cn-blur)"/>
+    <circle cx="380" cy="100" r="2.6" fill="#F4E4B8"/>
+
+    <circle cx="460" cy="150" r="9" fill="url(#cn-star-red)" filter="url(#cn-blur)"/>
+    <circle cx="460" cy="150" r="2.2" fill="#E7DCC8"/>
+
+    <circle cx="540" cy="110" r="18" fill="url(#cn-star)" filter="url(#cn-blur)"/>
+    <circle cx="540" cy="110" r="3.6" fill="#F4E4B8"/>
+
+    <circle cx="620" cy="170" r="11" fill="url(#cn-star)" filter="url(#cn-blur)"/>
+    <circle cx="620" cy="170" r="2.4" fill="#F4E4B8"/>
+
+    <circle cx="720" cy="120" r="13" fill="url(#cn-star-red)" filter="url(#cn-blur)"/>
+    <circle cx="720" cy="120" r="2.8" fill="#E7DCC8"/>
+
+    <circle cx="820" cy="150" r="10" fill="url(#cn-star)" filter="url(#cn-blur)"/>
+    <circle cx="820" cy="150" r="2.4" fill="#F4E4B8"/>
+
+    <circle cx="920" cy="100" r="20" fill="url(#cn-star-red)" filter="url(#cn-blur)"/>
+    <circle cx="920" cy="100" r="4" fill="#E7DCC8"/>
+
+    <circle cx="1010" cy="150" r="11" fill="url(#cn-star)" filter="url(#cn-blur)"/>
+    <circle cx="1010" cy="150" r="2.4" fill="#F4E4B8"/>
+  </g>
+
+  <!-- Cross-shaped sparkles on the brightest stars -->
+  <g stroke="#F4E4B8" stroke-width="0.6" opacity="0.85">
+    <line x1="540" y1="92" x2="540" y2="128"/>
+    <line x1="522" y1="110" x2="558" y2="110"/>
+    <line x1="920" y1="80" x2="920" y2="120"/>
+    <line x1="900" y1="100" x2="940" y2="100"/>
+  </g>
+
+  <!-- Side gilded brackets -->
+  <g stroke="#5B1117" stroke-width="0.8" fill="none">
+    <line x1="20" y1="40" x2="20" y2="240"/>
+    <line x1="1180" y1="40" x2="1180" y2="240"/>
+    <polygon points="20,40 14,46 26,46" fill="#3B0A12"/>
+    <polygon points="20,240 14,234 26,234" fill="#3B0A12"/>
+    <polygon points="1180,40 1174,46 1186,46" fill="#3B0A12"/>
+    <polygon points="1180,240 1174,234 1186,234" fill="#3B0A12"/>
+  </g>
+
+  <!-- Caption -->
+  <text x="600" y="258" font-family="UnifrakturMaguntia, serif" font-size="18" fill="#C9A86A" text-anchor="middle" letter-spacing="3">Constelacion de commits</text>
+</svg>

@@ -1,0 +1,165 @@
+<svg width="1000" height="500" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pl-title pl-desc">
+  <title id="pl-title">Two gothic stelae of practice and pursuit</title>
+  <desc id="pl-desc">Two gothic memorial steles with pointed arches, gilded tracery and inscribed lists describing what Doritos0 practices and pursues.</desc>
+  <defs>
+    <linearGradient id="pl-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080103"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="pl-stone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A0E12"/>
+      <stop offset="45%" stop-color="#0F070A"/>
+      <stop offset="100%" stop-color="#1A0E12"/>
+    </linearGradient>
+    <linearGradient id="pl-gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7A5A2E"/>
+      <stop offset="50%" stop-color="#C9A86A"/>
+      <stop offset="100%" stop-color="#7A5A2E"/>
+    </linearGradient>
+    <radialGradient id="pl-halo" cx="50%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#8E1B2A" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#050505" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="pl-rough" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.4" numOctaves="2" seed="7"/>
+      <feColorMatrix values="0 0 0 0 0.05  0 0 0 0 0.02  0 0 0 0 0.02  0 0 0 0.32 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="500" fill="url(#pl-bg)"/>
+
+  <!-- ====================== LEFT STELE ====================== -->
+  <g transform="translate(40,40)">
+    <!-- Halo behind -->
+    <circle cx="220" cy="100" r="180" fill="url(#pl-halo)"/>
+
+    <!-- Stele body with pointed arch top -->
+    <path d="M 30 420 L 30 120 Q 30 0 220 0 Q 410 0 410 120 L 410 420 Z"
+          fill="url(#pl-stone)" stroke="url(#pl-gold)" stroke-width="2"/>
+    <!-- Inner gilded arch -->
+    <path d="M 46 412 L 46 124 Q 46 16 220 16 Q 394 16 394 124 L 394 412 Z"
+          fill="none" stroke="#5B1117" stroke-width="1"/>
+    <path d="M 56 408 L 56 128 Q 56 26 220 26 Q 384 26 384 128 L 384 408 Z"
+          fill="none" stroke="#C9A86A" stroke-width="0.4" opacity="0.55"/>
+    <!-- Stone roughness overlay -->
+    <path d="M 30 420 L 30 120 Q 30 0 220 0 Q 410 0 410 120 L 410 420 Z"
+          fill="#000" filter="url(#pl-rough)" opacity="0.5"/>
+
+    <!-- Cross at apex -->
+    <g transform="translate(220,42)" stroke="#C9A86A" stroke-width="2" stroke-linecap="round" fill="none">
+      <line x1="0" y1="-14" x2="0" y2="20"/>
+      <line x1="-10" y1="0" x2="10" y2="0"/>
+      <circle cx="0" cy="-14" r="3" fill="#5B1117"/>
+    </g>
+
+    <!-- Decorative quatrefoils flanking title -->
+    <g fill="#3B0A12" stroke="#C9A86A" stroke-width="0.6" transform="translate(80,108)">
+      <circle r="6"/><circle r="2.5" fill="#C9A86A"/>
+    </g>
+    <g fill="#3B0A12" stroke="#C9A86A" stroke-width="0.6" transform="translate(360,108)">
+      <circle r="6"/><circle r="2.5" fill="#C9A86A"/>
+    </g>
+
+    <!-- Title -->
+    <text x="220" y="118" font-family="UnifrakturMaguntia, serif" font-size="30" fill="#E7DCC8" text-anchor="middle" letter-spacing="2">Lo que practico</text>
+    <line x1="100" y1="132" x2="340" y2="132" stroke="#5B1117" stroke-width="0.8"/>
+    <line x1="140" y1="138" x2="300" y2="138" stroke="#5B1117" stroke-width="0.5" opacity="0.7"/>
+
+    <!-- Inscribed list -->
+    <g font-family="'IM Fell English', Georgia, serif" font-size="14" fill="#B5A99A">
+      <g transform="translate(80,178)">
+        <text x="0" y="0" fill="#C9A86A">✠</text>
+        <text x="20" y="0" fill="#E7DCC8">Aplicaciones web</text>
+        <text x="20" y="18">full stack, de extremo a extremo</text>
+      </g>
+      <g transform="translate(80,232)">
+        <text x="0" y="0" fill="#C9A86A">✠</text>
+        <text x="20" y="0" fill="#E7DCC8">APIs REST</text>
+        <text x="20" y="18">mantenibles, documentadas, testeables</text>
+      </g>
+      <g transform="translate(80,286)">
+        <text x="0" y="0" fill="#C9A86A">✠</text>
+        <text x="20" y="0" fill="#E7DCC8">Modelado relacional</text>
+        <text x="20" y="18">y consultas que envejecen bien</text>
+      </g>
+      <g transform="translate(80,340)">
+        <text x="0" y="0" fill="#C9A86A">✠</text>
+        <text x="20" y="0" fill="#E7DCC8">Automatizacion</text>
+        <text x="20" y="18">de procesos, scripts y rutinas</text>
+      </g>
+    </g>
+
+    <!-- Base footer ornament -->
+    <g transform="translate(220,396)" stroke="#5B1117" stroke-width="0.8" fill="none">
+      <line x1="-90" y1="0" x2="-12" y2="0"/>
+      <line x1="12" y1="0" x2="90" y2="0"/>
+      <polygon points="-12,0 0,-6 12,0 0,6" fill="#3B0A12"/>
+    </g>
+  </g>
+
+  <!-- ====================== RIGHT STELE ====================== -->
+  <g transform="translate(520,40)">
+    <circle cx="220" cy="100" r="180" fill="url(#pl-halo)"/>
+
+    <path d="M 30 420 L 30 120 Q 30 0 220 0 Q 410 0 410 120 L 410 420 Z"
+          fill="url(#pl-stone)" stroke="url(#pl-gold)" stroke-width="2"/>
+    <path d="M 46 412 L 46 124 Q 46 16 220 16 Q 394 16 394 124 L 394 412 Z"
+          fill="none" stroke="#5B1117" stroke-width="1"/>
+    <path d="M 56 408 L 56 128 Q 56 26 220 26 Q 384 26 384 128 L 384 408 Z"
+          fill="none" stroke="#C9A86A" stroke-width="0.4" opacity="0.55"/>
+    <path d="M 30 420 L 30 120 Q 30 0 220 0 Q 410 0 410 120 L 410 420 Z"
+          fill="#000" filter="url(#pl-rough)" opacity="0.5"/>
+
+    <!-- Flame at apex (pursuit) -->
+    <g transform="translate(220,42)">
+      <path d="M 0 -18 Q 10 -6 0 16 Q -10 -6 0 -18 Z" fill="#8E1B2A"/>
+      <path d="M 0 -10 Q 5 -2 0 12 Q -5 -2 0 -10 Z" fill="#C9A86A"/>
+      <circle cy="0" r="2" fill="#E7DCC8"/>
+    </g>
+
+    <g fill="#3B0A12" stroke="#C9A86A" stroke-width="0.6" transform="translate(80,108)">
+      <circle r="6"/><circle r="2.5" fill="#C9A86A"/>
+    </g>
+    <g fill="#3B0A12" stroke="#C9A86A" stroke-width="0.6" transform="translate(360,108)">
+      <circle r="6"/><circle r="2.5" fill="#C9A86A"/>
+    </g>
+
+    <text x="220" y="118" font-family="UnifrakturMaguntia, serif" font-size="30" fill="#E7DCC8" text-anchor="middle" letter-spacing="2">Lo que persigo</text>
+    <line x1="100" y1="132" x2="340" y2="132" stroke="#5B1117" stroke-width="0.8"/>
+    <line x1="140" y1="138" x2="300" y2="138" stroke="#5B1117" stroke-width="0.5" opacity="0.7"/>
+
+    <g font-family="'IM Fell English', Georgia, serif" font-size="14" fill="#B5A99A">
+      <g transform="translate(80,178)">
+        <text x="0" y="0" fill="#C9A86A">✠</text>
+        <text x="20" y="0" fill="#E7DCC8">Codigo como prosa</text>
+        <text x="20" y="18">claro, leible, nunca conjuro criptico</text>
+      </g>
+      <g transform="translate(80,232)">
+        <text x="0" y="0" fill="#C9A86A">✠</text>
+        <text x="20" y="0" fill="#E7DCC8">Interfaces vivas</text>
+        <text x="20" y="18">accesibles, claras y con personalidad</text>
+      </g>
+      <g transform="translate(80,286)">
+        <text x="0" y="0" fill="#C9A86A">✠</text>
+        <text x="20" y="0" fill="#E7DCC8">Arquitectura pequena</text>
+        <text x="20" y="18">que resuelva problemas grandes</text>
+      </g>
+      <g transform="translate(80,340)">
+        <text x="0" y="0" fill="#C9A86A">✠</text>
+        <text x="20" y="0" fill="#E7DCC8">Aprender mas</text>
+        <text x="20" y="18">un poco mejor con cada commit</text>
+      </g>
+    </g>
+
+    <g transform="translate(220,396)" stroke="#5B1117" stroke-width="0.8" fill="none">
+      <line x1="-90" y1="0" x2="-12" y2="0"/>
+      <line x1="12" y1="0" x2="90" y2="0"/>
+      <polygon points="-12,0 0,-6 12,0 0,6" fill="#3B0A12"/>
+    </g>
+  </g>
+
+  <!-- Floor reflection / divider line -->
+  <line x1="60" y1="475" x2="940" y2="475" stroke="#3B0A12" stroke-width="0.6"/>
+  <text x="500" y="492" font-family="'IM Fell English', Georgia, serif" font-size="11" fill="#7E7478" text-anchor="middle" font-style="italic">— dos columnas, un mismo templo —</text>
+</svg>

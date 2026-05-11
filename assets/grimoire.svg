@@ -1,0 +1,153 @@
+<svg width="1000" height="520" viewBox="0 0 1000 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="gr-title gr-desc">
+  <title id="gr-title">Open grimoire of Doritos0</title>
+  <desc id="gr-desc">An open gothic spellbook with two parchment pages describing the developer, gilded borders, illuminated capital and a wax seal.</desc>
+  <defs>
+    <linearGradient id="gr-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080103"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="gr-leather" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A0408"/>
+      <stop offset="50%" stop-color="#0A0203"/>
+      <stop offset="100%" stop-color="#1A0408"/>
+    </linearGradient>
+    <linearGradient id="gr-page" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1F1A14"/>
+      <stop offset="40%" stop-color="#2A2218"/>
+      <stop offset="100%" stop-color="#1A1510"/>
+    </linearGradient>
+    <linearGradient id="gr-page-edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0A0807" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#0A0807" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0A0807" stop-opacity="0.8"/>
+    </linearGradient>
+    <radialGradient id="gr-light" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#C9A86A" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#050505" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gr-seal" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#C2384A"/>
+      <stop offset="60%" stop-color="#8E1B2A"/>
+      <stop offset="100%" stop-color="#3B0A12"/>
+    </radialGradient>
+    <filter id="gr-paper" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="3"/>
+      <feColorMatrix values="0 0 0 0 0.4  0 0 0 0 0.34  0 0 0 0 0.22  0 0 0 0.18 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="520" fill="url(#gr-bg)"/>
+  <rect width="1000" height="520" fill="url(#gr-light)"/>
+
+  <!-- Book leather cover -->
+  <g>
+    <path d="M 40 60 Q 500 30 960 60 L 960 480 Q 500 500 40 480 Z" fill="url(#gr-leather)" stroke="#3B0A12" stroke-width="2"/>
+    <!-- Gilded outer border -->
+    <path d="M 60 78 Q 500 50 940 78 L 940 460 Q 500 478 60 460 Z" fill="none" stroke="#C9A86A" stroke-width="1" opacity="0.55"/>
+    <path d="M 70 86 Q 500 60 930 86 L 930 452 Q 500 470 70 452 Z" fill="none" stroke="#5B1117" stroke-width="0.7" opacity="0.8"/>
+  </g>
+
+  <!-- Book spine shadow -->
+  <rect x="495" y="60" width="10" height="420" fill="#050505"/>
+  <line x1="500" y1="70" x2="500" y2="470" stroke="#C9A86A" stroke-width="0.6" opacity="0.4"/>
+
+  <!-- Pages -->
+  <g>
+    <path d="M 85 100 L 495 100 L 495 460 L 85 460 Z" fill="url(#gr-page)"/>
+    <path d="M 505 100 L 915 100 L 915 460 L 505 460 Z" fill="url(#gr-page)"/>
+    <rect x="85" y="100" width="830" height="360" fill="url(#gr-page-edge)" opacity="0.6"/>
+    <rect x="85" y="100" width="830" height="360" fill="#000" filter="url(#gr-paper)" opacity="0.5"/>
+  </g>
+
+  <!-- Page borders / illuminated frames -->
+  <g stroke="#5B1117" stroke-width="0.8" fill="none">
+    <rect x="105" y="118" width="370" height="324"/>
+    <rect x="525" y="118" width="370" height="324"/>
+  </g>
+  <g stroke="#C9A86A" stroke-width="0.4" fill="none" opacity="0.6">
+    <rect x="115" y="128" width="350" height="304"/>
+    <rect x="535" y="128" width="350" height="304"/>
+  </g>
+
+  <!-- Corner fleur ornaments (left page) -->
+  <g fill="#8E1B2A" opacity="0.85">
+    <g transform="translate(105,118)"><polygon points="0,0 18,0 0,18"/><circle cx="6" cy="6" r="1.8" fill="#C9A86A"/></g>
+    <g transform="translate(475,118)"><polygon points="0,0 -18,0 0,18"/><circle cx="-6" cy="6" r="1.8" fill="#C9A86A"/></g>
+    <g transform="translate(105,442)"><polygon points="0,0 18,0 0,-18"/><circle cx="6" cy="-6" r="1.8" fill="#C9A86A"/></g>
+    <g transform="translate(475,442)"><polygon points="0,0 -18,0 0,-18"/><circle cx="-6" cy="-6" r="1.8" fill="#C9A86A"/></g>
+  </g>
+  <!-- Corner fleur ornaments (right page) -->
+  <g fill="#8E1B2A" opacity="0.85">
+    <g transform="translate(525,118)"><polygon points="0,0 18,0 0,18"/><circle cx="6" cy="6" r="1.8" fill="#C9A86A"/></g>
+    <g transform="translate(895,118)"><polygon points="0,0 -18,0 0,18"/><circle cx="-6" cy="6" r="1.8" fill="#C9A86A"/></g>
+    <g transform="translate(525,442)"><polygon points="0,0 18,0 0,-18"/><circle cx="6" cy="-6" r="1.8" fill="#C9A86A"/></g>
+    <g transform="translate(895,442)"><polygon points="0,0 -18,0 0,-18"/><circle cx="-6" cy="-6" r="1.8" fill="#C9A86A"/></g>
+  </g>
+
+  <!-- Left page header -->
+  <text x="290" y="160" font-family="UnifrakturMaguntia, serif" font-size="24" fill="#C9A86A" text-anchor="middle" letter-spacing="2">Capitulus Primus</text>
+  <line x1="160" y1="172" x2="420" y2="172" stroke="#5B1117" stroke-width="0.6"/>
+  <line x1="200" y1="176" x2="380" y2="176" stroke="#5B1117" stroke-width="0.4" opacity="0.7"/>
+
+  <!-- Illuminated drop-cap -->
+  <g transform="translate(130,200)">
+    <rect width="46" height="46" fill="#3B0A12" stroke="#C9A86A" stroke-width="1"/>
+    <text x="23" y="38" font-family="UnifrakturMaguntia, serif" font-size="40" fill="#E7DCC8" text-anchor="middle">D</text>
+  </g>
+
+  <!-- Left page body -->
+  <g font-family="'IM Fell English', 'Cormorant Garamond', Georgia, serif" fill="#B5A99A" font-size="13">
+    <text x="186" y="210">esarrollador full-stack que</text>
+    <text x="130" y="230">edifica catedrales digitales con</text>
+    <text x="130" y="250">codigo nitido: interfaces en</text>
+    <text x="130" y="270">React y Angular, servidores en</text>
+    <text x="130" y="290">Django y FastAPI, y la liturgia</text>
+    <text x="130" y="310">silenciosa de las bases de datos.</text>
+    <text x="130" y="340" fill="#E7DCC8" font-style="italic">— Cada commit, un grimorio.</text>
+  </g>
+
+  <!-- Left page glyphs (small) -->
+  <g transform="translate(290,380)" stroke="#5B1117" stroke-width="0.8" fill="none">
+    <circle r="18"/>
+    <path d="M -10 0 L 10 0 M 0 -10 L 0 10" />
+    <circle r="3" fill="#C9A86A"/>
+  </g>
+
+  <!-- Right page header -->
+  <text x="710" y="160" font-family="UnifrakturMaguntia, serif" font-size="24" fill="#C9A86A" text-anchor="middle" letter-spacing="2">Capitulus Secundus</text>
+  <line x1="580" y1="172" x2="840" y2="172" stroke="#5B1117" stroke-width="0.6"/>
+  <line x1="620" y1="176" x2="800" y2="176" stroke="#5B1117" stroke-width="0.4" opacity="0.7"/>
+
+  <!-- Right page columns of "scripture": tech stack as creed -->
+  <g font-family="'IM Fell English', Georgia, serif" font-size="14" fill="#B5A99A">
+    <text x="550" y="210" fill="#E7DCC8">✠ Credo del Frontend</text>
+    <text x="560" y="232">React · Angular · TypeScript</text>
+    <text x="560" y="250">HTML semantico · CSS expresivo</text>
+
+    <text x="550" y="288" fill="#E7DCC8">✠ Credo del Backend</text>
+    <text x="560" y="310">Python · Django · FastAPI</text>
+    <text x="560" y="328">APIs REST · automatizacion</text>
+
+    <text x="550" y="366" fill="#E7DCC8">✠ Credo del Dato</text>
+    <text x="560" y="388">PostgreSQL · MySQL</text>
+    <text x="560" y="406">modelado · integridad · escala</text>
+  </g>
+
+  <!-- Wax seal on right page -->
+  <g transform="translate(835,405)">
+    <circle r="28" fill="url(#gr-seal)" stroke="#3B0A12" stroke-width="1.5"/>
+    <circle r="20" fill="none" stroke="#3B0A12" stroke-width="0.6"/>
+    <text y="6" font-family="UnifrakturMaguntia, serif" font-size="22" fill="#E7DCC8" text-anchor="middle">D</text>
+    <!-- splatter -->
+    <circle cx="-32" cy="14" r="3" fill="#8E1B2A" opacity="0.7"/>
+    <circle cx="-26" cy="22" r="2" fill="#8E1B2A" opacity="0.6"/>
+    <circle cx="30" cy="-18" r="2.5" fill="#8E1B2A" opacity="0.6"/>
+  </g>
+
+  <!-- Page numbers / bookmark ribbon -->
+  <path d="M 500 460 L 510 460 L 510 510 L 505 502 L 500 510 Z" fill="#8E1B2A"/>
+
+  <text x="120" y="475" font-family="serif" font-size="11" fill="#7E7478" font-style="italic">— I —</text>
+  <text x="880" y="475" font-family="serif" font-size="11" fill="#7E7478" font-style="italic">— II —</text>
+</svg>

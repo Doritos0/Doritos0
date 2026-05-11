@@ -1,0 +1,139 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="sg-title sg-desc">
+  <title id="sg-title">Doritos0 stained glass banner</title>
+  <desc id="sg-desc">A gothic cathedral stained glass rose window banner with crimson tracery and the name Doritos0 inscribed at the base.</desc>
+  <defs>
+    <radialGradient id="sg-rose" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F4E4B8" stop-opacity="0.95"/>
+      <stop offset="22%" stop-color="#C9A86A" stop-opacity="0.9"/>
+      <stop offset="55%" stop-color="#8E1B2A" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#3B0A12" stop-opacity="0.95"/>
+    </radialGradient>
+    <radialGradient id="sg-halo" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#8E1B2A" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#5B1117" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#050505" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sg-lancet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5B1117"/>
+      <stop offset="55%" stop-color="#1A0408"/>
+      <stop offset="100%" stop-color="#0A0203"/>
+    </linearGradient>
+    <linearGradient id="sg-lancet2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3B0A12"/>
+      <stop offset="100%" stop-color="#080103"/>
+    </linearGradient>
+    <linearGradient id="sg-floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0A0203" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#3B0A12" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="sg-name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C9A86A"/>
+      <stop offset="50%" stop-color="#F4E4B8"/>
+      <stop offset="100%" stop-color="#C9A86A"/>
+    </linearGradient>
+    <filter id="sg-blur"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+
+  <rect width="1200" height="360" fill="#050505"/>
+  <rect width="1200" height="360" fill="url(#sg-halo)"/>
+
+  <!-- Cathedral silhouette background spires -->
+  <g fill="#0A0203" opacity="0.85">
+    <polygon points="60,360 60,250 95,210 130,250 130,360"/>
+    <polygon points="1070,360 1070,250 1105,210 1140,250 1140,360"/>
+    <polygon points="160,360 160,270 200,225 240,270 240,360"/>
+    <polygon points="960,360 960,270 1000,225 1040,270 1040,360"/>
+  </g>
+
+  <!-- Outer gothic arch frame -->
+  <path d="M 280 360 L 280 200 Q 280 70 600 70 Q 920 70 920 200 L 920 360 Z"
+        fill="none" stroke="#3B0A12" stroke-width="3"/>
+  <path d="M 296 360 L 296 205 Q 296 86 600 86 Q 904 86 904 205 L 904 360 Z"
+        fill="#080103" stroke="#5B1117" stroke-width="1"/>
+
+  <!-- Pointed-arch keystone ornaments at apex -->
+  <g transform="translate(600, 70)" fill="#5B1117">
+    <polygon points="0,-20 8,0 0,18 -8,0"/>
+    <circle cy="-22" r="3"/>
+  </g>
+
+  <!-- Side lancet windows (left pair) -->
+  <g transform="translate(370,250)">
+    <path d="M -32 90 L -32 -55 Q -32 -110 0 -110 Q 32 -110 32 -55 L 32 90 Z" fill="url(#sg-lancet)"/>
+    <path d="M -32 90 L -32 -55 Q -32 -110 0 -110 Q 32 -110 32 -55 L 32 90 Z" fill="none" stroke="#050505" stroke-width="2"/>
+    <line x1="-32" y1="0" x2="32" y2="0" stroke="#050505" stroke-width="1.4"/>
+    <line x1="-32" y1="40" x2="32" y2="40" stroke="#050505" stroke-width="1.4"/>
+    <line x1="0" y1="-110" x2="0" y2="90" stroke="#050505" stroke-width="1.2"/>
+    <circle r="6" cy="-70" fill="#C9A86A" opacity="0.55"/>
+  </g>
+  <g transform="translate(450,250)">
+    <path d="M -28 90 L -28 -45 Q -28 -100 0 -100 Q 28 -100 28 -45 L 28 90 Z" fill="url(#sg-lancet2)"/>
+    <path d="M -28 90 L -28 -45 Q -28 -100 0 -100 Q 28 -100 28 -45 L 28 90 Z" fill="none" stroke="#050505" stroke-width="2"/>
+    <line x1="-28" y1="10" x2="28" y2="10" stroke="#050505" stroke-width="1.4"/>
+    <line x1="-28" y1="50" x2="28" y2="50" stroke="#050505" stroke-width="1.4"/>
+    <line x1="0" y1="-100" x2="0" y2="90" stroke="#050505" stroke-width="1.2"/>
+    <circle r="5" cy="-60" fill="#8E1B2A" opacity="0.45"/>
+  </g>
+  <!-- Right pair (mirror) -->
+  <g transform="translate(750,250)">
+    <path d="M -28 90 L -28 -45 Q -28 -100 0 -100 Q 28 -100 28 -45 L 28 90 Z" fill="url(#sg-lancet2)"/>
+    <path d="M -28 90 L -28 -45 Q -28 -100 0 -100 Q 28 -100 28 -45 L 28 90 Z" fill="none" stroke="#050505" stroke-width="2"/>
+    <line x1="-28" y1="10" x2="28" y2="10" stroke="#050505" stroke-width="1.4"/>
+    <line x1="-28" y1="50" x2="28" y2="50" stroke="#050505" stroke-width="1.4"/>
+    <line x1="0" y1="-100" x2="0" y2="90" stroke="#050505" stroke-width="1.2"/>
+    <circle r="5" cy="-60" fill="#8E1B2A" opacity="0.45"/>
+  </g>
+  <g transform="translate(830,250)">
+    <path d="M -32 90 L -32 -55 Q -32 -110 0 -110 Q 32 -110 32 -55 L 32 90 Z" fill="url(#sg-lancet)"/>
+    <path d="M -32 90 L -32 -55 Q -32 -110 0 -110 Q 32 -110 32 -55 L 32 90 Z" fill="none" stroke="#050505" stroke-width="2"/>
+    <line x1="-32" y1="0" x2="32" y2="0" stroke="#050505" stroke-width="1.4"/>
+    <line x1="-32" y1="40" x2="32" y2="40" stroke="#050505" stroke-width="1.4"/>
+    <line x1="0" y1="-110" x2="0" y2="90" stroke="#050505" stroke-width="1.2"/>
+    <circle r="6" cy="-70" fill="#C9A86A" opacity="0.55"/>
+  </g>
+
+  <!-- Rose window -->
+  <g transform="translate(600,165)">
+    <circle r="82" fill="#050505"/>
+    <circle r="80" fill="url(#sg-rose)"/>
+    <g stroke="#050505" stroke-width="2" fill="none">
+      <circle r="80"/>
+      <circle r="58"/>
+      <circle r="34"/>
+      <circle r="14" fill="#F4E4B8" opacity="0.85"/>
+    </g>
+    <!-- 12 petal spokes -->
+    <g stroke="#050505" stroke-width="1.8" fill="none">
+      <g><line x1="0" y1="-80" x2="0" y2="80"/><line x1="-80" y1="0" x2="80" y2="0"/></g>
+      <g transform="rotate(30)"><line x1="0" y1="-80" x2="0" y2="80"/><line x1="-80" y1="0" x2="80" y2="0"/></g>
+      <g transform="rotate(60)"><line x1="0" y1="-80" x2="0" y2="80"/><line x1="-80" y1="0" x2="80" y2="0"/></g>
+    </g>
+    <!-- Petal accents -->
+    <g fill="#5B1117" opacity="0.55">
+      <circle cx="0" cy="-46" r="6"/>
+      <circle cx="40" cy="-23" r="6"/>
+      <circle cx="40" cy="23" r="6"/>
+      <circle cx="0" cy="46" r="6"/>
+      <circle cx="-40" cy="23" r="6"/>
+      <circle cx="-40" cy="-23" r="6"/>
+    </g>
+    <!-- Halo glow -->
+    <circle r="100" fill="url(#sg-halo)" opacity="0.6"/>
+  </g>
+
+  <!-- Tracery ornaments above name -->
+  <g transform="translate(600,295)" stroke="#5B1117" stroke-width="1.4" fill="none">
+    <line x1="-220" y1="0" x2="-70" y2="0"/>
+    <line x1="70" y1="0" x2="220" y2="0"/>
+    <polygon points="-65,0 -55,-8 -45,0 -55,8" fill="#3B0A12"/>
+    <polygon points="45,0 55,-8 65,0 55,8" fill="#3B0A12"/>
+    <polygon points="-10,-6 0,-14 10,-6 10,6 0,14 -10,6" fill="#3B0A12" stroke="#8E1B2A"/>
+  </g>
+
+  <!-- Name inscription -->
+  <text x="600" y="335" font-family="UnifrakturMaguntia, 'IM Fell English SC', serif"
+        font-size="46" fill="url(#sg-name)" text-anchor="middle" letter-spacing="6">Doritos0</text>
+
+  <!-- Faint floor reflection -->
+  <rect x="280" y="345" width="640" height="15" fill="url(#sg-floor)"/>
+</svg>
