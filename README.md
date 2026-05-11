@@ -40,7 +40,7 @@
 </p>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,ts,js,react,angular,html,css,git,github,django,fastapi,postgresql,vscode&perline=7" />
+  <img src="https://skillicons.dev/icons?i=python,ts,js,react,angular,html,css,git,github,django,fastapi,postgresql,mysql,vscode&perline=7" />
 </p>
 
 <p align="center">
