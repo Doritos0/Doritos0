@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="80" viewBox="0 0 1200 80" role="img" aria-label="divider with ravens and sigil">
+  <defs>
+    <linearGradient id="dv-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8B6BB5" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#8B6BB5" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#D8C5F0" stop-opacity="0.95"/>
+      <stop offset="80%" stop-color="#8B6BB5" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#8B6BB5" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="dv-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D8C5F0" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#D8C5F0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Twin lines -->
+  <line x1="0" y1="38" x2="540" y2="38" stroke="url(#dv-line)" stroke-width="1.1"/>
+  <line x1="0" y1="44" x2="540" y2="44" stroke="url(#dv-line)" stroke-width="0.5" opacity="0.6"/>
+  <line x1="660" y1="38" x2="1200" y2="38" stroke="url(#dv-line)" stroke-width="1.1"/>
+  <line x1="660" y1="44" x2="1200" y2="44" stroke="url(#dv-line)" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- Central halo -->
+  <circle cx="600" cy="40" r="40" fill="url(#dv-glow)"/>
+
+  <!-- Central sigil: cross + rose -->
+  <g transform="translate(600 40)">
+    <circle r="15" fill="none" stroke="#A78BCA" stroke-width="1"/>
+    <circle r="10" fill="none" stroke="#C9A8D6" stroke-width="0.7" opacity="0.85"/>
+    <circle r="4" fill="#D8C5F0"/>
+    <line x1="-20" y1="0" x2="-15" y2="0" stroke="#8B6BB5" stroke-width="1"/>
+    <line x1="15" y1="0" x2="20" y2="0" stroke="#8B6BB5" stroke-width="1"/>
+    <line x1="0" y1="-20" x2="0" y2="-15" stroke="#8B6BB5" stroke-width="1"/>
+    <line x1="0" y1="15" x2="0" y2="20" stroke="#8B6BB5" stroke-width="1"/>
+    <line x1="-18" y1="-18" x2="-12" y2="-12" stroke="#8B6BB5" stroke-width="0.6" opacity="0.7"/>
+    <line x1="18" y1="-18" x2="12" y2="-12" stroke="#8B6BB5" stroke-width="0.6" opacity="0.7"/>
+    <line x1="-18" y1="18" x2="-12" y2="12" stroke="#8B6BB5" stroke-width="0.6" opacity="0.7"/>
+    <line x1="18" y1="18" x2="12" y2="12" stroke="#8B6BB5" stroke-width="0.6" opacity="0.7"/>
+  </g>
+
+  <!-- Tiny diamonds on the line -->
+  <g fill="#8B6BB5">
+    <path d="M 540 38 l 4 -4 l 4 4 l -4 4 z" opacity="0.9"/>
+    <path d="M 652 38 l 4 -4 l 4 4 l -4 4 z" opacity="0.9"/>
+    <path d="M 400 38 l 3 -3 l 3 3 l -3 3 z" opacity="0.7"/>
+    <path d="M 794 38 l 3 -3 l 3 3 l -3 3 z" opacity="0.7"/>
+    <path d="M 240 38 l 2.5 -2.5 l 2.5 2.5 l -2.5 2.5 z" opacity="0.55"/>
+    <path d="M 955 38 l 2.5 -2.5 l 2.5 2.5 l -2.5 2.5 z" opacity="0.55"/>
+  </g>
+
+  <!-- Ravens scattered -->
+  <g stroke="#04020a" stroke-width="1.4" fill="none" stroke-linecap="round">
+    <path d="M 80 18 q 4 -3 8 0 q 4 -3 8 0"/>
+    <path d="M 160 12 q 3 -2 6 0 q 3 -2 6 0"/>
+    <path d="M 220 22 q 4 -3 8 0 q 4 -3 8 0"/>
+    <path d="M 320 14 q 3 -2 6 0 q 3 -2 6 0"/>
+    <path d="M 980 18 q 4 -3 8 0 q 4 -3 8 0"/>
+    <path d="M 1040 12 q 3 -2 6 0 q 3 -2 6 0"/>
+    <path d="M 1100 22 q 4 -3 8 0 q 4 -3 8 0"/>
+  </g>
+  <g stroke="#8B6BB5" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.7">
+    <path d="M 120 64 q 3 -2 6 0 q 3 -2 6 0"/>
+    <path d="M 260 68 q 3 -2 6 0 q 3 -2 6 0"/>
+    <path d="M 940 64 q 3 -2 6 0 q 3 -2 6 0"/>
+    <path d="M 1060 68 q 3 -2 6 0 q 3 -2 6 0"/>
+  </g>
+</svg>

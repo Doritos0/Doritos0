@@ -1,189 +1,97 @@
 <div align="center">
-  <img width="100%" src="./assets/stained-glass.svg" alt="Stained glass banner with the name Doritos0" />
-</div>
-
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=UnifrakturMaguntia&weight=400&size=30&duration=2600&pause=900&color=B5A99A&center=true&vCenter=true&width=900&height=58&lines=Bienvenido+al+santuario;de+un+desarrollador+web+full+stack;que+talla+software+como+catedrales" alt="Welcome typing lines" />
-</div>
-
-<div align="center">
-  <a href="https://github.com/Doritos0">
-    <img src="https://img.shields.io/badge/perfil-Doritos0-E7DCC8?style=for-the-badge&labelColor=050505&color=3B0A12" alt="Profile badge" />
-  </a>
-  <a href="https://github.com/Doritos0?tab=repositories">
-    <img src="https://img.shields.io/badge/oficio-full--stack-C9A86A?style=for-the-badge&labelColor=050505&color=8E1B2A" alt="Craft badge" />
-  </a>
-  <img src="https://img.shields.io/badge/sigilo-react%20·%20django%20·%20fastapi-B5A99A?style=for-the-badge&labelColor=050505&color=5B1117" alt="Sigil badge" />
-  <a href="https://github.com/Doritos0?tab=followers">
-    <img src="https://img.shields.io/github/followers/Doritos0?style=for-the-badge&label=fieles&logo=github&logoColor=E7DCC8&labelColor=050505&color=3B0A12" alt="Followers" />
-  </a>
-</div>
-
-<br/>
-
-> <samp>«Cada función es un rezo, cada commit una reliquia, cada deploy un acto litúrgico.»</samp>
-
-<br/>
-
----
-
-## <samp>𓆩 ☩ 𓆪 &nbsp; Pr&oacute;logo &nbsp; 𓆩 ☩ 𓆪</samp>
-
-<sub>
-Soy <b>Doritos0</b>, desarrollador web full stack. Construyo interfaces que respiran y servicios que sostienen. Me importa la claridad estructural, la mantenibilidad y la elegancia silenciosa de un sistema que <i>simplemente funciona</i>. Lo que sigue es un breve grimorio: tres capítulos para contarme, tres arcanos para mostrarme y una crónica de huellas dejadas en GitHub.
-</sub>
-
-<br/>
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:050505,40:5B1117,60:5B1117,100:050505" alt="" />
-</div>
-
-<br/>
-
-## <samp>𓏲 &nbsp; I. El Grimorio Abierto &nbsp; 𓏲</samp>
-
-<div align="center">
-  <img width="950" src="./assets/grimoire.svg" alt="Open grimoire describing the developer and the technical creed" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img width="950" src="./assets/pillars.svg" alt="Two gothic stelae: lo que practico and lo que persigo" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:050505,40:5B1117,60:5B1117,100:050505" alt="" />
-</div>
-
-<br/>
-
-## <samp>𓊛 &nbsp; II. Tres Arcanos del Oficio &nbsp; 𓊛</samp>
-
-<div align="center">
-  <img width="950" src="./assets/arcane-cards.svg" alt="Three arcane cards: Interface, Engine and Vault" />
+  <img width="100%" src="./assets/banner.svg" alt="Doritos0 - catedral violeta entre la niebla" />
 </div>
 
 <div align="center">
 
-<sub><b>La Interfaz</b> · <b>El Motor</b> · <b>La Bóveda</b> &nbsp;—&nbsp; tres caras de un mismo oficio.</sub>
+<a href="https://github.com/Doritos0"><img src="https://img.shields.io/badge/%E2%9C%A6%20heraldo-Doritos0-D8C5F0?style=for-the-badge&labelColor=06030d&color=2d1b4e" alt="Heraldo" /></a>
+<img src="https://img.shields.io/badge/%E2%9C%9D%20oficio-developer-A78BCA?style=for-the-badge&labelColor=06030d&color=4a2a6e" alt="Oficio" />
+<img src="https://img.shields.io/badge/%E2%80%A0%20sigilo-react%20%C2%B7%20django%20%C2%B7%20fastapi-C9A8D6?style=for-the-badge&labelColor=06030d&color=5d3a8a" alt="Sigilo" />
+<a href="https://github.com/Doritos0?tab=followers"><img src="https://img.shields.io/github/followers/Doritos0?style=for-the-badge&label=fieles&logo=github&logoColor=D8C5F0&labelColor=06030d&color=2d1b4e" alt="Fieles" /></a>
+<img src="https://komarev.com/ghpvc/?username=Doritos0&label=peregrinos&color=4a2a6e&style=for-the-badge" alt="Peregrinos" />
 
 </div>
 
-<br/>
-
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=ts,js,python,react,angular,django,fastapi,html,css,postgresql,mysql,git,github,vscode&perline=14&theme=dark" alt="Tech stack icons" />
-</div>
-
-<br/>
-
-<div align="center">
-<table>
-<tr>
-<td align="center" width="33%">
-<sub><samp>— Frontend —</samp></sub><br/>
-<img src="https://img.shields.io/badge/React-050505?style=flat-square&logo=react&logoColor=8E1B2A&labelColor=050505" />
-<img src="https://img.shields.io/badge/Angular-050505?style=flat-square&logo=angular&logoColor=C9A86A&labelColor=050505" />
-<img src="https://img.shields.io/badge/TypeScript-050505?style=flat-square&logo=typescript&logoColor=B5A99A&labelColor=050505" />
-<img src="https://img.shields.io/badge/HTML5-050505?style=flat-square&logo=html5&logoColor=8E1B2A&labelColor=050505" />
-<img src="https://img.shields.io/badge/CSS3-050505?style=flat-square&logo=css3&logoColor=B5A99A&labelColor=050505" />
-</td>
-<td align="center" width="33%">
-<sub><samp>— Backend —</samp></sub><br/>
-<img src="https://img.shields.io/badge/Python-050505?style=flat-square&logo=python&logoColor=C9A86A&labelColor=050505" />
-<img src="https://img.shields.io/badge/Django-050505?style=flat-square&logo=django&logoColor=8E1B2A&labelColor=050505" />
-<img src="https://img.shields.io/badge/FastAPI-050505?style=flat-square&logo=fastapi&logoColor=B5A99A&labelColor=050505" />
-<img src="https://img.shields.io/badge/REST-050505?style=flat-square&logo=swagger&logoColor=C9A86A&labelColor=050505" />
-</td>
-<td align="center" width="33%">
-<sub><samp>— Bóveda —</samp></sub><br/>
-<img src="https://img.shields.io/badge/PostgreSQL-050505?style=flat-square&logo=postgresql&logoColor=B5A99A&labelColor=050505" />
-<img src="https://img.shields.io/badge/MySQL-050505?style=flat-square&logo=mysql&logoColor=C9A86A&labelColor=050505" />
-<img src="https://img.shields.io/badge/Git-050505?style=flat-square&logo=git&logoColor=8E1B2A&labelColor=050505" />
-<img src="https://img.shields.io/badge/GitHub-050505?style=flat-square&logo=github&logoColor=E7DCC8&labelColor=050505" />
-</td>
-</tr>
-</table>
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:050505,40:5B1117,60:5B1117,100:050505" alt="" />
-</div>
-
-<br/>
-
-## <samp>𖤐 &nbsp; III. Cr&oacute;nica Visible &nbsp; 𖤐</samp>
-
-<div align="center">
-  <img height="195" src="https://github-readme-stats.shion.dev/api?username=Doritos0&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=0a0203&title_color=C9A86A&text_color=B5A99A&icon_color=8E1B2A&ring_color=8E1B2A&card_width=480" alt="GitHub statistics" />
-  &nbsp;
-  <img height="195" src="https://github-readme-stats.shion.dev/api/top-langs/?username=Doritos0&layout=donut-vertical&hide_border=true&bg_color=0a0203&title_color=C9A86A&text_color=B5A99A&icon_color=C9A86A&langs_count=8&card_width=320" alt="Top languages donut" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Doritos0&hide_border=true&background=0a0203&stroke=3B0A12&ring=8E1B2A&fire=C9A86A&currStreakNum=E7DCC8&sideNums=E7DCC8&currStreakLabel=B5A99A&sideLabels=B5A99A&dates=7E7478" alt="GitHub streak" />
-</div>
-
-<br/>
-
-<div align="center">
-  <a href="https://github.com/Doritos0">
-    <img src="https://github-profile-trophy.vercel.app/?username=Doritos0&theme=darkhub&no-frame=true&no-bg=true&margin-w=8&row=1&column=7&title=Stars,Followers,Commits,Repositories,Issues,PullRequest,Reviews" alt="GitHub trophies" />
-  </a>
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:050505,40:5B1117,60:5B1117,100:050505" alt="" />
-</div>
-
-<br/>
-
-## <samp>☧ &nbsp; IV. Vestigios del Camino &nbsp; ☧</samp>
-
-<div align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Doritos0&bg_color=0a0203&color=E7DCC8&line=8E1B2A&point=C9A86A&area=true&area_color=3B0A12&hide_border=true&radius=4&custom_title=Cr%C3%B3nica%20de%20contribuciones&title_color=C9A86A" alt="Contribution activity graph" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img width="100%" src="./assets/constellation.svg" alt="Decorative star chart with four symbolic constellations" />
+  <img width="100%" src="./assets/divider.svg" alt="" />
 </div>
 
 <div align="center">
-  <sub><i>Cuatro constelaciones simbólicas — <b>Crux</b>, <b>Cultellus</b>, <b>Calix</b> y <b>Clavis</b> — trazadas como emblema del oficio. No son métricas; son un pequeño firmamento decorativo.</i></sub>
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:050505,40:5B1117,60:5B1117,100:050505" alt="" />
-</div>
-
-<br/>
-
-## <samp>† &nbsp; Ep&iacute;logo &nbsp; †</samp>
-
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=UnifrakturMaguntia&size=24&duration=3000&pause=1200&color=8E1B2A&center=true&vCenter=true&width=920&height=46&lines=Gracias+por+atravesar+el+portico.;Si+algo+aqui+resono%2C+sigueme+o+escribeme.;ex+tenebris%2C+codicem." alt="Closing message" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img width="100%" src="./assets/sigil.svg" alt="Closing sigil with shield, raven, crossed quill and dagger" />
+  <img width="100%" src="./assets/title-codex.svg" alt="I. Codex" />
 </div>
 
 <div align="center">
-  <sub><i>— construido a la luz de un solo cirio, refactorizado al alba —</i></sub>
+  <img width="100%" src="./assets/codex.svg" alt="Lo que practico - lo que persigo" />
+</div>
+
+<div align="center">
+  <img width="100%" src="./assets/divider.svg" alt="" />
+</div>
+
+<div align="center">
+  <img width="100%" src="./assets/title-arsenal.svg" alt="II. Arsenal" />
+</div>
+
+<div align="center">
+  <img width="100%" src="./assets/arsenal.svg" alt="Tres nichos goticos con tecnologias" />
+</div>
+
+<div align="center">
+  <img width="100%" src="./assets/divider.svg" alt="" />
+</div>
+
+<div align="center">
+  <img width="100%" src="./assets/title-chronicle.svg" alt="III. Cronica" />
+</div>
+
+<div align="center">
+
+<img height="200" src="https://github-readme-stats.shion.dev/api?username=Doritos0&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=06030d&title_color=D8C5F0&text_color=B89BD9&icon_color=8B6BB5&ring_color=A78BCA&card_width=480" alt="Stats" />
+&nbsp;
+<img height="200" src="https://github-readme-stats.shion.dev/api/top-langs/?username=Doritos0&layout=donut-vertical&hide_border=true&bg_color=06030d&title_color=D8C5F0&text_color=B89BD9&icon_color=A78BCA&langs_count=8&card_width=320" alt="Lenguas" />
+
+<br/><br/>
+
+<img src="https://streak-stats.demolab.com/?user=Doritos0&hide_border=true&background=06030d&stroke=2d1b4e&ring=8B6BB5&fire=C9A8D6&currStreakNum=D8C5F0&sideNums=D8C5F0&currStreakLabel=B89BD9&sideLabels=B89BD9&dates=6B5A8A" alt="Racha" />
+
+<br/><br/>
+
+<a href="https://github.com/Doritos0"><img src="https://github-profile-trophy.vercel.app/?username=Doritos0&theme=gruvbox&no-frame=true&no-bg=true&margin-w=8&row=1&column=7&title=Stars,Followers,Commits,Repositories,Issues,PullRequest,Reviews" alt="Reliquias" /></a>
+
+</div>
+
+<div align="center">
+  <img width="100%" src="./assets/divider.svg" alt="" />
+</div>
+
+<div align="center">
+  <img width="100%" src="./assets/title-vestiges.svg" alt="IV. Vestigios" />
+</div>
+
+<div align="center">
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Doritos0&bg_color=06030d&color=E8D5FF&line=8B6BB5&point=C9A8D6&area=true&area_color=2d1b4e&hide_border=true&radius=4&custom_title=Cr%C3%B3nica%20de%20contribuciones&title_color=D8C5F0" alt="Grafo de contribuciones" />
+</div>
+
+<div align="center">
+  <img width="100%" src="./assets/divider.svg" alt="" />
+</div>
+
+<div align="center">
+  <img width="100%" src="./assets/title-contributions.svg" alt="V. Contribuciones" />
+</div>
+
+<div align="center">
+  <picture>
+    <source srcset="https://gh-heat.anishroy.com/api/Doritos0/svg?theme=purple&darkMode=true" media="(prefers-color-scheme: dark)" />
+    <source srcset="https://gh-heat.anishroy.com/api/Doritos0/svg?theme=purple&darkMode=false" media="(prefers-color-scheme: light)" />
+    <img width="100%" src="https://gh-heat.anishroy.com/api/Doritos0/svg?theme=purple&darkMode=true" alt="Heatmap de contribuciones" />
+  </picture>
+</div>
+
+<div align="center">
+  <img width="100%" src="./assets/divider.svg" alt="" />
+</div>
+
+<div align="center">
+  <img width="100%" src="./assets/footer.svg" alt="ex tenebris, codicem" />
 </div>

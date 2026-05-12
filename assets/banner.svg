@@ -1,0 +1,234 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-labelledby="bn-title">
+  <title id="bn-title">Doritos0 - Catedral violeta entre la niebla</title>
+  <defs>
+    <linearGradient id="bn-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06030d"/>
+      <stop offset="22%" stop-color="#150a26"/>
+      <stop offset="55%" stop-color="#2d1b4e"/>
+      <stop offset="82%" stop-color="#4a2a6e"/>
+      <stop offset="100%" stop-color="#6b4ba0"/>
+    </linearGradient>
+    <radialGradient id="bn-moon" cx="50%" cy="38%" r="34%">
+      <stop offset="0%" stop-color="#f1e6ff" stop-opacity="0.85"/>
+      <stop offset="14%" stop-color="#D8C5F0" stop-opacity="0.55"/>
+      <stop offset="48%" stop-color="#8B6BB5" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#8B6BB5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bn-cloud" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A78BCA" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#5d3a8a" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#5d3a8a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bn-fog" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C9A8D6" stop-opacity="0"/>
+      <stop offset="55%" stop-color="#C9A8D6" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#E8D5FF" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="bn-name" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4e7ff"/>
+      <stop offset="55%" stop-color="#B89BD9"/>
+      <stop offset="100%" stop-color="#6b4ba0"/>
+    </linearGradient>
+    <linearGradient id="bn-rose" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D8C5F0" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#5d3a8a" stop-opacity="0.6"/>
+    </linearGradient>
+    <filter id="bn-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bn-softglow">
+      <feGaussianBlur stdDeviation="1.4"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1200" height="480" fill="url(#bn-sky)"/>
+
+  <!-- Stars -->
+  <g fill="#E8D5FF">
+    <circle cx="40" cy="60" r="0.7" opacity="0.9"/>
+    <circle cx="90" cy="30" r="0.5" opacity="0.7"/>
+    <circle cx="140" cy="90" r="0.8" opacity="0.85"/>
+    <circle cx="200" cy="50" r="0.5" opacity="0.6"/>
+    <circle cx="260" cy="110" r="0.6" opacity="0.75"/>
+    <circle cx="310" cy="40" r="0.7" opacity="0.85"/>
+    <circle cx="370" cy="80" r="0.5" opacity="0.7"/>
+    <circle cx="430" cy="30" r="0.6" opacity="0.8"/>
+    <circle cx="500" cy="20" r="0.5" opacity="0.6"/>
+    <circle cx="570" cy="50" r="0.4" opacity="0.7"/>
+    <circle cx="640" cy="20" r="0.5" opacity="0.7"/>
+    <circle cx="700" cy="55" r="0.4" opacity="0.6"/>
+    <circle cx="760" cy="30" r="0.7" opacity="0.85"/>
+    <circle cx="820" cy="70" r="0.5" opacity="0.7"/>
+    <circle cx="880" cy="40" r="0.8" opacity="0.9"/>
+    <circle cx="940" cy="90" r="0.5" opacity="0.7"/>
+    <circle cx="1000" cy="50" r="0.7" opacity="0.85"/>
+    <circle cx="1060" cy="30" r="0.5" opacity="0.65"/>
+    <circle cx="1110" cy="80" r="0.6" opacity="0.8"/>
+    <circle cx="1160" cy="40" r="0.5" opacity="0.7"/>
+    <circle cx="60" cy="180" r="0.5" opacity="0.55"/>
+    <circle cx="180" cy="190" r="0.4" opacity="0.5"/>
+    <circle cx="1090" cy="190" r="0.5" opacity="0.55"/>
+    <circle cx="1140" cy="170" r="0.4" opacity="0.5"/>
+  </g>
+
+  <!-- Moon halo (no disc, just light) -->
+  <ellipse cx="600" cy="180" rx="320" ry="180" fill="url(#bn-moon)"/>
+
+  <!-- Distant clouds -->
+  <ellipse cx="180" cy="140" rx="260" ry="36" fill="url(#bn-cloud)" opacity="0.65"/>
+  <ellipse cx="1020" cy="110" rx="280" ry="42" fill="url(#bn-cloud)" opacity="0.6"/>
+  <ellipse cx="600" cy="80" rx="420" ry="28" fill="url(#bn-cloud)" opacity="0.35"/>
+  <ellipse cx="400" cy="220" rx="180" ry="24" fill="url(#bn-cloud)" opacity="0.45"/>
+  <ellipse cx="820" cy="240" rx="200" ry="26" fill="url(#bn-cloud)" opacity="0.45"/>
+
+  <!-- Distant city silhouette (very faint) -->
+  <g fill="#0a0510" opacity="0.55">
+    <path d="M 0 400 L 0 360 L 30 360 L 30 340 L 50 340 L 50 360 L 80 360 L 80 320 L 100 320 L 100 310 L 110 310 L 110 320 L 130 320 L 130 350 L 160 350 L 160 330 L 180 330 L 180 360 L 220 360 L 220 340 L 240 340 L 240 360 L 260 360 L 260 320 L 280 320 L 280 360 L 320 360 L 320 350 L 340 350 L 340 360 L 380 360 L 380 330 L 400 330 L 400 360 L 1200 360 L 1200 400 Z"/>
+    <path d="M 1200 400 L 1200 360 L 1170 360 L 1170 340 L 1150 340 L 1150 360 L 1120 360 L 1120 320 L 1100 320 L 1100 310 L 1090 310 L 1090 320 L 1070 320 L 1070 350 L 1040 350 L 1040 330 L 1020 330 L 1020 360 L 980 360 L 980 340 L 960 340 L 960 360 L 940 360 L 940 320 L 920 320 L 920 360 L 880 360 L 880 350 L 860 350 L 860 360 L 820 360 L 820 330 L 800 330 L 800 360 Z"/>
+  </g>
+
+  <!-- Side small cathedrals -->
+  <g fill="#06030d" opacity="0.95">
+    <!-- Left cathedral -->
+    <path d="M 130 400 L 130 300 L 145 300 L 145 280 L 140 280 L 152 258 L 164 280 L 159 280 L 159 300 L 178 300 L 178 270 L 196 244 L 214 270 L 214 300 L 233 300 L 233 280 L 228 280 L 240 258 L 252 280 L 247 280 L 247 300 L 262 300 L 262 400 Z"/>
+    <!-- Right cathedral -->
+    <path d="M 938 400 L 938 300 L 953 300 L 953 280 L 948 280 L 960 258 L 972 280 L 967 280 L 967 300 L 986 300 L 986 270 L 1004 244 L 1022 270 L 1022 300 L 1041 300 L 1041 280 L 1036 280 L 1048 258 L 1060 280 L 1055 280 L 1055 300 L 1070 300 L 1070 400 Z"/>
+  </g>
+  <!-- Tiny windows on small cathedrals -->
+  <g fill="#3d2050">
+    <rect x="190" y="318" width="3" height="10" rx="1.5"/>
+    <rect x="201" y="318" width="3" height="10" rx="1.5"/>
+    <rect x="998" y="318" width="3" height="10" rx="1.5"/>
+    <rect x="1009" y="318" width="3" height="10" rx="1.5"/>
+  </g>
+
+  <!-- Central cathedral (main) -->
+  <g fill="#04020a">
+    <!-- Buttresses + body -->
+    <path d="M 430 410
+             L 430 270
+             L 445 270 L 445 252 L 440 252 L 452 232 L 464 252 L 459 252 L 459 270
+             L 478 270
+             L 478 250 L 472 250 L 488 228 L 488 200 L 478 200 L 498 168 L 518 200 L 508 200 L 508 228 L 524 250 L 518 250 L 518 270
+             L 540 270
+             L 540 220 L 555 196 L 555 168 L 545 168 L 565 130 L 585 168 L 575 168 L 575 196 L 590 220 L 590 130
+             L 600 18
+             L 610 130 L 610 220 L 625 196 L 625 168 L 615 168 L 635 130 L 655 168 L 645 168 L 645 196 L 660 220 L 660 270
+             L 682 270 L 682 250 L 676 250 L 692 228 L 692 200 L 682 200 L 702 168 L 722 200 L 712 200 L 712 228 L 728 250 L 722 250 L 722 270
+             L 741 270 L 741 252 L 736 252 L 748 232 L 760 252 L 755 252 L 755 270
+             L 770 270
+             L 770 410 Z"/>
+  </g>
+
+  <!-- Rose window on cathedral -->
+  <g transform="translate(600 290)">
+    <circle r="32" fill="#0a0510" stroke="#8B6BB5" stroke-width="1.4"/>
+    <circle r="28" fill="url(#bn-rose)" opacity="0.55"/>
+    <g stroke="#C9A8D6" stroke-width="0.7" fill="none" opacity="0.95">
+      <line x1="-28" y1="0" x2="28" y2="0"/>
+      <line x1="0" y1="-28" x2="0" y2="28"/>
+      <line x1="-20" y1="-20" x2="20" y2="20"/>
+      <line x1="-20" y1="20" x2="20" y2="-20"/>
+      <circle r="12" stroke="#D8C5F0"/>
+      <circle r="20" stroke="#A78BCA" opacity="0.6"/>
+    </g>
+    <circle r="3.5" fill="#f1e6ff" filter="url(#bn-softglow)"/>
+  </g>
+
+  <!-- Cathedral windows & door -->
+  <g>
+    <!-- Tall arched windows in side bays -->
+    <g fill="#1a0a2e" stroke="#5d3a8a" stroke-width="0.8">
+      <path d="M 488 350 q 0 -22 10 -22 q 10 0 10 22 L 508 376 L 488 376 Z"/>
+      <path d="M 518 350 q 0 -22 10 -22 q 10 0 10 22 L 538 376 L 518 376 Z"/>
+      <path d="M 662 350 q 0 -22 10 -22 q 10 0 10 22 L 682 376 L 662 376 Z"/>
+      <path d="M 692 350 q 0 -22 10 -22 q 10 0 10 22 L 712 376 L 692 376 Z"/>
+    </g>
+    <!-- Window light glow -->
+    <g fill="#8B6BB5" opacity="0.35" filter="url(#bn-softglow)">
+      <rect x="490" y="356" width="16" height="18" rx="3"/>
+      <rect x="520" y="356" width="16" height="18" rx="3"/>
+      <rect x="664" y="356" width="16" height="18" rx="3"/>
+      <rect x="694" y="356" width="16" height="18" rx="3"/>
+    </g>
+    <!-- Main portal -->
+    <path d="M 575 410 q 0 -52 25 -52 q 25 0 25 52 Z" fill="#0a0510" stroke="#5d3a8a" stroke-width="1"/>
+    <path d="M 583 410 q 0 -42 17 -42 q 17 0 17 42 Z" fill="#1a0a2e" stroke="#8B6BB5" stroke-width="0.5" opacity="0.6"/>
+    <line x1="600" y1="368" x2="600" y2="410" stroke="#3d2050" stroke-width="0.8"/>
+    <!-- Cross atop center spire -->
+    <line x1="600" y1="18" x2="600" y2="0" stroke="#8B6BB5" stroke-width="1.2"/>
+    <line x1="594" y1="6" x2="606" y2="6" stroke="#8B6BB5" stroke-width="1.2"/>
+    <!-- Crosses atop side spires -->
+    <line x1="488" y1="168" x2="488" y2="158" stroke="#5d3a8a" stroke-width="0.8"/>
+    <line x1="484" y1="161" x2="492" y2="161" stroke="#5d3a8a" stroke-width="0.8"/>
+    <line x1="712" y1="168" x2="712" y2="158" stroke="#5d3a8a" stroke-width="0.8"/>
+    <line x1="708" y1="161" x2="716" y2="161" stroke="#5d3a8a" stroke-width="0.8"/>
+  </g>
+
+  <!-- Ravens flying -->
+  <g stroke="#04020a" stroke-width="1.6" fill="none" stroke-linecap="round">
+    <path d="M 120 110 q 5 -4 10 0 q 5 -4 10 0"/>
+    <path d="M 200 80 q 4 -3 8 0 q 4 -3 8 0"/>
+    <path d="M 280 130 q 4 -3 8 0 q 4 -3 8 0"/>
+    <path d="M 350 90 q 5 -4 10 0 q 5 -4 10 0"/>
+    <path d="M 420 60 q 4 -3 8 0 q 4 -3 8 0"/>
+    <path d="M 250 200 q 3 -2 6 0 q 3 -2 6 0" stroke-width="1.2"/>
+    <path d="M 340 220 q 3 -2 6 0 q 3 -2 6 0" stroke-width="1.2"/>
+    <path d="M 820 70 q 5 -4 10 0 q 5 -4 10 0"/>
+    <path d="M 880 110 q 4 -3 8 0 q 4 -3 8 0"/>
+    <path d="M 940 80 q 5 -4 10 0 q 5 -4 10 0"/>
+    <path d="M 1020 130 q 4 -3 8 0 q 4 -3 8 0"/>
+    <path d="M 1080 90 q 3 -2 6 0 q 3 -2 6 0" stroke-width="1.3"/>
+    <path d="M 1140 110 q 3 -2 6 0 q 3 -2 6 0" stroke-width="1.2"/>
+    <path d="M 870 200 q 3 -2 6 0 q 3 -2 6 0" stroke-width="1.2"/>
+    <path d="M 960 220 q 3 -2 6 0 q 3 -2 6 0" stroke-width="1.2"/>
+  </g>
+
+  <!-- Fog layers -->
+  <rect x="0" y="320" width="1200" height="160" fill="url(#bn-fog)"/>
+  <ellipse cx="300" cy="395" rx="280" ry="22" fill="#C9A8D6" opacity="0.22"/>
+  <ellipse cx="900" cy="400" rx="320" ry="24" fill="#C9A8D6" opacity="0.22"/>
+  <ellipse cx="600" cy="410" rx="500" ry="20" fill="#D8C5F0" opacity="0.18"/>
+
+  <!-- Engraved plaque behind name -->
+  <g>
+    <rect x="380" y="380" width="440" height="58" fill="#0a0510" opacity="0.55" rx="2"/>
+    <rect x="380" y="380" width="440" height="58" fill="none" stroke="#8B6BB5" stroke-width="0.6" opacity="0.7"/>
+    <line x1="380" y1="386" x2="820" y2="386" stroke="#8B6BB5" stroke-width="0.3" opacity="0.6"/>
+    <line x1="380" y1="432" x2="820" y2="432" stroke="#8B6BB5" stroke-width="0.3" opacity="0.6"/>
+    <!-- Corner crosses -->
+    <g stroke="#A78BCA" stroke-width="0.9" opacity="0.9">
+      <path d="M 376 384 L 376 392 M 372 388 L 380 388"/>
+      <path d="M 824 384 L 824 392 M 820 388 L 828 388"/>
+      <path d="M 376 430 L 376 438 M 372 434 L 380 434"/>
+      <path d="M 824 430 L 824 438 M 820 434 L 828 434"/>
+    </g>
+  </g>
+
+  <!-- Name -->
+  <text x="600" y="422" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="38" font-weight="400" letter-spacing="14"
+        fill="url(#bn-name)" filter="url(#bn-glow)">D O R I T O S 0</text>
+
+  <!-- Subtitle line -->
+  <text x="600" y="462" text-anchor="middle"
+        font-family="Georgia, serif" font-size="11"
+        fill="#C9A8D6" letter-spacing="9" opacity="0.85">
+    ✦  ex tenebris · codicem · in lumine violaceo  ✦
+  </text>
+
+  <!-- Corner ornaments -->
+  <g stroke="#8B6BB5" stroke-width="0.9" fill="none" opacity="0.85">
+    <path d="M 24 24 L 70 24 M 24 24 L 24 70"/>
+    <circle cx="40" cy="40" r="5"/>
+    <path d="M 40 33 L 40 47 M 33 40 L 47 40"/>
+    <path d="M 1176 24 L 1130 24 M 1176 24 L 1176 70"/>
+    <circle cx="1160" cy="40" r="5"/>
+    <path d="M 1160 33 L 1160 47 M 1153 40 L 1167 40"/>
+    <path d="M 24 456 L 70 456 M 24 456 L 24 410"/>
+    <path d="M 1176 456 L 1130 456 M 1176 456 L 1176 410"/>
+  </g>
+</svg>

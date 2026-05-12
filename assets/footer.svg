@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="ft-title">
+  <title id="ft-title">Footer - catedral lejana entre la niebla violeta</title>
+  <defs>
+    <linearGradient id="ft-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06030d"/>
+      <stop offset="55%" stop-color="#2d1b4e"/>
+      <stop offset="100%" stop-color="#6b4ba0"/>
+    </linearGradient>
+    <radialGradient id="ft-halo" cx="50%" cy="60%" r="50%">
+      <stop offset="0%" stop-color="#D8C5F0" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#A78BCA" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ft-fog" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C9A8D6" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#E8D5FF" stop-opacity="0.65"/>
+    </linearGradient>
+    <linearGradient id="ft-text" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8D5FF"/>
+      <stop offset="100%" stop-color="#8B6BB5"/>
+    </linearGradient>
+    <filter id="ft-glow"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+
+  <rect width="1200" height="280" fill="url(#ft-sky)"/>
+
+  <!-- Stars -->
+  <g fill="#E8D5FF" opacity="0.8">
+    <circle cx="80" cy="30" r="0.6"/>
+    <circle cx="160" cy="50" r="0.5"/>
+    <circle cx="240" cy="20" r="0.7"/>
+    <circle cx="320" cy="40" r="0.5"/>
+    <circle cx="400" cy="60" r="0.5"/>
+    <circle cx="480" cy="30" r="0.6"/>
+    <circle cx="560" cy="50" r="0.5"/>
+    <circle cx="640" cy="25" r="0.6"/>
+    <circle cx="720" cy="60" r="0.5"/>
+    <circle cx="800" cy="40" r="0.5"/>
+    <circle cx="880" cy="30" r="0.7"/>
+    <circle cx="960" cy="55" r="0.5"/>
+    <circle cx="1040" cy="20" r="0.6"/>
+    <circle cx="1120" cy="50" r="0.5"/>
+  </g>
+
+  <!-- Halo behind cathedral -->
+  <ellipse cx="600" cy="160" rx="380" ry="120" fill="url(#ft-halo)"/>
+
+  <!-- Distant cathedral (small, centered) -->
+  <g fill="#04020a" opacity="0.95">
+    <path d="M 540 200 L 540 150 L 552 150 L 552 138 L 547 138 L 558 122 L 569 138 L 564 138 L 564 150 L 580 150 L 580 130 L 595 110 L 595 88 L 588 88 L 600 60 L 612 88 L 605 88 L 605 110 L 620 130 L 620 150 L 636 150 L 636 138 L 631 138 L 642 122 L 653 138 L 648 138 L 648 150 L 660 150 L 660 200 Z"/>
+  </g>
+  <!-- Rose window mini -->
+  <circle cx="600" cy="160" r="6" fill="#1a0a2e" stroke="#A78BCA" stroke-width="0.5"/>
+  <circle cx="600" cy="160" r="1.5" fill="#D8C5F0"/>
+  <!-- Cross atop spire -->
+  <line x1="600" y1="60" x2="600" y2="52" stroke="#A78BCA" stroke-width="0.8"/>
+  <line x1="596" y1="56" x2="604" y2="56" stroke="#A78BCA" stroke-width="0.8"/>
+
+  <!-- Side mini cathedrals -->
+  <g fill="#0a0510" opacity="0.85">
+    <path d="M 360 200 L 360 165 L 368 165 L 368 155 L 372 145 L 376 155 L 376 165 L 388 165 L 388 145 L 398 130 L 408 145 L 408 165 L 420 165 L 420 155 L 424 145 L 428 155 L 428 165 L 436 165 L 436 200 Z"/>
+    <path d="M 764 200 L 764 165 L 772 165 L 772 155 L 776 145 L 780 155 L 780 165 L 792 165 L 792 145 L 802 130 L 812 145 L 812 165 L 824 165 L 824 155 L 828 145 L 832 155 L 832 165 L 840 165 L 840 200 Z"/>
+  </g>
+
+  <!-- Trees / dark mass at bottom -->
+  <g fill="#04020a" opacity="0.9">
+    <path d="M 0 240 L 0 200 Q 80 180 160 200 Q 240 220 320 200 Q 400 190 480 200 L 480 240 Z"/>
+    <path d="M 720 240 L 720 200 Q 800 190 880 200 Q 960 220 1040 200 Q 1120 180 1200 200 L 1200 240 Z"/>
+  </g>
+
+  <!-- Ravens -->
+  <g stroke="#04020a" stroke-width="1.4" fill="none" stroke-linecap="round">
+    <path d="M 120 90 q 4 -3 8 0 q 4 -3 8 0"/>
+    <path d="M 200 70 q 3 -2 6 0 q 3 -2 6 0"/>
+    <path d="M 280 100 q 4 -3 8 0 q 4 -3 8 0"/>
+    <path d="M 360 80 q 3 -2 6 0 q 3 -2 6 0"/>
+    <path d="M 460 50 q 4 -3 8 0 q 4 -3 8 0"/>
+    <path d="M 760 60 q 4 -3 8 0 q 4 -3 8 0"/>
+    <path d="M 840 90 q 3 -2 6 0 q 3 -2 6 0"/>
+    <path d="M 920 70 q 4 -3 8 0 q 4 -3 8 0"/>
+    <path d="M 1000 100 q 3 -2 6 0 q 3 -2 6 0"/>
+    <path d="M 1080 80 q 4 -3 8 0 q 4 -3 8 0"/>
+  </g>
+
+  <!-- Fog -->
+  <rect x="0" y="160" width="1200" height="120" fill="url(#ft-fog)"/>
+  <ellipse cx="600" cy="210" rx="600" ry="30" fill="#D8C5F0" opacity="0.25"/>
+
+  <!-- Closing inscription -->
+  <text x="600" y="248" text-anchor="middle"
+        font-family="Georgia, serif" font-size="22" font-weight="700"
+        fill="url(#ft-text)" letter-spacing="14" filter="url(#ft-glow)">
+    EX  TENEBRIS,  CODICEM
+  </text>
+
+  <!-- Sub line -->
+  <text x="600" y="270" text-anchor="middle"
+        font-family="Georgia, serif" font-size="10"
+        fill="#A78BCA" letter-spacing="6" opacity="0.85">
+    &#x2720; forjado a la luz de un solo cirio violeta · refactorizado al alba &#x2720;
+  </text>
+</svg>
