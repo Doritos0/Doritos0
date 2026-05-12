@@ -4,11 +4,11 @@
 
 <div align="center">
 
-<a href="https://github.com/Doritos0"><img src="https://img.shields.io/badge/%E2%9C%A6%20heraldo-Doritos0-D8C5F0?style=for-the-badge&labelColor=06030d&color=2d1b4e" alt="Heraldo" /></a>
-<img src="https://img.shields.io/badge/%E2%9C%9D%20oficio-developer-A78BCA?style=for-the-badge&labelColor=06030d&color=4a2a6e" alt="Oficio" />
-<img src="https://img.shields.io/badge/%E2%80%A0%20sigilo-react%20%C2%B7%20django%20%C2%B7%20fastapi-C9A8D6?style=for-the-badge&labelColor=06030d&color=5d3a8a" alt="Sigilo" />
-<a href="https://github.com/Doritos0?tab=followers"><img src="https://img.shields.io/github/followers/Doritos0?style=for-the-badge&label=fieles&logo=github&logoColor=D8C5F0&labelColor=06030d&color=2d1b4e" alt="Fieles" /></a>
-<img src="https://komarev.com/ghpvc/?username=Doritos0&label=peregrinos&color=4a2a6e&style=for-the-badge" alt="Peregrinos" />
+<a href="https://github.com/Doritos0"><img src="https://img.shields.io/badge/%5B%20OPERATOR%20%5D-DORITOS0-D8C5F0?style=for-the-badge&labelColor=06030d&color=2d1b4e" alt="Operator" /></a>
+<img src="https://img.shields.io/badge/%5B%20ROLE%20%5D-DEVELOPER-A78BCA?style=for-the-badge&labelColor=06030d&color=4a2a6e" alt="Role" />
+<img src="https://img.shields.io/badge/%5B%20STACK%20%5D-REACT%20%2F%20DJANGO%20%2F%20FASTAPI-C9A8D6?style=for-the-badge&labelColor=06030d&color=5d3a8a" alt="Stack" />
+<a href="https://github.com/Doritos0?tab=followers"><img src="https://img.shields.io/github/followers/Doritos0?style=for-the-badge&label=FOLLOWERS&logo=github&logoColor=D8C5F0&labelColor=06030d&color=2d1b4e" alt="Followers" /></a>
+<img src="https://komarev.com/ghpvc/?username=Doritos0&label=VISITS&color=4a2a6e&style=for-the-badge" alt="Visits" />
 
 </div>
 

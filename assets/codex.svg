@@ -1,218 +1,209 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="cx-title">
-  <title id="cx-title">Codex: lo que practico - lo que persigo</title>
+  <title id="cx-title">Codex - dos placas industriales brutalistas</title>
   <defs>
     <linearGradient id="cx-bg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#06030d"/>
       <stop offset="100%" stop-color="#150a26"/>
     </linearGradient>
-    <linearGradient id="cx-page" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="cx-panel" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#2d1b4e"/>
-      <stop offset="50%" stop-color="#3d2050"/>
-      <stop offset="100%" stop-color="#1a0a2e"/>
+      <stop offset="55%" stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#0a0510"/>
     </linearGradient>
-    <radialGradient id="cx-page-light" cx="50%" cy="20%" r="80%">
-      <stop offset="0%" stop-color="#8B6BB5" stop-opacity="0.45"/>
-      <stop offset="100%" stop-color="#8B6BB5" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="cx-seal" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#E8D5FF"/>
-      <stop offset="40%" stop-color="#A78BCA"/>
-      <stop offset="100%" stop-color="#4a2a6e"/>
-    </radialGradient>
-    <filter id="cx-glow">
-      <feGaussianBlur stdDeviation="1.2"/>
-    </filter>
+    <linearGradient id="cx-band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a2a6e"/>
+      <stop offset="100%" stop-color="#2d1b4e"/>
+    </linearGradient>
+    <linearGradient id="cx-title-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4e7ff"/>
+      <stop offset="100%" stop-color="#A78BCA"/>
+    </linearGradient>
+    <filter id="cx-glow"><feGaussianBlur stdDeviation="1.4"/></filter>
+    <pattern id="cx-noise" x="0" y="0" width="3" height="3" patternUnits="userSpaceOnUse">
+      <rect width="3" height="3" fill="#06030d"/>
+      <rect x="0" y="0" width="1" height="1" fill="#1a0a2e" opacity="0.5"/>
+    </pattern>
   </defs>
 
   <rect width="1200" height="420" fill="url(#cx-bg)"/>
+  <!-- Background noise texture -->
+  <rect width="1200" height="420" fill="url(#cx-noise)" opacity="0.35"/>
 
-  <!-- Ambient stars / dust -->
-  <g fill="#A78BCA" opacity="0.4">
-    <circle cx="60" cy="40" r="0.6"/>
-    <circle cx="140" cy="80" r="0.5"/>
-    <circle cx="1100" cy="50" r="0.6"/>
-    <circle cx="1040" cy="90" r="0.5"/>
-    <circle cx="80" cy="380" r="0.5"/>
-    <circle cx="1120" cy="370" r="0.6"/>
+  <!-- Crosshair grid faint -->
+  <g stroke="#2d1b4e" stroke-width="0.3" opacity="0.4">
+    <line x1="0" y1="50" x2="1200" y2="50"/>
+    <line x1="0" y1="370" x2="1200" y2="370"/>
+    <line x1="50" y1="0" x2="50" y2="420"/>
+    <line x1="1150" y1="0" x2="1150" y2="420"/>
+  </g>
+  <g stroke="#5d3a8a" stroke-width="0.7" opacity="0.6">
+    <line x1="0" y1="50" x2="40" y2="50"/>
+    <line x1="50" y1="0" x2="50" y2="40"/>
+    <line x1="1160" y1="50" x2="1200" y2="50"/>
+    <line x1="1150" y1="0" x2="1150" y2="40"/>
+    <line x1="0" y1="370" x2="40" y2="370"/>
+    <line x1="50" y1="380" x2="50" y2="420"/>
+    <line x1="1160" y1="370" x2="1200" y2="370"/>
+    <line x1="1150" y1="380" x2="1150" y2="420"/>
   </g>
 
-  <!-- Codex - two pages -->
-  <!-- Page shadows -->
-  <path d="M 96 64 L 596 60 L 596 380 L 96 384 Z" fill="#04020a" opacity="0.55"/>
-  <path d="M 604 60 L 1104 64 L 1104 384 L 604 380 Z" fill="#04020a" opacity="0.55"/>
+  <!-- Doc index at top -->
+  <text x="60" y="36" font-family="Consolas, 'Courier New', monospace" font-size="10" letter-spacing="3" fill="#8B6BB5">DOC // CDX-0080-I &#x00B7; CLASSIF: OPERATOR &#x00B7; REV.05</text>
+  <text x="1140" y="36" text-anchor="end" font-family="Consolas, 'Courier New', monospace" font-size="10" letter-spacing="3" fill="#8B6BB5">[ &#x25A0; &#x25A0; &#x25A1; &#x25A1; &#x25A1; ]</text>
 
-  <!-- Left page -->
-  <path d="M 100 60 L 596 56 L 596 376 L 100 380 Z" fill="url(#cx-page)" stroke="#8B6BB5" stroke-width="0.9"/>
-  <path d="M 100 60 L 596 56 L 596 376 L 100 380 Z" fill="url(#cx-page-light)" opacity="0.5"/>
-
-  <!-- Right page -->
-  <path d="M 604 56 L 1100 60 L 1100 380 L 604 376 Z" fill="url(#cx-page)" stroke="#8B6BB5" stroke-width="0.9"/>
-  <path d="M 604 56 L 1100 60 L 1100 380 L 604 376 Z" fill="url(#cx-page-light)" opacity="0.5"/>
-
-  <!-- Central spine -->
-  <line x1="600" y1="56" x2="600" y2="376" stroke="#04020a" stroke-width="2.5"/>
-  <line x1="600" y1="56" x2="600" y2="376" stroke="#8B6BB5" stroke-width="0.4" opacity="0.6"/>
-
-  <!-- Page inner borders -->
-  <g fill="none" stroke="#A78BCA" stroke-width="0.5" opacity="0.7">
-    <path d="M 122 84 L 578 80 L 578 358 L 122 360 Z"/>
-    <path d="M 622 80 L 1078 84 L 1078 360 L 622 358 Z"/>
-  </g>
-  <g fill="none" stroke="#A78BCA" stroke-width="0.3" opacity="0.4">
-    <path d="M 128 90 L 572 86 L 572 354 L 128 356 Z"/>
-    <path d="M 628 86 L 1072 90 L 1072 356 L 628 354 Z"/>
-  </g>
-
-  <!-- Corner ornaments on both pages -->
-  <g stroke="#C9A8D6" stroke-width="0.7" fill="none" opacity="0.85">
-    <g transform="translate(122 84)">
-      <path d="M 0 14 L 0 0 L 14 0"/>
-      <path d="M 4 4 L 10 4 M 4 4 L 4 10"/>
-      <circle cx="2" cy="2" r="1.2" fill="#C9A8D6"/>
-    </g>
-    <g transform="translate(578 80) scale(-1 1)">
-      <path d="M 0 14 L 0 0 L 14 0"/>
-      <path d="M 4 4 L 10 4 M 4 4 L 4 10"/>
-      <circle cx="2" cy="2" r="1.2" fill="#C9A8D6"/>
-    </g>
-    <g transform="translate(122 358) scale(1 -1)">
-      <path d="M 0 14 L 0 0 L 14 0"/>
-      <path d="M 4 4 L 10 4 M 4 4 L 4 10"/>
-      <circle cx="2" cy="2" r="1.2" fill="#C9A8D6"/>
-    </g>
-    <g transform="translate(578 358) scale(-1 -1)">
-      <path d="M 0 14 L 0 0 L 14 0"/>
-      <path d="M 4 4 L 10 4 M 4 4 L 4 10"/>
-      <circle cx="2" cy="2" r="1.2" fill="#C9A8D6"/>
-    </g>
-    <g transform="translate(622 80)">
-      <path d="M 0 14 L 0 0 L 14 0"/>
-      <path d="M 4 4 L 10 4 M 4 4 L 4 10"/>
-      <circle cx="2" cy="2" r="1.2" fill="#C9A8D6"/>
-    </g>
-    <g transform="translate(1078 84) scale(-1 1)">
-      <path d="M 0 14 L 0 0 L 14 0"/>
-      <path d="M 4 4 L 10 4 M 4 4 L 4 10"/>
-      <circle cx="2" cy="2" r="1.2" fill="#C9A8D6"/>
-    </g>
-    <g transform="translate(622 358) scale(1 -1)">
-      <path d="M 0 14 L 0 0 L 14 0"/>
-      <path d="M 4 4 L 10 4 M 4 4 L 4 10"/>
-      <circle cx="2" cy="2" r="1.2" fill="#C9A8D6"/>
-    </g>
-    <g transform="translate(1078 358) scale(-1 -1)">
-      <path d="M 0 14 L 0 0 L 14 0"/>
-      <path d="M 4 4 L 10 4 M 4 4 L 4 10"/>
-      <circle cx="2" cy="2" r="1.2" fill="#C9A8D6"/>
-    </g>
-  </g>
-
-  <!-- LEFT PAGE HEADING -->
+  <!-- ============ LEFT PANEL ============ -->
   <g>
-    <text x="350" y="118" text-anchor="middle"
-          font-family="Georgia, serif" font-size="11"
-          fill="#A78BCA" letter-spacing="7" opacity="0.85">
-      ━ &#x2720; ━━ I &#x00B7; HEMISFERIO IZQUIERDO ━━ &#x2720; ━
+    <!-- Panel shadow -->
+    <rect x="84" y="74" width="488" height="280" fill="#04020a" opacity="0.7"/>
+    <!-- Panel body -->
+    <rect x="80" y="70" width="488" height="280" fill="url(#cx-panel)" stroke="#8B6BB5" stroke-width="1"/>
+    <!-- Inner border -->
+    <rect x="88" y="78" width="472" height="264" fill="none" stroke="#5d3a8a" stroke-width="0.4" opacity="0.7"/>
+
+    <!-- Corner bolts -->
+    <g fill="#06030d" stroke="#8B6BB5" stroke-width="0.6">
+      <circle cx="94" cy="84" r="3"/>
+      <circle cx="554" cy="84" r="3"/>
+      <circle cx="94" cy="336" r="3"/>
+      <circle cx="554" cy="336" r="3"/>
+    </g>
+    <g stroke="#8B6BB5" stroke-width="0.5" opacity="0.85">
+      <line x1="92" y1="84" x2="96" y2="84"/><line x1="94" y1="82" x2="94" y2="86"/>
+      <line x1="552" y1="84" x2="556" y2="84"/><line x1="554" y1="82" x2="554" y2="86"/>
+      <line x1="92" y1="336" x2="96" y2="336"/><line x1="94" y1="334" x2="94" y2="338"/>
+      <line x1="552" y1="336" x2="556" y2="336"/><line x1="554" y1="334" x2="554" y2="338"/>
+    </g>
+
+    <!-- Top hazard band -->
+    <rect x="100" y="92" width="448" height="22" fill="url(#cx-band)"/>
+    <g fill="#06030d">
+      <rect x="100" y="92" width="14" height="22"/>
+      <rect x="534" y="92" width="14" height="22"/>
+    </g>
+    <text x="324" y="108" text-anchor="middle"
+          font-family="Consolas, 'Courier New', monospace"
+          font-size="11" letter-spacing="6" fill="#D8C5F0">
+      &#x25B6; SECTION I &#x00B7; OPERATIONAL DOCTRINE &#x25C0;
     </text>
-    <text x="350" y="156" text-anchor="middle"
-          font-family="Georgia, serif" font-size="26" font-weight="700"
-          fill="#E8D5FF" letter-spacing="11" filter="url(#cx-glow)">
+
+    <!-- Title -->
+    <text x="324" y="160" text-anchor="middle"
+          font-family="Impact, 'Arial Black', Haettenschweiler, sans-serif"
+          font-size="32" font-weight="900" letter-spacing="6"
+          fill="url(#cx-title-g)" filter="url(#cx-glow)">
       LO QUE PRACTICO
     </text>
-    <line x1="200" y1="170" x2="500" y2="170" stroke="#8B6BB5" stroke-width="0.5" opacity="0.7"/>
-    <path d="M 350 167 l 4 -4 l 4 4 l -4 4 z" fill="#C9A8D6"/>
+    <line x1="180" y1="172" x2="468" y2="172" stroke="#8B6BB5" stroke-width="0.6"/>
+    <line x1="200" y1="176" x2="448" y2="176" stroke="#5d3a8a" stroke-width="0.3"/>
+
+    <!-- Items -->
+    <g font-family="'Arial Black', Impact, sans-serif" font-size="13" font-weight="700" fill="#D8C5F0" letter-spacing="2">
+      <text x="120" y="208">
+        <tspan font-family="Consolas, monospace" fill="#A78BCA">01 //</tspan>
+        <tspan dx="10">ARQUITECTURA LIMPIA, CAPAS CLARAS</tspan>
+      </text>
+      <text x="120" y="234">
+        <tspan font-family="Consolas, monospace" fill="#A78BCA">02 //</tspan>
+        <tspan dx="10">APIS QUE DOCUMENTAN SU PROPIA HISTORIA</tspan>
+      </text>
+      <text x="120" y="260">
+        <tspan font-family="Consolas, monospace" fill="#A78BCA">03 //</tspan>
+        <tspan dx="10">UI SILENCIOSA, ACCESIBLE, RESPIRABLE</tspan>
+      </text>
+      <text x="120" y="286">
+        <tspan font-family="Consolas, monospace" fill="#A78BCA">04 //</tspan>
+        <tspan dx="10">TIPADO ESTRICTO, PRUEBAS A MANO</tspan>
+      </text>
+      <text x="120" y="312">
+        <tspan font-family="Consolas, monospace" fill="#A78BCA">05 //</tspan>
+        <tspan dx="10">COMMITS QUE NARRAN EL SISTEMA</tspan>
+      </text>
+    </g>
   </g>
 
-  <!-- LEFT PAGE LINES -->
-  <g font-family="Georgia, serif" font-size="14" fill="#D8C5F0" opacity="0.95">
-    <text x="160" y="210">
-      <tspan fill="#C9A8D6" font-weight="700">&#x2720;</tspan>
-      <tspan dx="14">arquitectura limpia, capas claras</tspan>
-    </text>
-    <text x="160" y="240">
-      <tspan fill="#C9A8D6" font-weight="700">&#x2720;</tspan>
-      <tspan dx="14">APIs que documentan su propia historia</tspan>
-    </text>
-    <text x="160" y="270">
-      <tspan fill="#C9A8D6" font-weight="700">&#x2720;</tspan>
-      <tspan dx="14">UI silenciosa, accesible, respirable</tspan>
-    </text>
-    <text x="160" y="300">
-      <tspan fill="#C9A8D6" font-weight="700">&#x2720;</tspan>
-      <tspan dx="14">tipado estricto, pruebas escritas a mano</tspan>
-    </text>
-    <text x="160" y="330">
-      <tspan fill="#C9A8D6" font-weight="700">&#x2720;</tspan>
-      <tspan dx="14">commits que se leen como un salterio</tspan>
-    </text>
-  </g>
+  <!-- Divider rivet line between panels -->
+  <line x1="600" y1="70" x2="600" y2="350" stroke="#3d2050" stroke-width="0.6" stroke-dasharray="2 6" opacity="0.8"/>
 
-  <!-- RIGHT PAGE HEADING -->
+  <!-- ============ RIGHT PANEL ============ -->
   <g>
-    <text x="850" y="118" text-anchor="middle"
-          font-family="Georgia, serif" font-size="11"
-          fill="#A78BCA" letter-spacing="7" opacity="0.85">
-      ━ &#x2628; ━━ II &#x00B7; HEMISFERIO DERECHO ━━ &#x2628; ━
+    <rect x="636" y="74" width="488" height="280" fill="#04020a" opacity="0.7"/>
+    <rect x="632" y="70" width="488" height="280" fill="url(#cx-panel)" stroke="#8B6BB5" stroke-width="1"/>
+    <rect x="640" y="78" width="472" height="264" fill="none" stroke="#5d3a8a" stroke-width="0.4" opacity="0.7"/>
+
+    <g fill="#06030d" stroke="#8B6BB5" stroke-width="0.6">
+      <circle cx="646" cy="84" r="3"/>
+      <circle cx="1106" cy="84" r="3"/>
+      <circle cx="646" cy="336" r="3"/>
+      <circle cx="1106" cy="336" r="3"/>
+    </g>
+    <g stroke="#8B6BB5" stroke-width="0.5" opacity="0.85">
+      <line x1="644" y1="84" x2="648" y2="84"/><line x1="646" y1="82" x2="646" y2="86"/>
+      <line x1="1104" y1="84" x2="1108" y2="84"/><line x1="1106" y1="82" x2="1106" y2="86"/>
+      <line x1="644" y1="336" x2="648" y2="336"/><line x1="646" y1="334" x2="646" y2="338"/>
+      <line x1="1104" y1="336" x2="1108" y2="336"/><line x1="1106" y1="334" x2="1106" y2="338"/>
+    </g>
+
+    <rect x="652" y="92" width="448" height="22" fill="url(#cx-band)"/>
+    <g fill="#06030d">
+      <rect x="652" y="92" width="14" height="22"/>
+      <rect x="1086" y="92" width="14" height="22"/>
+    </g>
+    <text x="876" y="108" text-anchor="middle"
+          font-family="Consolas, 'Courier New', monospace"
+          font-size="11" letter-spacing="6" fill="#D8C5F0">
+      &#x25B6; SECTION II &#x00B7; OPERATIONAL TARGETS &#x25C0;
     </text>
-    <text x="850" y="156" text-anchor="middle"
-          font-family="Georgia, serif" font-size="26" font-weight="700"
-          fill="#E8D5FF" letter-spacing="11" filter="url(#cx-glow)">
+
+    <text x="876" y="160" text-anchor="middle"
+          font-family="Impact, 'Arial Black', Haettenschweiler, sans-serif"
+          font-size="32" font-weight="900" letter-spacing="6"
+          fill="url(#cx-title-g)" filter="url(#cx-glow)">
       LO QUE PERSIGO
     </text>
-    <line x1="700" y1="170" x2="1000" y2="170" stroke="#8B6BB5" stroke-width="0.5" opacity="0.7"/>
-    <path d="M 850 167 l 4 -4 l 4 4 l -4 4 z" fill="#C9A8D6"/>
+    <line x1="732" y1="172" x2="1020" y2="172" stroke="#8B6BB5" stroke-width="0.6"/>
+    <line x1="752" y1="176" x2="1000" y2="176" stroke="#5d3a8a" stroke-width="0.3"/>
+
+    <g font-family="'Arial Black', Impact, sans-serif" font-size="13" font-weight="700" fill="#D8C5F0" letter-spacing="2">
+      <text x="672" y="208">
+        <tspan font-family="Consolas, monospace" fill="#A78BCA">01 //</tspan>
+        <tspan dx="10">SISTEMAS QUE ENVEJECEN CON DIGNIDAD</tspan>
+      </text>
+      <text x="672" y="234">
+        <tspan font-family="Consolas, monospace" fill="#A78BCA">02 //</tspan>
+        <tspan dx="10">BOVEDAS RELACIONALES BIEN FORJADAS</tspan>
+      </text>
+      <text x="672" y="260">
+        <tspan font-family="Consolas, monospace" fill="#A78BCA">03 //</tspan>
+        <tspan dx="10">LATENCIA BAJA, SEMANTICA ALTA</tspan>
+      </text>
+      <text x="672" y="286">
+        <tspan font-family="Consolas, monospace" fill="#A78BCA">04 //</tspan>
+        <tspan dx="10">OBSERVABILIDAD COMO TERCER OJO</tspan>
+      </text>
+      <text x="672" y="312">
+        <tspan font-family="Consolas, monospace" fill="#A78BCA">05 //</tspan>
+        <tspan dx="10">CODIGO QUE UN EXTRANO PUEDA LEER</tspan>
+      </text>
+    </g>
   </g>
 
-  <!-- RIGHT PAGE LINES -->
-  <g font-family="Georgia, serif" font-size="14" fill="#D8C5F0" opacity="0.95">
-    <text x="660" y="210">
-      <tspan fill="#C9A8D6" font-weight="700">&#x2628;</tspan>
-      <tspan dx="14">sistemas que envejecen con dignidad</tspan>
-    </text>
-    <text x="660" y="240">
-      <tspan fill="#C9A8D6" font-weight="700">&#x2628;</tspan>
-      <tspan dx="14">b&#xF3;vedas relacionales bien forjadas</tspan>
-    </text>
-    <text x="660" y="270">
-      <tspan fill="#C9A8D6" font-weight="700">&#x2628;</tspan>
-      <tspan dx="14">latencia baja, sem&#xE1;ntica alta</tspan>
-    </text>
-    <text x="660" y="300">
-      <tspan fill="#C9A8D6" font-weight="700">&#x2628;</tspan>
-      <tspan dx="14">observabilidad como tercer ojo</tspan>
-    </text>
-    <text x="660" y="330">
-      <tspan fill="#C9A8D6" font-weight="700">&#x2628;</tspan>
-      <tspan dx="14">c&#xF3;digo que un extra&#xF1;o pueda leer</tspan>
-    </text>
-  </g>
-
-  <!-- Wax seal on the spine -->
-  <g transform="translate(600 200)">
-    <circle r="26" fill="#04020a" opacity="0.5"/>
-    <circle r="22" fill="url(#cx-seal)"/>
-    <circle r="22" fill="none" stroke="#04020a" stroke-width="0.6"/>
-    <circle r="17" fill="none" stroke="#04020a" stroke-width="0.4" opacity="0.7"/>
-    <!-- Sigil inside seal: D0 monogram-like cross -->
-    <path d="M -8 -6 L -8 8 L -4 8 Q 2 8 2 1 Q 2 -6 -4 -6 Z" fill="#04020a" opacity="0.85"/>
-    <circle cx="7" cy="1" r="5" fill="none" stroke="#04020a" stroke-width="1.4" opacity="0.85"/>
-  </g>
-  <!-- Wax drip -->
-  <path d="M 595 224 q 0 8 5 14 q 5 -6 5 -14 Z" fill="#6b4ba0"/>
-
-  <!-- Ribbon at bottom -->
+  <!-- Footer hazard strip -->
   <g>
-    <path d="M 540 376 L 540 396 L 560 388 L 580 396 L 580 376 Z" fill="#4a2a6e" stroke="#8B6BB5" stroke-width="0.5"/>
-    <path d="M 620 376 L 620 396 L 640 388 L 660 396 L 660 376 Z" fill="#4a2a6e" stroke="#8B6BB5" stroke-width="0.5"/>
-  </g>
-
-  <!-- Floating dust around the codex -->
-  <g fill="#D8C5F0">
-    <circle cx="60" cy="200" r="0.8" opacity="0.6"/>
-    <circle cx="40" cy="260" r="0.5" opacity="0.5"/>
-    <circle cx="80" cy="310" r="0.6" opacity="0.55"/>
-    <circle cx="1140" cy="210" r="0.8" opacity="0.6"/>
-    <circle cx="1160" cy="270" r="0.5" opacity="0.5"/>
-    <circle cx="1120" cy="320" r="0.6" opacity="0.55"/>
+    <rect x="80" y="378" width="1040" height="14" fill="#0a0510" stroke="#3d2050" stroke-width="0.5"/>
+    <g fill="#3d2050">
+      <rect x="80" y="378" width="14" height="14"/>
+      <rect x="120" y="378" width="14" height="14"/>
+      <rect x="160" y="378" width="14" height="14"/>
+      <rect x="200" y="378" width="14" height="14"/>
+      <rect x="1106" y="378" width="14" height="14"/>
+      <rect x="1066" y="378" width="14" height="14"/>
+      <rect x="1026" y="378" width="14" height="14"/>
+      <rect x="986" y="378" width="14" height="14"/>
+    </g>
+    <text x="600" y="389" text-anchor="middle"
+          font-family="Consolas, 'Courier New', monospace"
+          font-size="9" letter-spacing="5" fill="#A78BCA">
+      / / END.OF.MANIFEST / / RETURN TO TERMINAL / /
+    </text>
   </g>
 </svg>

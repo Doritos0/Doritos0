@@ -1,231 +1,260 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="ar-title">
-  <title id="ar-title">Arsenal: tres nichos goticos con tecnologias</title>
+  <title id="ar-title">Arsenal - tres modulos brutalistas</title>
   <defs>
     <linearGradient id="ar-bg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#06030d"/>
-      <stop offset="60%" stop-color="#150a26"/>
-      <stop offset="100%" stop-color="#1f1133"/>
+      <stop offset="100%" stop-color="#150a26"/>
     </linearGradient>
-    <linearGradient id="ar-stone" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#3d2050"/>
-      <stop offset="100%" stop-color="#1a0a2e"/>
+    <linearGradient id="ar-panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d1b4e"/>
+      <stop offset="50%" stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#06030d"/>
     </linearGradient>
-    <linearGradient id="ar-niche" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0a0510"/>
-      <stop offset="55%" stop-color="#1a0a2e"/>
+    <linearGradient id="ar-band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a2a6e"/>
       <stop offset="100%" stop-color="#2d1b4e"/>
     </linearGradient>
-    <radialGradient id="ar-niche-light" cx="50%" cy="100%" r="80%">
-      <stop offset="0%" stop-color="#8B6BB5" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#8B6BB5" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="ar-column" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="ar-screen" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#1a0a2e"/>
-      <stop offset="50%" stop-color="#3d2050"/>
-      <stop offset="100%" stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#06030d"/>
     </linearGradient>
-    <filter id="ar-glow"><feGaussianBlur stdDeviation="1.2"/></filter>
+    <linearGradient id="ar-title-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4e7ff"/>
+      <stop offset="100%" stop-color="#A78BCA"/>
+    </linearGradient>
+    <pattern id="ar-grid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1a0a2e" stroke-width="0.4"/>
+    </pattern>
+    <filter id="ar-glow"><feGaussianBlur stdDeviation="1.4"/></filter>
+    <filter id="ar-led-glow"><feGaussianBlur stdDeviation="1.6"/></filter>
   </defs>
 
   <rect width="1200" height="620" fill="url(#ar-bg)"/>
+  <rect width="1200" height="620" fill="url(#ar-grid)" opacity="0.6"/>
 
-  <!-- Ambient dust -->
-  <g fill="#A78BCA" opacity="0.35">
-    <circle cx="100" cy="60" r="0.6"/>
-    <circle cx="220" cy="40" r="0.5"/>
-    <circle cx="600" cy="30" r="0.6"/>
-    <circle cx="980" cy="50" r="0.5"/>
-    <circle cx="1100" cy="80" r="0.5"/>
-    <circle cx="60" cy="580" r="0.5"/>
-    <circle cx="1140" cy="590" r="0.5"/>
-  </g>
+  <!-- Top index bar -->
+  <rect x="0" y="0" width="1200" height="28" fill="#04020a"/>
+  <line x1="0" y1="28" x2="1200" y2="28" stroke="#3d2050" stroke-width="0.5"/>
+  <text x="20" y="18" font-family="Consolas, 'Courier New', monospace" font-size="10" letter-spacing="3" fill="#8B6BB5">SYS // ARSENAL.MAP &#x00B7; ZONE/V &#x00B7; 03 MODULES ONLINE</text>
+  <text x="1180" y="18" text-anchor="end" font-family="Consolas, monospace" font-size="10" letter-spacing="3" fill="#8B6BB5">[ &#x25CF; &#x25CF; &#x25CF; ] OK</text>
 
-  <!-- Ground line -->
-  <line x1="0" y1="572" x2="1200" y2="572" stroke="#3d2050" stroke-width="0.6" opacity="0.6"/>
-  <line x1="0" y1="576" x2="1200" y2="576" stroke="#3d2050" stroke-width="0.3" opacity="0.4"/>
+  <!-- Bottom index bar -->
+  <rect x="0" y="592" width="1200" height="28" fill="#04020a"/>
+  <line x1="0" y1="592" x2="1200" y2="592" stroke="#3d2050" stroke-width="0.5"/>
+  <text x="600" y="610" text-anchor="middle" font-family="Consolas, monospace" font-size="10" letter-spacing="6" fill="#8B6BB5">// END MODULE ARRAY // DORITOS0 / OPERATOR //</text>
 
-  <!-- ============ NICHE TEMPLATE - 3 niches ============ -->
-
-  <!-- NICHE 1: 30 to 370 -->
+  <!-- ============ MODULE 1: INTERFAZ - x 40 to 400 ============ -->
   <g>
-    <!-- Pedestal -->
-    <rect x="30" y="540" width="340" height="32" fill="url(#ar-stone)" stroke="#8B6BB5" stroke-width="0.6"/>
-    <line x1="30" y1="548" x2="370" y2="548" stroke="#8B6BB5" stroke-width="0.3" opacity="0.6"/>
-    <line x1="30" y1="566" x2="370" y2="566" stroke="#8B6BB5" stroke-width="0.3" opacity="0.6"/>
-
-    <!-- Columns -->
-    <rect x="30" y="120" width="22" height="420" fill="url(#ar-column)" stroke="#8B6BB5" stroke-width="0.5"/>
-    <rect x="348" y="120" width="22" height="420" fill="url(#ar-column)" stroke="#8B6BB5" stroke-width="0.5"/>
-    <!-- Capitals -->
-    <rect x="26" y="116" width="30" height="8" fill="#3d2050" stroke="#8B6BB5" stroke-width="0.5"/>
-    <rect x="344" y="116" width="30" height="8" fill="#3d2050" stroke="#8B6BB5" stroke-width="0.5"/>
-    <!-- Bases -->
-    <rect x="26" y="540" width="30" height="6" fill="#3d2050" stroke="#8B6BB5" stroke-width="0.5"/>
-    <rect x="344" y="540" width="30" height="6" fill="#3d2050" stroke="#8B6BB5" stroke-width="0.5"/>
-
-    <!-- Pointed arch -->
-    <path d="M 30 120 L 30 110 L 52 110 Q 200 -40 348 110 L 370 110 L 370 120 Z" fill="url(#ar-stone)" stroke="#8B6BB5" stroke-width="0.7"/>
-    <!-- Inner arch (niche opening) -->
-    <path d="M 52 540 L 52 110 Q 200 -16 348 110 L 348 540 Z" fill="url(#ar-niche)"/>
-    <path d="M 52 540 L 52 110 Q 200 -16 348 110 L 348 540 Z" fill="url(#ar-niche-light)" opacity="0.7"/>
-    <path d="M 52 540 L 52 110 Q 200 -16 348 110 L 348 540 Z" fill="none" stroke="#A78BCA" stroke-width="0.4" opacity="0.5"/>
-
-    <!-- Inner trim -->
-    <path d="M 60 540 L 60 114 Q 200 0 340 114 L 340 540" fill="none" stroke="#5d3a8a" stroke-width="0.3" opacity="0.5"/>
-
-    <!-- Keystone with cross -->
-    <path d="M 192 4 L 208 4 L 212 18 L 188 18 Z" fill="#3d2050" stroke="#A78BCA" stroke-width="0.5"/>
-    <line x1="200" y1="6" x2="200" y2="16" stroke="#C9A8D6" stroke-width="0.7"/>
-    <line x1="196" y1="9" x2="204" y2="9" stroke="#C9A8D6" stroke-width="0.7"/>
-
-    <!-- Title plaque -->
-    <rect x="74" y="156" width="252" height="38" fill="#04020a" opacity="0.7" rx="1"/>
-    <rect x="74" y="156" width="252" height="38" fill="none" stroke="#8B6BB5" stroke-width="0.6"/>
-    <path d="M 70 162 L 70 188 M 66 175 L 74 175" stroke="#A78BCA" stroke-width="0.6"/>
-    <path d="M 330 162 L 330 188 M 326 175 L 334 175" stroke="#A78BCA" stroke-width="0.6"/>
-    <text x="200" y="172" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#A78BCA" letter-spacing="5" opacity="0.9">━━ I ━━</text>
-    <text x="200" y="187" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#E8D5FF" letter-spacing="6" filter="url(#ar-glow)">LA INTERFAZ</text>
-
-    <!-- Tech list -->
-    <g font-family="Georgia, serif" font-size="14" fill="#D8C5F0">
-      <text x="200" y="240" text-anchor="middle"><tspan fill="#C9A8D6">&#x2720;</tspan><tspan dx="10">React</tspan></text>
-      <text x="200" y="278" text-anchor="middle"><tspan fill="#C9A8D6">&#x2720;</tspan><tspan dx="10">Angular</tspan></text>
-      <text x="200" y="316" text-anchor="middle"><tspan fill="#C9A8D6">&#x2720;</tspan><tspan dx="10">TypeScript</tspan></text>
-      <text x="200" y="354" text-anchor="middle"><tspan fill="#C9A8D6">&#x2720;</tspan><tspan dx="10">JavaScript</tspan></text>
-      <text x="200" y="392" text-anchor="middle"><tspan fill="#C9A8D6">&#x2720;</tspan><tspan dx="10">HTML5</tspan></text>
-      <text x="200" y="430" text-anchor="middle"><tspan fill="#C9A8D6">&#x2720;</tspan><tspan dx="10">CSS3</tspan></text>
+    <!-- Bracket marks -->
+    <g stroke="#5d3a8a" stroke-width="0.8" fill="none">
+      <path d="M 40 70 L 60 70 M 40 70 L 40 86"/>
+      <path d="M 400 70 L 380 70 M 400 70 L 400 86"/>
+      <path d="M 40 558 L 60 558 M 40 558 L 40 542"/>
+      <path d="M 400 558 L 380 558 M 400 558 L 400 542"/>
     </g>
 
-    <!-- Sigil at base -->
-    <g transform="translate(200 490)">
-      <circle r="14" fill="none" stroke="#8B6BB5" stroke-width="0.8" opacity="0.9"/>
-      <circle r="9" fill="none" stroke="#A78BCA" stroke-width="0.5" opacity="0.7"/>
-      <circle r="3" fill="#C9A8D6"/>
-      <line x1="-17" y1="0" x2="-14" y2="0" stroke="#8B6BB5" stroke-width="0.6"/>
-      <line x1="17" y1="0" x2="14" y2="0" stroke="#8B6BB5" stroke-width="0.6"/>
-      <line x1="0" y1="-17" x2="0" y2="-14" stroke="#8B6BB5" stroke-width="0.6"/>
-      <line x1="0" y1="14" x2="0" y2="17" stroke="#8B6BB5" stroke-width="0.6"/>
+    <!-- Body -->
+    <rect x="48" y="78" width="344" height="472" fill="url(#ar-panel)" stroke="#8B6BB5" stroke-width="1"/>
+    <rect x="56" y="86" width="328" height="456" fill="none" stroke="#5d3a8a" stroke-width="0.4" opacity="0.7"/>
+
+    <!-- Corner bolts -->
+    <g fill="#06030d" stroke="#8B6BB5" stroke-width="0.6">
+      <circle cx="62" cy="92" r="3.5"/><circle cx="378" cy="92" r="3.5"/>
+      <circle cx="62" cy="536" r="3.5"/><circle cx="378" cy="536" r="3.5"/>
     </g>
-    <!-- Inscription below sigil -->
-    <text x="200" y="528" text-anchor="middle" font-family="Georgia, serif" font-size="8" fill="#8B6BB5" letter-spacing="4" opacity="0.85">VITRUM &#x00B7; LUX &#x00B7; OCULUS</text>
+    <g stroke="#8B6BB5" stroke-width="0.5">
+      <line x1="59" y1="92" x2="65" y2="92"/><line x1="62" y1="89" x2="62" y2="95"/>
+      <line x1="375" y1="92" x2="381" y2="92" /><line x1="378" y1="89" x2="378" y2="95"/>
+      <line x1="59" y1="536" x2="65" y2="536"/><line x1="62" y1="533" x2="62" y2="539"/>
+      <line x1="375" y1="536" x2="381" y2="536"/><line x1="378" y1="533" x2="378" y2="539"/>
+    </g>
+
+    <!-- ID band top -->
+    <rect x="72" y="104" width="296" height="26" fill="url(#ar-band)"/>
+    <rect x="72" y="104" width="14" height="26" fill="#06030d"/>
+    <rect x="354" y="104" width="14" height="26" fill="#06030d"/>
+    <text x="220" y="121" text-anchor="middle" font-family="Consolas, monospace" font-size="11" letter-spacing="6" fill="#D8C5F0">&#x25B6; MOD.01 &#x00B7; FRONT END &#x25C0;</text>
+
+    <!-- Big title -->
+    <text x="220" y="172" text-anchor="middle"
+          font-family="Impact, 'Arial Black', Haettenschweiler, sans-serif"
+          font-size="34" font-weight="900" letter-spacing="6"
+          fill="url(#ar-title-g)" filter="url(#ar-glow)">LA INTERFAZ</text>
+    <line x1="100" y1="186" x2="340" y2="186" stroke="#8B6BB5" stroke-width="0.6"/>
+
+    <!-- CRT screen with tech list -->
+    <rect x="72" y="208" width="296" height="240" fill="url(#ar-screen)" stroke="#5d3a8a" stroke-width="0.6"/>
+    <!-- Scanlines -->
+    <g stroke="#2d1b4e" stroke-width="0.4" opacity="0.5">
+      <line x1="72" y1="220" x2="368" y2="220"/>
+      <line x1="72" y1="234" x2="368" y2="234"/>
+      <line x1="72" y1="248" x2="368" y2="248"/>
+      <line x1="72" y1="262" x2="368" y2="262"/>
+      <line x1="72" y1="276" x2="368" y2="276"/>
+      <line x1="72" y1="290" x2="368" y2="290"/>
+      <line x1="72" y1="304" x2="368" y2="304"/>
+      <line x1="72" y1="318" x2="368" y2="318"/>
+      <line x1="72" y1="332" x2="368" y2="332"/>
+      <line x1="72" y1="346" x2="368" y2="346"/>
+      <line x1="72" y1="360" x2="368" y2="360"/>
+      <line x1="72" y1="374" x2="368" y2="374"/>
+      <line x1="72" y1="388" x2="368" y2="388"/>
+      <line x1="72" y1="402" x2="368" y2="402"/>
+      <line x1="72" y1="416" x2="368" y2="416"/>
+      <line x1="72" y1="430" x2="368" y2="430"/>
+    </g>
+
+    <!-- Tech list (monospace, terminal style) -->
+    <g font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#D8C5F0">
+      <text x="92" y="232"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">load</tspan> REACT_______18.x</text>
+      <text x="92" y="262"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">load</tspan> ANGULAR_____17.x</text>
+      <text x="92" y="292"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">load</tspan> TYPESCRIPT__5.x</text>
+      <text x="92" y="322"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">load</tspan> JAVASCRIPT__ES</text>
+      <text x="92" y="352"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">load</tspan> HTML5__&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;</text>
+      <text x="92" y="382"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">load</tspan> CSS3___&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;</text>
+      <text x="92" y="412"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">load</tspan> TAILWIND__OK</text>
+      <text x="92" y="432" fill="#6b4ba0">_ ready.</text>
+    </g>
+
+    <!-- LEDs strip -->
+    <rect x="72" y="464" width="296" height="40" fill="#0a0510" stroke="#3d2050" stroke-width="0.5"/>
+    <text x="84" y="480" font-family="Consolas, monospace" font-size="9" letter-spacing="3" fill="#6b4ba0">STATUS</text>
+    <g filter="url(#ar-led-glow)">
+      <circle cx="120" cy="488" r="3.5" fill="#C9A8D6"/>
+      <circle cx="140" cy="488" r="3.5" fill="#C9A8D6"/>
+      <circle cx="160" cy="488" r="3.5" fill="#C9A8D6"/>
+      <circle cx="180" cy="488" r="3.5" fill="#8B6BB5" opacity="0.7"/>
+      <circle cx="200" cy="488" r="3.5" fill="#3d2050"/>
+    </g>
+    <text x="356" y="497" text-anchor="end" font-family="Consolas, monospace" font-size="9" letter-spacing="2" fill="#A78BCA">ONLINE / 080%</text>
+
+    <!-- Bottom strap with motto -->
+    <text x="220" y="528" text-anchor="middle" font-family="Consolas, monospace" font-size="9" letter-spacing="6" fill="#5d3a8a">VITRUM &#x00B7; LUX &#x00B7; OCULUS</text>
   </g>
 
-  <!-- NICHE 2: 430 to 770 -->
+  <!-- ============ MODULE 2: MOTOR - x 420 to 780 ============ -->
   <g>
-    <rect x="430" y="540" width="340" height="32" fill="url(#ar-stone)" stroke="#8B6BB5" stroke-width="0.6"/>
-    <line x1="430" y1="548" x2="770" y2="548" stroke="#8B6BB5" stroke-width="0.3" opacity="0.6"/>
-    <line x1="430" y1="566" x2="770" y2="566" stroke="#8B6BB5" stroke-width="0.3" opacity="0.6"/>
+    <g stroke="#5d3a8a" stroke-width="0.8" fill="none">
+      <path d="M 420 70 L 440 70 M 420 70 L 420 86"/>
+      <path d="M 780 70 L 760 70 M 780 70 L 780 86"/>
+      <path d="M 420 558 L 440 558 M 420 558 L 420 542"/>
+      <path d="M 780 558 L 760 558 M 780 558 L 780 542"/>
+    </g>
+    <rect x="428" y="78" width="344" height="472" fill="url(#ar-panel)" stroke="#8B6BB5" stroke-width="1"/>
+    <rect x="436" y="86" width="328" height="456" fill="none" stroke="#5d3a8a" stroke-width="0.4" opacity="0.7"/>
 
-    <rect x="430" y="120" width="22" height="420" fill="url(#ar-column)" stroke="#8B6BB5" stroke-width="0.5"/>
-    <rect x="748" y="120" width="22" height="420" fill="url(#ar-column)" stroke="#8B6BB5" stroke-width="0.5"/>
-    <rect x="426" y="116" width="30" height="8" fill="#3d2050" stroke="#8B6BB5" stroke-width="0.5"/>
-    <rect x="744" y="116" width="30" height="8" fill="#3d2050" stroke="#8B6BB5" stroke-width="0.5"/>
-    <rect x="426" y="540" width="30" height="6" fill="#3d2050" stroke="#8B6BB5" stroke-width="0.5"/>
-    <rect x="744" y="540" width="30" height="6" fill="#3d2050" stroke="#8B6BB5" stroke-width="0.5"/>
-
-    <path d="M 430 120 L 430 110 L 452 110 Q 600 -40 748 110 L 770 110 L 770 120 Z" fill="url(#ar-stone)" stroke="#8B6BB5" stroke-width="0.7"/>
-    <path d="M 452 540 L 452 110 Q 600 -16 748 110 L 748 540 Z" fill="url(#ar-niche)"/>
-    <path d="M 452 540 L 452 110 Q 600 -16 748 110 L 748 540 Z" fill="url(#ar-niche-light)" opacity="0.7"/>
-    <path d="M 452 540 L 452 110 Q 600 -16 748 110 L 748 540 Z" fill="none" stroke="#A78BCA" stroke-width="0.4" opacity="0.5"/>
-    <path d="M 460 540 L 460 114 Q 600 0 740 114 L 740 540" fill="none" stroke="#5d3a8a" stroke-width="0.3" opacity="0.5"/>
-
-    <path d="M 592 4 L 608 4 L 612 18 L 588 18 Z" fill="#3d2050" stroke="#A78BCA" stroke-width="0.5"/>
-    <line x1="600" y1="6" x2="600" y2="16" stroke="#C9A8D6" stroke-width="0.7"/>
-    <line x1="596" y1="9" x2="604" y2="9" stroke="#C9A8D6" stroke-width="0.7"/>
-
-    <rect x="474" y="156" width="252" height="38" fill="#04020a" opacity="0.7" rx="1"/>
-    <rect x="474" y="156" width="252" height="38" fill="none" stroke="#8B6BB5" stroke-width="0.6"/>
-    <path d="M 470 162 L 470 188 M 466 175 L 474 175" stroke="#A78BCA" stroke-width="0.6"/>
-    <path d="M 730 162 L 730 188 M 726 175 L 734 175" stroke="#A78BCA" stroke-width="0.6"/>
-    <text x="600" y="172" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#A78BCA" letter-spacing="5" opacity="0.9">━━ II ━━</text>
-    <text x="600" y="187" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#E8D5FF" letter-spacing="6" filter="url(#ar-glow)">EL MOTOR</text>
-
-    <g font-family="Georgia, serif" font-size="14" fill="#D8C5F0">
-      <text x="600" y="240" text-anchor="middle"><tspan fill="#C9A8D6">&#x2628;</tspan><tspan dx="10">Python</tspan></text>
-      <text x="600" y="278" text-anchor="middle"><tspan fill="#C9A8D6">&#x2628;</tspan><tspan dx="10">Django</tspan></text>
-      <text x="600" y="316" text-anchor="middle"><tspan fill="#C9A8D6">&#x2628;</tspan><tspan dx="10">FastAPI</tspan></text>
-      <text x="600" y="354" text-anchor="middle"><tspan fill="#C9A8D6">&#x2628;</tspan><tspan dx="10">REST APIs</tspan></text>
-      <text x="600" y="392" text-anchor="middle"><tspan fill="#C9A8D6">&#x2628;</tspan><tspan dx="10">Node.js</tspan></text>
-      <text x="600" y="430" text-anchor="middle"><tspan fill="#C9A8D6">&#x2628;</tspan><tspan dx="10">WebSockets</tspan></text>
+    <g fill="#06030d" stroke="#8B6BB5" stroke-width="0.6">
+      <circle cx="442" cy="92" r="3.5"/><circle cx="758" cy="92" r="3.5"/>
+      <circle cx="442" cy="536" r="3.5"/><circle cx="758" cy="536" r="3.5"/>
+    </g>
+    <g stroke="#8B6BB5" stroke-width="0.5">
+      <line x1="439" y1="92" x2="445" y2="92"/><line x1="442" y1="89" x2="442" y2="95"/>
+      <line x1="755" y1="92" x2="761" y2="92"/><line x1="758" y1="89" x2="758" y2="95"/>
+      <line x1="439" y1="536" x2="445" y2="536"/><line x1="442" y1="533" x2="442" y2="539"/>
+      <line x1="755" y1="536" x2="761" y2="536"/><line x1="758" y1="533" x2="758" y2="539"/>
     </g>
 
-    <g transform="translate(600 490)">
-      <circle r="14" fill="none" stroke="#8B6BB5" stroke-width="0.8" opacity="0.9"/>
-      <circle r="9" fill="none" stroke="#A78BCA" stroke-width="0.5" opacity="0.7"/>
-      <path d="M -4 -7 L 4 -7 L 4 7 L -4 7 Z" fill="none" stroke="#C9A8D6" stroke-width="0.8"/>
-      <line x1="-4" y1="0" x2="4" y2="0" stroke="#C9A8D6" stroke-width="0.6"/>
-      <line x1="-17" y1="0" x2="-14" y2="0" stroke="#8B6BB5" stroke-width="0.6"/>
-      <line x1="17" y1="0" x2="14" y2="0" stroke="#8B6BB5" stroke-width="0.6"/>
-      <line x1="0" y1="-17" x2="0" y2="-14" stroke="#8B6BB5" stroke-width="0.6"/>
-      <line x1="0" y1="14" x2="0" y2="17" stroke="#8B6BB5" stroke-width="0.6"/>
+    <rect x="452" y="104" width="296" height="26" fill="url(#ar-band)"/>
+    <rect x="452" y="104" width="14" height="26" fill="#06030d"/>
+    <rect x="734" y="104" width="14" height="26" fill="#06030d"/>
+    <text x="600" y="121" text-anchor="middle" font-family="Consolas, monospace" font-size="11" letter-spacing="6" fill="#D8C5F0">&#x25B6; MOD.02 &#x00B7; BACK END &#x25C0;</text>
+
+    <text x="600" y="172" text-anchor="middle"
+          font-family="Impact, 'Arial Black', Haettenschweiler, sans-serif"
+          font-size="34" font-weight="900" letter-spacing="6"
+          fill="url(#ar-title-g)" filter="url(#ar-glow)">EL MOTOR</text>
+    <line x1="480" y1="186" x2="720" y2="186" stroke="#8B6BB5" stroke-width="0.6"/>
+
+    <rect x="452" y="208" width="296" height="240" fill="url(#ar-screen)" stroke="#5d3a8a" stroke-width="0.6"/>
+    <g stroke="#2d1b4e" stroke-width="0.4" opacity="0.5">
+      <line x1="452" y1="220" x2="748" y2="220"/><line x1="452" y1="234" x2="748" y2="234"/><line x1="452" y1="248" x2="748" y2="248"/><line x1="452" y1="262" x2="748" y2="262"/><line x1="452" y1="276" x2="748" y2="276"/><line x1="452" y1="290" x2="748" y2="290"/><line x1="452" y1="304" x2="748" y2="304"/><line x1="452" y1="318" x2="748" y2="318"/><line x1="452" y1="332" x2="748" y2="332"/><line x1="452" y1="346" x2="748" y2="346"/><line x1="452" y1="360" x2="748" y2="360"/><line x1="452" y1="374" x2="748" y2="374"/><line x1="452" y1="388" x2="748" y2="388"/><line x1="452" y1="402" x2="748" y2="402"/><line x1="452" y1="416" x2="748" y2="416"/><line x1="452" y1="430" x2="748" y2="430"/>
     </g>
-    <text x="600" y="528" text-anchor="middle" font-family="Georgia, serif" font-size="8" fill="#8B6BB5" letter-spacing="4" opacity="0.85">IGNIS &#x00B7; SPIRITUS &#x00B7; LOGOS</text>
+
+    <g font-family="Consolas, monospace" font-size="14" fill="#D8C5F0">
+      <text x="472" y="232"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">exec</tspan> PYTHON_____3.12</text>
+      <text x="472" y="262"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">exec</tspan> DJANGO_____5.x</text>
+      <text x="472" y="292"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">exec</tspan> FASTAPI____&#x25A0;&#x25A0;&#x25A0;</text>
+      <text x="472" y="322"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">exec</tspan> REST_APIs__OK</text>
+      <text x="472" y="352"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">exec</tspan> NODE.JS____20.x</text>
+      <text x="472" y="382"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">exec</tspan> WEBSOCKETS__&#x25A0;</text>
+      <text x="472" y="412"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">exec</tspan> CELERY_____&#x25A0;&#x25A0;</text>
+      <text x="472" y="432" fill="#6b4ba0">_ idle.</text>
+    </g>
+
+    <rect x="452" y="464" width="296" height="40" fill="#0a0510" stroke="#3d2050" stroke-width="0.5"/>
+    <text x="464" y="480" font-family="Consolas, monospace" font-size="9" letter-spacing="3" fill="#6b4ba0">STATUS</text>
+    <g filter="url(#ar-led-glow)">
+      <circle cx="500" cy="488" r="3.5" fill="#C9A8D6"/>
+      <circle cx="520" cy="488" r="3.5" fill="#C9A8D6"/>
+      <circle cx="540" cy="488" r="3.5" fill="#C9A8D6"/>
+      <circle cx="560" cy="488" r="3.5" fill="#C9A8D6"/>
+      <circle cx="580" cy="488" r="3.5" fill="#8B6BB5" opacity="0.7"/>
+    </g>
+    <text x="736" y="497" text-anchor="end" font-family="Consolas, monospace" font-size="9" letter-spacing="2" fill="#A78BCA">ONLINE / 095%</text>
+
+    <text x="600" y="528" text-anchor="middle" font-family="Consolas, monospace" font-size="9" letter-spacing="6" fill="#5d3a8a">IGNIS &#x00B7; SPIRITUS &#x00B7; LOGOS</text>
   </g>
 
-  <!-- NICHE 3: 830 to 1170 -->
+  <!-- ============ MODULE 3: BOVEDA - x 800 to 1160 ============ -->
   <g>
-    <rect x="830" y="540" width="340" height="32" fill="url(#ar-stone)" stroke="#8B6BB5" stroke-width="0.6"/>
-    <line x1="830" y1="548" x2="1170" y2="548" stroke="#8B6BB5" stroke-width="0.3" opacity="0.6"/>
-    <line x1="830" y1="566" x2="1170" y2="566" stroke="#8B6BB5" stroke-width="0.3" opacity="0.6"/>
+    <g stroke="#5d3a8a" stroke-width="0.8" fill="none">
+      <path d="M 800 70 L 820 70 M 800 70 L 800 86"/>
+      <path d="M 1160 70 L 1140 70 M 1160 70 L 1160 86"/>
+      <path d="M 800 558 L 820 558 M 800 558 L 800 542"/>
+      <path d="M 1160 558 L 1140 558 M 1160 558 L 1160 542"/>
+    </g>
+    <rect x="808" y="78" width="344" height="472" fill="url(#ar-panel)" stroke="#8B6BB5" stroke-width="1"/>
+    <rect x="816" y="86" width="328" height="456" fill="none" stroke="#5d3a8a" stroke-width="0.4" opacity="0.7"/>
 
-    <rect x="830" y="120" width="22" height="420" fill="url(#ar-column)" stroke="#8B6BB5" stroke-width="0.5"/>
-    <rect x="1148" y="120" width="22" height="420" fill="url(#ar-column)" stroke="#8B6BB5" stroke-width="0.5"/>
-    <rect x="826" y="116" width="30" height="8" fill="#3d2050" stroke="#8B6BB5" stroke-width="0.5"/>
-    <rect x="1144" y="116" width="30" height="8" fill="#3d2050" stroke="#8B6BB5" stroke-width="0.5"/>
-    <rect x="826" y="540" width="30" height="6" fill="#3d2050" stroke="#8B6BB5" stroke-width="0.5"/>
-    <rect x="1144" y="540" width="30" height="6" fill="#3d2050" stroke="#8B6BB5" stroke-width="0.5"/>
-
-    <path d="M 830 120 L 830 110 L 852 110 Q 1000 -40 1148 110 L 1170 110 L 1170 120 Z" fill="url(#ar-stone)" stroke="#8B6BB5" stroke-width="0.7"/>
-    <path d="M 852 540 L 852 110 Q 1000 -16 1148 110 L 1148 540 Z" fill="url(#ar-niche)"/>
-    <path d="M 852 540 L 852 110 Q 1000 -16 1148 110 L 1148 540 Z" fill="url(#ar-niche-light)" opacity="0.7"/>
-    <path d="M 852 540 L 852 110 Q 1000 -16 1148 110 L 1148 540 Z" fill="none" stroke="#A78BCA" stroke-width="0.4" opacity="0.5"/>
-    <path d="M 860 540 L 860 114 Q 1000 0 1140 114 L 1140 540" fill="none" stroke="#5d3a8a" stroke-width="0.3" opacity="0.5"/>
-
-    <path d="M 992 4 L 1008 4 L 1012 18 L 988 18 Z" fill="#3d2050" stroke="#A78BCA" stroke-width="0.5"/>
-    <line x1="1000" y1="6" x2="1000" y2="16" stroke="#C9A8D6" stroke-width="0.7"/>
-    <line x1="996" y1="9" x2="1004" y2="9" stroke="#C9A8D6" stroke-width="0.7"/>
-
-    <rect x="874" y="156" width="252" height="38" fill="#04020a" opacity="0.7" rx="1"/>
-    <rect x="874" y="156" width="252" height="38" fill="none" stroke="#8B6BB5" stroke-width="0.6"/>
-    <path d="M 870 162 L 870 188 M 866 175 L 874 175" stroke="#A78BCA" stroke-width="0.6"/>
-    <path d="M 1130 162 L 1130 188 M 1126 175 L 1134 175" stroke="#A78BCA" stroke-width="0.6"/>
-    <text x="1000" y="172" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#A78BCA" letter-spacing="5" opacity="0.9">━━ III ━━</text>
-    <text x="1000" y="187" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#E8D5FF" letter-spacing="6" filter="url(#ar-glow)">LA BOVEDA</text>
-
-    <g font-family="Georgia, serif" font-size="14" fill="#D8C5F0">
-      <text x="1000" y="240" text-anchor="middle"><tspan fill="#C9A8D6">&#x2625;</tspan><tspan dx="10">PostgreSQL</tspan></text>
-      <text x="1000" y="278" text-anchor="middle"><tspan fill="#C9A8D6">&#x2625;</tspan><tspan dx="10">MySQL</tspan></text>
-      <text x="1000" y="316" text-anchor="middle"><tspan fill="#C9A8D6">&#x2625;</tspan><tspan dx="10">Docker</tspan></text>
-      <text x="1000" y="354" text-anchor="middle"><tspan fill="#C9A8D6">&#x2625;</tspan><tspan dx="10">Git</tspan></text>
-      <text x="1000" y="392" text-anchor="middle"><tspan fill="#C9A8D6">&#x2625;</tspan><tspan dx="10">GitHub</tspan></text>
-      <text x="1000" y="430" text-anchor="middle"><tspan fill="#C9A8D6">&#x2625;</tspan><tspan dx="10">Linux</tspan></text>
+    <g fill="#06030d" stroke="#8B6BB5" stroke-width="0.6">
+      <circle cx="822" cy="92" r="3.5"/><circle cx="1138" cy="92" r="3.5"/>
+      <circle cx="822" cy="536" r="3.5"/><circle cx="1138" cy="536" r="3.5"/>
+    </g>
+    <g stroke="#8B6BB5" stroke-width="0.5">
+      <line x1="819" y1="92" x2="825" y2="92"/><line x1="822" y1="89" x2="822" y2="95"/>
+      <line x1="1135" y1="92" x2="1141" y2="92"/><line x1="1138" y1="89" x2="1138" y2="95"/>
+      <line x1="819" y1="536" x2="825" y2="536"/><line x1="822" y1="533" x2="822" y2="539"/>
+      <line x1="1135" y1="536" x2="1141" y2="536"/><line x1="1138" y1="533" x2="1138" y2="539"/>
     </g>
 
-    <g transform="translate(1000 490)">
-      <circle r="14" fill="none" stroke="#8B6BB5" stroke-width="0.8" opacity="0.9"/>
-      <circle r="9" fill="none" stroke="#A78BCA" stroke-width="0.5" opacity="0.7"/>
-      <path d="M -5 -3 L 5 -3 M -5 0 L 5 0 M -5 3 L 5 3" stroke="#C9A8D6" stroke-width="0.7"/>
-      <line x1="-17" y1="0" x2="-14" y2="0" stroke="#8B6BB5" stroke-width="0.6"/>
-      <line x1="17" y1="0" x2="14" y2="0" stroke="#8B6BB5" stroke-width="0.6"/>
-      <line x1="0" y1="-17" x2="0" y2="-14" stroke="#8B6BB5" stroke-width="0.6"/>
-      <line x1="0" y1="14" x2="0" y2="17" stroke="#8B6BB5" stroke-width="0.6"/>
+    <rect x="832" y="104" width="296" height="26" fill="url(#ar-band)"/>
+    <rect x="832" y="104" width="14" height="26" fill="#06030d"/>
+    <rect x="1114" y="104" width="14" height="26" fill="#06030d"/>
+    <text x="980" y="121" text-anchor="middle" font-family="Consolas, monospace" font-size="11" letter-spacing="6" fill="#D8C5F0">&#x25B6; MOD.03 &#x00B7; INFRA &#x25C0;</text>
+
+    <text x="980" y="172" text-anchor="middle"
+          font-family="Impact, 'Arial Black', Haettenschweiler, sans-serif"
+          font-size="34" font-weight="900" letter-spacing="6"
+          fill="url(#ar-title-g)" filter="url(#ar-glow)">LA BOVEDA</text>
+    <line x1="860" y1="186" x2="1100" y2="186" stroke="#8B6BB5" stroke-width="0.6"/>
+
+    <rect x="832" y="208" width="296" height="240" fill="url(#ar-screen)" stroke="#5d3a8a" stroke-width="0.6"/>
+    <g stroke="#2d1b4e" stroke-width="0.4" opacity="0.5">
+      <line x1="832" y1="220" x2="1128" y2="220"/><line x1="832" y1="234" x2="1128" y2="234"/><line x1="832" y1="248" x2="1128" y2="248"/><line x1="832" y1="262" x2="1128" y2="262"/><line x1="832" y1="276" x2="1128" y2="276"/><line x1="832" y1="290" x2="1128" y2="290"/><line x1="832" y1="304" x2="1128" y2="304"/><line x1="832" y1="318" x2="1128" y2="318"/><line x1="832" y1="332" x2="1128" y2="332"/><line x1="832" y1="346" x2="1128" y2="346"/><line x1="832" y1="360" x2="1128" y2="360"/><line x1="832" y1="374" x2="1128" y2="374"/><line x1="832" y1="388" x2="1128" y2="388"/><line x1="832" y1="402" x2="1128" y2="402"/><line x1="832" y1="416" x2="1128" y2="416"/><line x1="832" y1="430" x2="1128" y2="430"/>
     </g>
-    <text x="1000" y="528" text-anchor="middle" font-family="Georgia, serif" font-size="8" fill="#8B6BB5" letter-spacing="4" opacity="0.85">RADIX &#x00B7; ARCA &#x00B7; MEMORIA</text>
-  </g>
 
-  <!-- Hanging chandeliers (decorative) between niches -->
-  <g stroke="#8B6BB5" stroke-width="0.6" fill="none" opacity="0.85">
-    <line x1="400" y1="0" x2="400" y2="60"/>
-    <circle cx="400" cy="66" r="5" fill="#3d2050"/>
-    <circle cx="400" cy="66" r="2" fill="#D8C5F0"/>
-    <line x1="800" y1="0" x2="800" y2="60"/>
-    <circle cx="800" cy="66" r="5" fill="#3d2050"/>
-    <circle cx="800" cy="66" r="2" fill="#D8C5F0"/>
-  </g>
+    <g font-family="Consolas, monospace" font-size="14" fill="#D8C5F0">
+      <text x="852" y="232"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">mount</tspan> POSTGRES_16</text>
+      <text x="852" y="262"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">mount</tspan> MYSQL____8.x</text>
+      <text x="852" y="292"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">mount</tspan> DOCKER___&#x25A0;&#x25A0;&#x25A0;</text>
+      <text x="852" y="322"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">mount</tspan> REDIS____&#x25A0;&#x25A0;</text>
+      <text x="852" y="352"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">mount</tspan> GIT______OK</text>
+      <text x="852" y="382"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">mount</tspan> GITHUB___OK</text>
+      <text x="852" y="412"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">mount</tspan> LINUX____&#x25A0;&#x25A0;&#x25A0;&#x25A0;</text>
+      <text x="852" y="432" fill="#6b4ba0">_ sealed.</text>
+    </g>
 
-  <!-- Ravens watching -->
-  <g stroke="#04020a" stroke-width="1.4" fill="none" stroke-linecap="round">
-    <path d="M 400 100 q 3 -2 6 0 q 3 -2 6 0"/>
-    <path d="M 800 100 q 3 -2 6 0 q 3 -2 6 0"/>
+    <rect x="832" y="464" width="296" height="40" fill="#0a0510" stroke="#3d2050" stroke-width="0.5"/>
+    <text x="844" y="480" font-family="Consolas, monospace" font-size="9" letter-spacing="3" fill="#6b4ba0">STATUS</text>
+    <g filter="url(#ar-led-glow)">
+      <circle cx="880" cy="488" r="3.5" fill="#C9A8D6"/>
+      <circle cx="900" cy="488" r="3.5" fill="#C9A8D6"/>
+      <circle cx="920" cy="488" r="3.5" fill="#C9A8D6"/>
+      <circle cx="940" cy="488" r="3.5" fill="#C9A8D6"/>
+      <circle cx="960" cy="488" r="3.5" fill="#C9A8D6"/>
+    </g>
+    <text x="1116" y="497" text-anchor="end" font-family="Consolas, monospace" font-size="9" letter-spacing="2" fill="#A78BCA">SECURE / 100%</text>
+
+    <text x="980" y="528" text-anchor="middle" font-family="Consolas, monospace" font-size="9" letter-spacing="6" fill="#5d3a8a">RADIX &#x00B7; ARCA &#x00B7; MEMORIA</text>
   </g>
 </svg>

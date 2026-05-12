@@ -1,54 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="130" viewBox="0 0 1200 130" role="img" aria-label="I. Codex">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="140" viewBox="0 0 1200 140" role="img" aria-label="I. Codex">
   <defs>
     <linearGradient id="t1-bg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#06030d"/>
       <stop offset="100%" stop-color="#150a26"/>
     </linearGradient>
-    <linearGradient id="t1-line" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#8B6BB5" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#D8C5F0" stop-opacity="0.95"/>
-      <stop offset="100%" stop-color="#8B6BB5" stop-opacity="0"/>
+    <linearGradient id="t1-plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d1b4e"/>
+      <stop offset="55%" stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#06030d"/>
+    </linearGradient>
+    <linearGradient id="t1-band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a2a6e"/>
+      <stop offset="100%" stop-color="#2d1b4e"/>
     </linearGradient>
     <linearGradient id="t1-text" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#f4e7ff"/>
-      <stop offset="100%" stop-color="#8B6BB5"/>
+      <stop offset="100%" stop-color="#A78BCA"/>
     </linearGradient>
     <filter id="t1-glow"><feGaussianBlur stdDeviation="1.4"/></filter>
   </defs>
-  <rect width="1200" height="130" fill="url(#t1-bg)"/>
+  <rect width="1200" height="140" fill="url(#t1-bg)"/>
 
-  <!-- Pointed-arch frame -->
-  <path d="M 120 110 L 120 56 Q 600 -50 1080 56 L 1080 110 L 1080 116 L 120 116 Z" fill="none" stroke="#8B6BB5" stroke-width="0.7" opacity="0.65"/>
-  <path d="M 130 110 L 130 60 Q 600 -36 1070 60 L 1070 110" fill="none" stroke="#5d3a8a" stroke-width="0.5" opacity="0.5"/>
+  <!-- Top + bottom thin lines -->
+  <line x1="40" y1="14" x2="1160" y2="14" stroke="#5d3a8a" stroke-width="0.5" opacity="0.7"/>
+  <line x1="40" y1="126" x2="1160" y2="126" stroke="#5d3a8a" stroke-width="0.5" opacity="0.7"/>
 
-  <!-- Keystone -->
-  <path d="M 592 6 L 608 6 L 612 20 L 588 20 Z" fill="#3d2050" stroke="#A78BCA" stroke-width="0.6"/>
-  <line x1="600" y1="9" x2="600" y2="18" stroke="#C9A8D6" stroke-width="0.7"/>
-  <line x1="596" y1="12" x2="604" y2="12" stroke="#C9A8D6" stroke-width="0.7"/>
-
-  <!-- Ornament lines -->
-  <line x1="40" y1="75" x2="380" y2="75" stroke="url(#t1-line)" stroke-width="0.9"/>
-  <line x1="820" y1="75" x2="1160" y2="75" stroke="url(#t1-line)" stroke-width="0.9"/>
-
-  <!-- Small sigils on the line -->
-  <g fill="#A78BCA">
-    <path d="M 380 75 l 5 -5 l 5 5 l -5 5 z"/>
-    <path d="M 810 75 l 5 -5 l 5 5 l -5 5 z"/>
-  </g>
-  <g stroke="#8B6BB5" stroke-width="0.6" fill="none" opacity="0.85">
-    <circle cx="200" cy="75" r="3"/>
-    <circle cx="1000" cy="75" r="3"/>
+  <!-- Side brackets -->
+  <g stroke="#8B6BB5" stroke-width="0.9" fill="none">
+    <path d="M 40 14 L 40 126"/>
+    <path d="M 1160 14 L 1160 126"/>
+    <path d="M 40 14 L 60 14"/>
+    <path d="M 1160 14 L 1140 14"/>
+    <path d="M 40 126 L 60 126"/>
+    <path d="M 1160 126 L 1140 126"/>
   </g>
 
-  <!-- Title -->
-  <text x="600" y="68" text-anchor="middle"
-        font-family="Georgia, serif" font-size="11" fill="#A78BCA"
-        letter-spacing="7" opacity="0.9">
-    &#x2720;  &#x00B7;  C A P I T U L U M  &#x00B7;  &#x2720;
+  <!-- Plate background -->
+  <rect x="80" y="28" width="1040" height="84" fill="url(#t1-plate)" stroke="#5d3a8a" stroke-width="0.5"/>
+
+  <!-- Corner bolts -->
+  <g fill="#06030d" stroke="#8B6BB5" stroke-width="0.5">
+    <circle cx="92" cy="40" r="3"/><circle cx="1108" cy="40" r="3"/>
+    <circle cx="92" cy="100" r="3"/><circle cx="1108" cy="100" r="3"/>
+  </g>
+  <g stroke="#8B6BB5" stroke-width="0.4">
+    <line x1="89" y1="40" x2="95" y2="40"/><line x1="92" y1="37" x2="92" y2="43"/>
+    <line x1="1105" y1="40" x2="1111" y2="40"/><line x1="1108" y1="37" x2="1108" y2="43"/>
+    <line x1="89" y1="100" x2="95" y2="100"/><line x1="92" y1="97" x2="92" y2="103"/>
+    <line x1="1105" y1="100" x2="1111" y2="100"/><line x1="1108" y1="97" x2="1108" y2="103"/>
+  </g>
+
+  <!-- Hazard side bands -->
+  <rect x="108" y="36" width="10" height="68" fill="url(#t1-band)"/>
+  <rect x="1082" y="36" width="10" height="68" fill="url(#t1-band)"/>
+  <g fill="#06030d">
+    <rect x="108" y="36" width="10" height="8"/>
+    <rect x="108" y="60" width="10" height="8"/>
+    <rect x="108" y="84" width="10" height="8"/>
+    <rect x="1082" y="36" width="10" height="8"/>
+    <rect x="1082" y="60" width="10" height="8"/>
+    <rect x="1082" y="84" width="10" height="8"/>
+  </g>
+
+  <!-- Subline -->
+  <text x="600" y="56" text-anchor="middle"
+        font-family="Consolas, 'Courier New', monospace"
+        font-size="11" letter-spacing="8" fill="#A78BCA" opacity="0.9">
+    // SECTION I &#x00B7; DOCTRINE //
   </text>
-  <text x="600" y="100" text-anchor="middle"
-        font-family="Georgia, serif" font-size="26" font-weight="700"
-        fill="url(#t1-text)" letter-spacing="14" filter="url(#t1-glow)">
-    I &#x00B7;  C O D E X
+
+  <!-- Main title -->
+  <text x="600" y="94" text-anchor="middle"
+        font-family="Impact, 'Arial Black', Haettenschweiler, sans-serif"
+        font-size="36" font-weight="900" letter-spacing="12"
+        fill="url(#t1-text)" filter="url(#t1-glow)">
+    I &#x00B7; CODEX
   </text>
 </svg>

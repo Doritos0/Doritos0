@@ -1,234 +1,385 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-labelledby="bn-title">
-  <title id="bn-title">Doritos0 - Catedral violeta entre la niebla</title>
+  <title id="bn-title">Doritos0 - skyline brutalista violeta</title>
   <defs>
     <linearGradient id="bn-sky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#06030d"/>
-      <stop offset="22%" stop-color="#150a26"/>
-      <stop offset="55%" stop-color="#2d1b4e"/>
-      <stop offset="82%" stop-color="#4a2a6e"/>
+      <stop offset="45%" stop-color="#1f1133"/>
+      <stop offset="80%" stop-color="#3d2050"/>
       <stop offset="100%" stop-color="#6b4ba0"/>
     </linearGradient>
-    <radialGradient id="bn-moon" cx="50%" cy="38%" r="34%">
+    <radialGradient id="bn-moon" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#f1e6ff" stop-opacity="0.85"/>
-      <stop offset="14%" stop-color="#D8C5F0" stop-opacity="0.55"/>
-      <stop offset="48%" stop-color="#8B6BB5" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#8B6BB5" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#A78BCA" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#A78BCA" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="bn-cloud" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#A78BCA" stop-opacity="0.55"/>
-      <stop offset="60%" stop-color="#5d3a8a" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#5d3a8a" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="bn-fog" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="bn-smog" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#C9A8D6" stop-opacity="0"/>
-      <stop offset="55%" stop-color="#C9A8D6" stop-opacity="0.32"/>
-      <stop offset="100%" stop-color="#E8D5FF" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#A78BCA" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#E8D5FF" stop-opacity="0.42"/>
+    </linearGradient>
+    <linearGradient id="bn-concrete" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0a2e"/>
+      <stop offset="55%" stop-color="#150a26"/>
+      <stop offset="100%" stop-color="#06030d"/>
+    </linearGradient>
+    <linearGradient id="bn-concrete-side" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06030d"/>
+      <stop offset="50%" stop-color="#2d1b4e"/>
+      <stop offset="100%" stop-color="#06030d"/>
     </linearGradient>
     <linearGradient id="bn-name" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#f4e7ff"/>
-      <stop offset="55%" stop-color="#B89BD9"/>
+      <stop offset="55%" stop-color="#C9A8D6"/>
       <stop offset="100%" stop-color="#6b4ba0"/>
     </linearGradient>
-    <linearGradient id="bn-rose" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#D8C5F0" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#5d3a8a" stop-opacity="0.6"/>
-    </linearGradient>
-    <filter id="bn-glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3.5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <radialGradient id="bn-sign-light" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C9A8D6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#C9A8D6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="bn-neon" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="b1"/>
+      <feGaussianBlur stdDeviation="2" result="b2"/>
+      <feMerge>
+        <feMergeNode in="b1"/>
+        <feMergeNode in="b2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
-    <filter id="bn-softglow">
-      <feGaussianBlur stdDeviation="1.4"/>
-    </filter>
+    <filter id="bn-window-glow"><feGaussianBlur stdDeviation="0.9"/></filter>
   </defs>
 
   <!-- Sky -->
   <rect width="1200" height="480" fill="url(#bn-sky)"/>
 
-  <!-- Stars -->
-  <g fill="#E8D5FF">
-    <circle cx="40" cy="60" r="0.7" opacity="0.9"/>
-    <circle cx="90" cy="30" r="0.5" opacity="0.7"/>
-    <circle cx="140" cy="90" r="0.8" opacity="0.85"/>
-    <circle cx="200" cy="50" r="0.5" opacity="0.6"/>
-    <circle cx="260" cy="110" r="0.6" opacity="0.75"/>
-    <circle cx="310" cy="40" r="0.7" opacity="0.85"/>
-    <circle cx="370" cy="80" r="0.5" opacity="0.7"/>
-    <circle cx="430" cy="30" r="0.6" opacity="0.8"/>
-    <circle cx="500" cy="20" r="0.5" opacity="0.6"/>
-    <circle cx="570" cy="50" r="0.4" opacity="0.7"/>
-    <circle cx="640" cy="20" r="0.5" opacity="0.7"/>
-    <circle cx="700" cy="55" r="0.4" opacity="0.6"/>
-    <circle cx="760" cy="30" r="0.7" opacity="0.85"/>
-    <circle cx="820" cy="70" r="0.5" opacity="0.7"/>
-    <circle cx="880" cy="40" r="0.8" opacity="0.9"/>
-    <circle cx="940" cy="90" r="0.5" opacity="0.7"/>
-    <circle cx="1000" cy="50" r="0.7" opacity="0.85"/>
-    <circle cx="1060" cy="30" r="0.5" opacity="0.65"/>
-    <circle cx="1110" cy="80" r="0.6" opacity="0.8"/>
-    <circle cx="1160" cy="40" r="0.5" opacity="0.7"/>
-    <circle cx="60" cy="180" r="0.5" opacity="0.55"/>
-    <circle cx="180" cy="190" r="0.4" opacity="0.5"/>
-    <circle cx="1090" cy="190" r="0.5" opacity="0.55"/>
-    <circle cx="1140" cy="170" r="0.4" opacity="0.5"/>
+  <!-- Stars (very sparse, industrial sky) -->
+  <g fill="#D8C5F0" opacity="0.55">
+    <circle cx="80" cy="40" r="0.5"/>
+    <circle cx="380" cy="20" r="0.5"/>
+    <circle cx="540" cy="50" r="0.4"/>
+    <circle cx="700" cy="25" r="0.5"/>
+    <circle cx="860" cy="40" r="0.4"/>
+    <circle cx="1020" cy="22" r="0.5"/>
+    <circle cx="1140" cy="55" r="0.4"/>
   </g>
 
-  <!-- Moon halo (no disc, just light) -->
-  <ellipse cx="600" cy="180" rx="320" ry="180" fill="url(#bn-moon)"/>
+  <!-- Cold pale moon -->
+  <circle cx="990" cy="92" r="80" fill="url(#bn-moon)"/>
+  <circle cx="990" cy="92" r="34" fill="#E8D5FF" opacity="0.15"/>
+  <circle cx="990" cy="92" r="18" fill="#f4e7ff" opacity="0.6"/>
 
-  <!-- Distant clouds -->
-  <ellipse cx="180" cy="140" rx="260" ry="36" fill="url(#bn-cloud)" opacity="0.65"/>
-  <ellipse cx="1020" cy="110" rx="280" ry="42" fill="url(#bn-cloud)" opacity="0.6"/>
-  <ellipse cx="600" cy="80" rx="420" ry="28" fill="url(#bn-cloud)" opacity="0.35"/>
-  <ellipse cx="400" cy="220" rx="180" ry="24" fill="url(#bn-cloud)" opacity="0.45"/>
-  <ellipse cx="820" cy="240" rx="200" ry="26" fill="url(#bn-cloud)" opacity="0.45"/>
-
-  <!-- Distant city silhouette (very faint) -->
-  <g fill="#0a0510" opacity="0.55">
-    <path d="M 0 400 L 0 360 L 30 360 L 30 340 L 50 340 L 50 360 L 80 360 L 80 320 L 100 320 L 100 310 L 110 310 L 110 320 L 130 320 L 130 350 L 160 350 L 160 330 L 180 330 L 180 360 L 220 360 L 220 340 L 240 340 L 240 360 L 260 360 L 260 320 L 280 320 L 280 360 L 320 360 L 320 350 L 340 350 L 340 360 L 380 360 L 380 330 L 400 330 L 400 360 L 1200 360 L 1200 400 Z"/>
-    <path d="M 1200 400 L 1200 360 L 1170 360 L 1170 340 L 1150 340 L 1150 360 L 1120 360 L 1120 320 L 1100 320 L 1100 310 L 1090 310 L 1090 320 L 1070 320 L 1070 350 L 1040 350 L 1040 330 L 1020 330 L 1020 360 L 980 360 L 980 340 L 960 340 L 960 360 L 940 360 L 940 320 L 920 320 L 920 360 L 880 360 L 880 350 L 860 350 L 860 360 L 820 360 L 820 330 L 800 330 L 800 360 Z"/>
+  <!-- Power lines crossing -->
+  <g stroke="#5d3a8a" stroke-width="0.45" opacity="0.7" fill="none">
+    <path d="M 0 84 Q 600 102 1200 78"/>
+    <path d="M 0 108 Q 600 130 1200 102"/>
+    <path d="M 0 130 Q 600 154 1200 124"/>
   </g>
 
-  <!-- Side small cathedrals -->
-  <g fill="#06030d" opacity="0.95">
-    <!-- Left cathedral -->
-    <path d="M 130 400 L 130 300 L 145 300 L 145 280 L 140 280 L 152 258 L 164 280 L 159 280 L 159 300 L 178 300 L 178 270 L 196 244 L 214 270 L 214 300 L 233 300 L 233 280 L 228 280 L 240 258 L 252 280 L 247 280 L 247 300 L 262 300 L 262 400 Z"/>
-    <!-- Right cathedral -->
-    <path d="M 938 400 L 938 300 L 953 300 L 953 280 L 948 280 L 960 258 L 972 280 L 967 280 L 967 300 L 986 300 L 986 270 L 1004 244 L 1022 270 L 1022 300 L 1041 300 L 1041 280 L 1036 280 L 1048 258 L 1060 280 L 1055 280 L 1055 300 L 1070 300 L 1070 400 Z"/>
+  <!-- Far smog band -->
+  <rect x="0" y="180" width="1200" height="80" fill="#3d2050" opacity="0.35"/>
+  <ellipse cx="600" cy="220" rx="700" ry="28" fill="#6b4ba0" opacity="0.25"/>
+
+  <!-- Background distant slabs (very faint) -->
+  <g fill="#06030d" opacity="0.65">
+    <rect x="0" y="230" width="60" height="200"/>
+    <rect x="160" y="240" width="50" height="190"/>
+    <rect x="1140" y="245" width="60" height="185"/>
   </g>
-  <!-- Tiny windows on small cathedrals -->
-  <g fill="#3d2050">
-    <rect x="190" y="318" width="3" height="10" rx="1.5"/>
-    <rect x="201" y="318" width="3" height="10" rx="1.5"/>
-    <rect x="998" y="318" width="3" height="10" rx="1.5"/>
-    <rect x="1009" y="318" width="3" height="10" rx="1.5"/>
+  <!-- tiny windows in distant slabs -->
+  <g fill="#3d2050" opacity="0.7">
+    <rect x="10" y="248" width="3" height="6"/><rect x="20" y="248" width="3" height="6"/><rect x="30" y="248" width="3" height="6"/><rect x="40" y="248" width="3" height="6"/>
+    <rect x="10" y="262" width="3" height="6"/><rect x="20" y="262" width="3" height="6"/><rect x="30" y="262" width="3" height="6"/><rect x="40" y="262" width="3" height="6"/>
+    <rect x="10" y="276" width="3" height="6"/><rect x="30" y="276" width="3" height="6"/><rect x="40" y="276" width="3" height="6"/>
+    <rect x="1150" y="262" width="3" height="6"/><rect x="1160" y="262" width="3" height="6"/><rect x="1170" y="262" width="3" height="6"/>
+    <rect x="1150" y="276" width="3" height="6"/><rect x="1160" y="276" width="3" height="6"/><rect x="1170" y="276" width="3" height="6"/>
   </g>
 
-  <!-- Central cathedral (main) -->
-  <g fill="#04020a">
-    <!-- Buttresses + body -->
-    <path d="M 430 410
-             L 430 270
-             L 445 270 L 445 252 L 440 252 L 452 232 L 464 252 L 459 252 L 459 270
-             L 478 270
-             L 478 250 L 472 250 L 488 228 L 488 200 L 478 200 L 498 168 L 518 200 L 508 200 L 508 228 L 524 250 L 518 250 L 518 270
-             L 540 270
-             L 540 220 L 555 196 L 555 168 L 545 168 L 565 130 L 585 168 L 575 168 L 575 196 L 590 220 L 590 130
-             L 600 18
-             L 610 130 L 610 220 L 625 196 L 625 168 L 615 168 L 635 130 L 655 168 L 645 168 L 645 196 L 660 220 L 660 270
-             L 682 270 L 682 250 L 676 250 L 692 228 L 692 200 L 682 200 L 702 168 L 722 200 L 712 200 L 712 228 L 728 250 L 722 250 L 722 270
-             L 741 270 L 741 252 L 736 252 L 748 232 L 760 252 L 755 252 L 755 270
-             L 770 270
-             L 770 410 Z"/>
-  </g>
-
-  <!-- Rose window on cathedral -->
-  <g transform="translate(600 290)">
-    <circle r="32" fill="#0a0510" stroke="#8B6BB5" stroke-width="1.4"/>
-    <circle r="28" fill="url(#bn-rose)" opacity="0.55"/>
-    <g stroke="#C9A8D6" stroke-width="0.7" fill="none" opacity="0.95">
-      <line x1="-28" y1="0" x2="28" y2="0"/>
-      <line x1="0" y1="-28" x2="0" y2="28"/>
-      <line x1="-20" y1="-20" x2="20" y2="20"/>
-      <line x1="-20" y1="20" x2="20" y2="-20"/>
-      <circle r="12" stroke="#D8C5F0"/>
-      <circle r="20" stroke="#A78BCA" opacity="0.6"/>
-    </g>
-    <circle r="3.5" fill="#f1e6ff" filter="url(#bn-softglow)"/>
-  </g>
-
-  <!-- Cathedral windows & door -->
+  <!-- ===================== BUILDING 1: tall slab left ===================== -->
   <g>
-    <!-- Tall arched windows in side bays -->
-    <g fill="#1a0a2e" stroke="#5d3a8a" stroke-width="0.8">
-      <path d="M 488 350 q 0 -22 10 -22 q 10 0 10 22 L 508 376 L 488 376 Z"/>
-      <path d="M 518 350 q 0 -22 10 -22 q 10 0 10 22 L 538 376 L 518 376 Z"/>
-      <path d="M 662 350 q 0 -22 10 -22 q 10 0 10 22 L 682 376 L 662 376 Z"/>
-      <path d="M 692 350 q 0 -22 10 -22 q 10 0 10 22 L 712 376 L 692 376 Z"/>
+    <!-- Antenna -->
+    <rect x="138" y="92" width="6" height="12" fill="#06030d"/>
+    <line x1="141" y1="92" x2="141" y2="28" stroke="#3d2050" stroke-width="1"/>
+    <line x1="135" y1="48" x2="147" y2="48" stroke="#3d2050" stroke-width="0.7"/>
+    <line x1="137" y1="58" x2="145" y2="58" stroke="#3d2050" stroke-width="0.7"/>
+    <line x1="139" y1="68" x2="143" y2="68" stroke="#3d2050" stroke-width="0.6"/>
+    <circle cx="141" cy="28" r="1.5" fill="#C9A8D6"/>
+
+    <!-- Body -->
+    <rect x="60" y="104" width="160" height="316" fill="url(#bn-concrete)"/>
+    <rect x="60" y="104" width="160" height="316" fill="none" stroke="#06030d" stroke-width="1"/>
+
+    <!-- Vertical panel seams -->
+    <g stroke="#06030d" stroke-width="0.6" opacity="0.9">
+      <line x1="100" y1="104" x2="100" y2="420"/>
+      <line x1="140" y1="104" x2="140" y2="420"/>
+      <line x1="180" y1="104" x2="180" y2="420"/>
     </g>
-    <!-- Window light glow -->
-    <g fill="#8B6BB5" opacity="0.35" filter="url(#bn-softglow)">
-      <rect x="490" y="356" width="16" height="18" rx="3"/>
-      <rect x="520" y="356" width="16" height="18" rx="3"/>
-      <rect x="664" y="356" width="16" height="18" rx="3"/>
-      <rect x="694" y="356" width="16" height="18" rx="3"/>
+    <!-- Horizontal floor lines -->
+    <g stroke="#2d1b4e" stroke-width="0.4" opacity="0.6">
+      <line x1="60" y1="136" x2="220" y2="136"/>
+      <line x1="60" y1="168" x2="220" y2="168"/>
+      <line x1="60" y1="200" x2="220" y2="200"/>
+      <line x1="60" y1="232" x2="220" y2="232"/>
+      <line x1="60" y1="264" x2="220" y2="264"/>
+      <line x1="60" y1="296" x2="220" y2="296"/>
+      <line x1="60" y1="328" x2="220" y2="328"/>
+      <line x1="60" y1="360" x2="220" y2="360"/>
+      <line x1="60" y1="392" x2="220" y2="392"/>
     </g>
-    <!-- Main portal -->
-    <path d="M 575 410 q 0 -52 25 -52 q 25 0 25 52 Z" fill="#0a0510" stroke="#5d3a8a" stroke-width="1"/>
-    <path d="M 583 410 q 0 -42 17 -42 q 17 0 17 42 Z" fill="#1a0a2e" stroke="#8B6BB5" stroke-width="0.5" opacity="0.6"/>
-    <line x1="600" y1="368" x2="600" y2="410" stroke="#3d2050" stroke-width="0.8"/>
-    <!-- Cross atop center spire -->
-    <line x1="600" y1="18" x2="600" y2="0" stroke="#8B6BB5" stroke-width="1.2"/>
-    <line x1="594" y1="6" x2="606" y2="6" stroke="#8B6BB5" stroke-width="1.2"/>
-    <!-- Crosses atop side spires -->
-    <line x1="488" y1="168" x2="488" y2="158" stroke="#5d3a8a" stroke-width="0.8"/>
-    <line x1="484" y1="161" x2="492" y2="161" stroke="#5d3a8a" stroke-width="0.8"/>
-    <line x1="712" y1="168" x2="712" y2="158" stroke="#5d3a8a" stroke-width="0.8"/>
-    <line x1="708" y1="161" x2="716" y2="161" stroke="#5d3a8a" stroke-width="0.8"/>
+
+    <!-- Windows: 4 cols x 10 rows = 40 windows -->
+    <g fill="#04020a">
+      <!-- F1 -->
+      <rect x="72" y="114" width="22" height="14"/><rect x="106" y="114" width="22" height="14"/><rect x="152" y="114" width="22" height="14"/><rect x="186" y="114" width="22" height="14"/>
+      <!-- F2 -->
+      <rect x="72" y="146" width="22" height="14"/><rect x="106" y="146" width="22" height="14"/><rect x="152" y="146" width="22" height="14"/><rect x="186" y="146" width="22" height="14"/>
+      <!-- F3 -->
+      <rect x="72" y="178" width="22" height="14"/><rect x="106" y="178" width="22" height="14"/><rect x="152" y="178" width="22" height="14"/><rect x="186" y="178" width="22" height="14"/>
+      <!-- F4 -->
+      <rect x="72" y="210" width="22" height="14"/><rect x="106" y="210" width="22" height="14"/><rect x="152" y="210" width="22" height="14"/><rect x="186" y="210" width="22" height="14"/>
+      <!-- F5 -->
+      <rect x="72" y="242" width="22" height="14"/><rect x="106" y="242" width="22" height="14"/><rect x="152" y="242" width="22" height="14"/><rect x="186" y="242" width="22" height="14"/>
+      <!-- F6 -->
+      <rect x="72" y="274" width="22" height="14"/><rect x="106" y="274" width="22" height="14"/><rect x="152" y="274" width="22" height="14"/><rect x="186" y="274" width="22" height="14"/>
+      <!-- F7 -->
+      <rect x="72" y="306" width="22" height="14"/><rect x="106" y="306" width="22" height="14"/><rect x="152" y="306" width="22" height="14"/><rect x="186" y="306" width="22" height="14"/>
+      <!-- F8 -->
+      <rect x="72" y="338" width="22" height="14"/><rect x="106" y="338" width="22" height="14"/><rect x="152" y="338" width="22" height="14"/><rect x="186" y="338" width="22" height="14"/>
+      <!-- F9 -->
+      <rect x="72" y="370" width="22" height="14"/><rect x="106" y="370" width="22" height="14"/><rect x="152" y="370" width="22" height="14"/><rect x="186" y="370" width="22" height="14"/>
+      <!-- F10 -->
+      <rect x="72" y="402" width="22" height="14"/><rect x="106" y="402" width="22" height="14"/><rect x="152" y="402" width="22" height="14"/><rect x="186" y="402" width="22" height="14"/>
+    </g>
+    <!-- Lit windows -->
+    <g fill="#E8D5FF" filter="url(#bn-window-glow)" opacity="0.9">
+      <rect x="106" y="146" width="22" height="14"/>
+      <rect x="186" y="178" width="22" height="14"/>
+      <rect x="72" y="242" width="22" height="14"/>
+      <rect x="152" y="306" width="22" height="14"/>
+      <rect x="106" y="370" width="22" height="14"/>
+    </g>
+    <g fill="#C9A8D6" opacity="0.75">
+      <rect x="72" y="178" width="22" height="14"/>
+      <rect x="152" y="242" width="22" height="14"/>
+      <rect x="106" y="338" width="22" height="14"/>
+      <rect x="186" y="402" width="22" height="14"/>
+    </g>
   </g>
 
-  <!-- Ravens flying -->
-  <g stroke="#04020a" stroke-width="1.6" fill="none" stroke-linecap="round">
-    <path d="M 120 110 q 5 -4 10 0 q 5 -4 10 0"/>
-    <path d="M 200 80 q 4 -3 8 0 q 4 -3 8 0"/>
-    <path d="M 280 130 q 4 -3 8 0 q 4 -3 8 0"/>
-    <path d="M 350 90 q 5 -4 10 0 q 5 -4 10 0"/>
-    <path d="M 420 60 q 4 -3 8 0 q 4 -3 8 0"/>
-    <path d="M 250 200 q 3 -2 6 0 q 3 -2 6 0" stroke-width="1.2"/>
-    <path d="M 340 220 q 3 -2 6 0 q 3 -2 6 0" stroke-width="1.2"/>
-    <path d="M 820 70 q 5 -4 10 0 q 5 -4 10 0"/>
-    <path d="M 880 110 q 4 -3 8 0 q 4 -3 8 0"/>
-    <path d="M 940 80 q 5 -4 10 0 q 5 -4 10 0"/>
-    <path d="M 1020 130 q 4 -3 8 0 q 4 -3 8 0"/>
-    <path d="M 1080 90 q 3 -2 6 0 q 3 -2 6 0" stroke-width="1.3"/>
-    <path d="M 1140 110 q 3 -2 6 0 q 3 -2 6 0" stroke-width="1.2"/>
-    <path d="M 870 200 q 3 -2 6 0 q 3 -2 6 0" stroke-width="1.2"/>
-    <path d="M 960 220 q 3 -2 6 0 q 3 -2 6 0" stroke-width="1.2"/>
-  </g>
-
-  <!-- Fog layers -->
-  <rect x="0" y="320" width="1200" height="160" fill="url(#bn-fog)"/>
-  <ellipse cx="300" cy="395" rx="280" ry="22" fill="#C9A8D6" opacity="0.22"/>
-  <ellipse cx="900" cy="400" rx="320" ry="24" fill="#C9A8D6" opacity="0.22"/>
-  <ellipse cx="600" cy="410" rx="500" ry="20" fill="#D8C5F0" opacity="0.18"/>
-
-  <!-- Engraved plaque behind name -->
+  <!-- ===================== SMOKESTACK ===================== -->
   <g>
-    <rect x="380" y="380" width="440" height="58" fill="#0a0510" opacity="0.55" rx="2"/>
-    <rect x="380" y="380" width="440" height="58" fill="none" stroke="#8B6BB5" stroke-width="0.6" opacity="0.7"/>
-    <line x1="380" y1="386" x2="820" y2="386" stroke="#8B6BB5" stroke-width="0.3" opacity="0.6"/>
-    <line x1="380" y1="432" x2="820" y2="432" stroke="#8B6BB5" stroke-width="0.3" opacity="0.6"/>
-    <!-- Corner crosses -->
-    <g stroke="#A78BCA" stroke-width="0.9" opacity="0.9">
-      <path d="M 376 384 L 376 392 M 372 388 L 380 388"/>
-      <path d="M 824 384 L 824 392 M 820 388 L 828 388"/>
-      <path d="M 376 430 L 376 438 M 372 434 L 380 434"/>
-      <path d="M 824 430 L 824 438 M 820 434 L 828 434"/>
+    <!-- Smoke plume -->
+    <g fill="#A78BCA" opacity="0.32">
+      <ellipse cx="244" cy="48" rx="22" ry="9"/>
+      <ellipse cx="260" cy="32" rx="32" ry="11"/>
+      <ellipse cx="252" cy="14" rx="44" ry="14"/>
+      <ellipse cx="284" cy="-2" rx="56" ry="16"/>
+    </g>
+    <!-- Stack body -->
+    <rect x="232" y="68" width="22" height="352" fill="url(#bn-concrete-side)"/>
+    <rect x="228" y="64" width="30" height="8" fill="#1a0a2e" stroke="#06030d" stroke-width="0.5"/>
+    <!-- Warning bands -->
+    <rect x="232" y="92" width="22" height="6" fill="#06030d"/>
+    <rect x="232" y="150" width="22" height="6" fill="#06030d"/>
+    <rect x="232" y="208" width="22" height="6" fill="#06030d"/>
+    <!-- Aircraft warning light -->
+    <circle cx="243" cy="72" r="1.6" fill="#f4e7ff" filter="url(#bn-window-glow)"/>
+  </g>
+
+  <!-- ===================== BUILDING 2: central main block with name sign ===================== -->
+  <g>
+    <!-- Name sign light halo -->
+    <ellipse cx="600" cy="180" rx="380" ry="60" fill="url(#bn-sign-light)"/>
+
+    <!-- Sign support frame -->
+    <g>
+      <line x1="362" y1="244" x2="362" y2="232" stroke="#06030d" stroke-width="3"/>
+      <line x1="478" y1="244" x2="478" y2="232" stroke="#06030d" stroke-width="3"/>
+      <line x1="600" y1="244" x2="600" y2="232" stroke="#06030d" stroke-width="3"/>
+      <line x1="722" y1="244" x2="722" y2="232" stroke="#06030d" stroke-width="3"/>
+      <line x1="838" y1="244" x2="838" y2="232" stroke="#06030d" stroke-width="3"/>
+      <!-- Cross beam under sign -->
+      <rect x="320" y="228" width="560" height="6" fill="#1a0a2e"/>
+      <!-- Sign plate -->
+      <rect x="320" y="138" width="560" height="90" fill="#06030d" stroke="#3d2050" stroke-width="0.9"/>
+      <rect x="320" y="138" width="560" height="90" fill="none" stroke="#2d1b4e" stroke-width="0.4" opacity="0.6"/>
+      <!-- Inner panel -->
+      <rect x="328" y="146" width="544" height="74" fill="#0a0510" stroke="#2d1b4e" stroke-width="0.4"/>
+      <!-- Bolts in corners -->
+      <circle cx="332" cy="142" r="1.6" fill="#3d2050"/>
+      <circle cx="868" cy="142" r="1.6" fill="#3d2050"/>
+      <circle cx="332" cy="224" r="1.6" fill="#3d2050"/>
+      <circle cx="868" cy="224" r="1.6" fill="#3d2050"/>
+    </g>
+
+    <!-- Building body -->
+    <rect x="290" y="244" width="620" height="176" fill="url(#bn-concrete)"/>
+    <rect x="290" y="244" width="620" height="176" fill="none" stroke="#06030d" stroke-width="1"/>
+
+    <!-- Panel seams vertical -->
+    <g stroke="#06030d" stroke-width="0.7" opacity="0.85">
+      <line x1="362" y1="244" x2="362" y2="420"/>
+      <line x1="434" y1="244" x2="434" y2="420"/>
+      <line x1="506" y1="244" x2="506" y2="420"/>
+      <line x1="578" y1="244" x2="578" y2="420"/>
+      <line x1="650" y1="244" x2="650" y2="420"/>
+      <line x1="722" y1="244" x2="722" y2="420"/>
+      <line x1="794" y1="244" x2="794" y2="420"/>
+      <line x1="866" y1="244" x2="866" y2="420"/>
+    </g>
+    <!-- Horizontal floor lines -->
+    <g stroke="#2d1b4e" stroke-width="0.4" opacity="0.6">
+      <line x1="290" y1="280" x2="910" y2="280"/>
+      <line x1="290" y1="316" x2="910" y2="316"/>
+      <line x1="290" y1="352" x2="910" y2="352"/>
+      <line x1="290" y1="388" x2="910" y2="388"/>
+    </g>
+
+    <!-- Windows: 9 cols x 5 rows = 45 -->
+    <g fill="#04020a">
+      <!-- helper: cols at 300, 372, 444, 516, 588, 660, 732, 804, 876 -->
+      <!-- F1 y=254 -->
+      <rect x="304" y="254" width="50" height="22"/><rect x="376" y="254" width="50" height="22"/><rect x="448" y="254" width="50" height="22"/><rect x="520" y="254" width="50" height="22"/><rect x="592" y="254" width="50" height="22"/><rect x="664" y="254" width="50" height="22"/><rect x="736" y="254" width="50" height="22"/><rect x="808" y="254" width="50" height="22"/><rect x="876" y="254" width="30" height="22"/>
+      <!-- F2 y=290 -->
+      <rect x="304" y="290" width="50" height="22"/><rect x="376" y="290" width="50" height="22"/><rect x="448" y="290" width="50" height="22"/><rect x="520" y="290" width="50" height="22"/><rect x="592" y="290" width="50" height="22"/><rect x="664" y="290" width="50" height="22"/><rect x="736" y="290" width="50" height="22"/><rect x="808" y="290" width="50" height="22"/><rect x="876" y="290" width="30" height="22"/>
+      <!-- F3 y=326 -->
+      <rect x="304" y="326" width="50" height="22"/><rect x="376" y="326" width="50" height="22"/><rect x="448" y="326" width="50" height="22"/><rect x="520" y="326" width="50" height="22"/><rect x="592" y="326" width="50" height="22"/><rect x="664" y="326" width="50" height="22"/><rect x="736" y="326" width="50" height="22"/><rect x="808" y="326" width="50" height="22"/><rect x="876" y="326" width="30" height="22"/>
+      <!-- F4 y=362 -->
+      <rect x="304" y="362" width="50" height="22"/><rect x="376" y="362" width="50" height="22"/><rect x="448" y="362" width="50" height="22"/><rect x="520" y="362" width="50" height="22"/><rect x="592" y="362" width="50" height="22"/><rect x="664" y="362" width="50" height="22"/><rect x="736" y="362" width="50" height="22"/><rect x="808" y="362" width="50" height="22"/><rect x="876" y="362" width="30" height="22"/>
+      <!-- F5 y=398 -->
+      <rect x="304" y="398" width="50" height="18"/><rect x="376" y="398" width="50" height="18"/><rect x="448" y="398" width="50" height="18"/><rect x="520" y="398" width="50" height="18"/><rect x="592" y="398" width="50" height="18"/><rect x="664" y="398" width="50" height="18"/><rect x="736" y="398" width="50" height="18"/><rect x="808" y="398" width="50" height="18"/><rect x="876" y="398" width="30" height="18"/>
+    </g>
+    <!-- Window mullions (cross) -->
+    <g stroke="#06030d" stroke-width="0.4" opacity="0.85">
+      <line x1="329" y1="254" x2="329" y2="276"/><line x1="304" y1="265" x2="354" y2="265"/>
+      <line x1="473" y1="290" x2="473" y2="312"/><line x1="448" y1="301" x2="498" y2="301"/>
+      <line x1="617" y1="326" x2="617" y2="348"/><line x1="592" y1="337" x2="642" y2="337"/>
+      <line x1="761" y1="362" x2="761" y2="384"/><line x1="736" y1="373" x2="786" y2="373"/>
+    </g>
+
+    <!-- Lit windows -->
+    <g fill="#E8D5FF" filter="url(#bn-window-glow)" opacity="0.9">
+      <rect x="448" y="254" width="50" height="22"/>
+      <rect x="664" y="290" width="50" height="22"/>
+      <rect x="376" y="326" width="50" height="22"/>
+      <rect x="592" y="362" width="50" height="22"/>
+      <rect x="808" y="398" width="50" height="18"/>
+    </g>
+    <g fill="#C9A8D6" opacity="0.78">
+      <rect x="736" y="254" width="50" height="22"/>
+      <rect x="304" y="290" width="50" height="22"/>
+      <rect x="520" y="326" width="50" height="22"/>
+      <rect x="808" y="362" width="50" height="22"/>
+      <rect x="448" y="398" width="50" height="18"/>
+      <rect x="664" y="398" width="50" height="18"/>
+    </g>
+
+    <!-- Ground floor entrance -->
+    <rect x="586" y="392" width="28" height="28" fill="#04020a"/>
+    <rect x="588" y="394" width="24" height="26" fill="#2d1b4e" opacity="0.65"/>
+
+    <!-- NAME on sign -->
+    <text x="600" y="200" text-anchor="middle"
+          font-family="Impact, 'Arial Black', Haettenschweiler, 'Franklin Gothic Bold', sans-serif"
+          font-size="62" font-weight="900" letter-spacing="6"
+          fill="url(#bn-name)" filter="url(#bn-neon)">DORITOS0</text>
+
+    <!-- Index label above the sign -->
+    <text x="600" y="156" text-anchor="middle"
+          font-family="Consolas, 'Courier New', monospace"
+          font-size="9" letter-spacing="6"
+          fill="#A78BCA" opacity="0.85">[ BLOCK / 0080 // SECTOR V ]</text>
+
+    <!-- Underline tick under name -->
+    <line x1="500" y1="214" x2="700" y2="214" stroke="#8B6BB5" stroke-width="0.6" opacity="0.7"/>
+  </g>
+
+  <!-- ===================== BUILDING 3: wide stocky right ===================== -->
+  <g>
+    <!-- Antenna -->
+    <rect x="828" y="252" width="6" height="10" fill="#06030d"/>
+    <line x1="831" y1="252" x2="831" y2="208" stroke="#3d2050" stroke-width="0.8"/>
+    <line x1="826" y1="222" x2="836" y2="222" stroke="#3d2050" stroke-width="0.6"/>
+
+    <!-- Body -->
+    <rect x="932" y="262" width="186" height="158" fill="url(#bn-concrete)"/>
+    <rect x="932" y="262" width="186" height="158" fill="none" stroke="#06030d" stroke-width="1"/>
+
+    <g stroke="#06030d" stroke-width="0.6" opacity="0.85">
+      <line x1="978" y1="262" x2="978" y2="420"/>
+      <line x1="1024" y1="262" x2="1024" y2="420"/>
+      <line x1="1070" y1="262" x2="1070" y2="420"/>
+    </g>
+    <g stroke="#2d1b4e" stroke-width="0.4" opacity="0.6">
+      <line x1="932" y1="294" x2="1118" y2="294"/>
+      <line x1="932" y1="326" x2="1118" y2="326"/>
+      <line x1="932" y1="358" x2="1118" y2="358"/>
+      <line x1="932" y1="390" x2="1118" y2="390"/>
+    </g>
+
+    <!-- Windows 4 cols x 5 rows -->
+    <g fill="#04020a">
+      <rect x="940" y="270" width="32" height="20"/><rect x="984" y="270" width="32" height="20"/><rect x="1030" y="270" width="32" height="20"/><rect x="1076" y="270" width="32" height="20"/>
+      <rect x="940" y="302" width="32" height="20"/><rect x="984" y="302" width="32" height="20"/><rect x="1030" y="302" width="32" height="20"/><rect x="1076" y="302" width="32" height="20"/>
+      <rect x="940" y="334" width="32" height="20"/><rect x="984" y="334" width="32" height="20"/><rect x="1030" y="334" width="32" height="20"/><rect x="1076" y="334" width="32" height="20"/>
+      <rect x="940" y="366" width="32" height="20"/><rect x="984" y="366" width="32" height="20"/><rect x="1030" y="366" width="32" height="20"/><rect x="1076" y="366" width="32" height="20"/>
+      <rect x="940" y="398" width="32" height="18"/><rect x="984" y="398" width="32" height="18"/><rect x="1030" y="398" width="32" height="18"/><rect x="1076" y="398" width="32" height="18"/>
+    </g>
+    <g fill="#E8D5FF" filter="url(#bn-window-glow)" opacity="0.85">
+      <rect x="1030" y="302" width="32" height="20"/>
+      <rect x="940" y="366" width="32" height="20"/>
+      <rect x="984" y="398" width="32" height="18"/>
+    </g>
+    <g fill="#C9A8D6" opacity="0.7">
+      <rect x="984" y="270" width="32" height="20"/>
+      <rect x="1076" y="334" width="32" height="20"/>
+      <rect x="1030" y="398" width="32" height="18"/>
     </g>
   </g>
 
-  <!-- Name -->
-  <text x="600" y="422" text-anchor="middle"
-        font-family="Georgia, 'Times New Roman', serif"
-        font-size="38" font-weight="400" letter-spacing="14"
-        fill="url(#bn-name)" filter="url(#bn-glow)">D O R I T O S 0</text>
+  <!-- ===================== Mid building between 2 and 3 ===================== -->
+  <g>
+    <rect x="916" y="290" width="14" height="130" fill="#06030d"/>
+    <g fill="#3d2050" opacity="0.85">
+      <rect x="920" y="300" width="6" height="6"/>
+      <rect x="920" y="320" width="6" height="6"/>
+      <rect x="920" y="340" width="6" height="6"/>
+      <rect x="920" y="360" width="6" height="6"/>
+      <rect x="920" y="380" width="6" height="6"/>
+    </g>
+  </g>
 
-  <!-- Subtitle line -->
-  <text x="600" y="462" text-anchor="middle"
-        font-family="Georgia, serif" font-size="11"
-        fill="#C9A8D6" letter-spacing="9" opacity="0.85">
-    ✦  ex tenebris · codicem · in lumine violaceo  ✦
-  </text>
+  <!-- ===================== Ravens ===================== -->
+  <g stroke="#04020a" stroke-width="1.5" fill="none" stroke-linecap="round">
+    <path d="M 320 90 q 5 -4 10 0 q 5 -4 10 0"/>
+    <path d="M 420 70 q 4 -3 8 0 q 4 -3 8 0"/>
+    <path d="M 520 100 q 4 -3 8 0 q 4 -3 8 0"/>
+    <path d="M 620 80 q 5 -4 10 0 q 5 -4 10 0"/>
+    <path d="M 720 110 q 3 -2 6 0 q 3 -2 6 0"/>
+    <path d="M 820 90 q 4 -3 8 0 q 4 -3 8 0"/>
+    <path d="M 900 60 q 5 -4 10 0 q 5 -4 10 0"/>
+    <path d="M 1100 130 q 3 -2 6 0 q 3 -2 6 0"/>
+  </g>
 
-  <!-- Corner ornaments -->
-  <g stroke="#8B6BB5" stroke-width="0.9" fill="none" opacity="0.85">
-    <path d="M 24 24 L 70 24 M 24 24 L 24 70"/>
-    <circle cx="40" cy="40" r="5"/>
-    <path d="M 40 33 L 40 47 M 33 40 L 47 40"/>
-    <path d="M 1176 24 L 1130 24 M 1176 24 L 1176 70"/>
-    <circle cx="1160" cy="40" r="5"/>
-    <path d="M 1160 33 L 1160 47 M 1153 40 L 1167 40"/>
-    <path d="M 24 456 L 70 456 M 24 456 L 24 410"/>
-    <path d="M 1176 456 L 1130 456 M 1176 456 L 1176 410"/>
+  <!-- Fog at base -->
+  <rect x="0" y="380" width="1200" height="100" fill="url(#bn-smog)"/>
+  <ellipse cx="600" cy="430" rx="700" ry="22" fill="#D8C5F0" opacity="0.22"/>
+  <ellipse cx="200" cy="440" rx="280" ry="14" fill="#D8C5F0" opacity="0.2"/>
+  <ellipse cx="1000" cy="442" rx="320" ry="16" fill="#D8C5F0" opacity="0.2"/>
+
+  <!-- Subtitle bar at the very bottom -->
+  <g>
+    <rect x="0" y="448" width="1200" height="32" fill="#06030d" opacity="0.85"/>
+    <line x1="0" y1="448" x2="1200" y2="448" stroke="#3d2050" stroke-width="0.6"/>
+    <line x1="0" y1="479" x2="1200" y2="479" stroke="#3d2050" stroke-width="0.6"/>
+    <text x="600" y="468" text-anchor="middle"
+          font-family="Consolas, 'Courier New', monospace"
+          font-size="11" letter-spacing="10"
+          fill="#C9A8D6" opacity="0.9">[ &#x25A0; ] &#x00B7;&#x00B7; EX TENEBRIS &#x00B7;&#x00B7; CODICEM &#x00B7;&#x00B7; FULL STACK DEVELOPER &#x00B7;&#x00B7; [ &#x25A0; ]</text>
+  </g>
+
+  <!-- Corner brutalist tick marks -->
+  <g stroke="#5d3a8a" stroke-width="1" fill="none" opacity="0.85">
+    <path d="M 12 12 L 36 12 L 36 18"/>
+    <path d="M 1188 12 L 1164 12 L 1164 18"/>
   </g>
 </svg>

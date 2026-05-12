@@ -1,101 +1,167 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="ft-title">
-  <title id="ft-title">Footer - catedral lejana entre la niebla violeta</title>
+  <title id="ft-title">Footer - skyline brutalista en niebla violeta</title>
   <defs>
     <linearGradient id="ft-sky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#06030d"/>
       <stop offset="55%" stop-color="#2d1b4e"/>
       <stop offset="100%" stop-color="#6b4ba0"/>
     </linearGradient>
-    <radialGradient id="ft-halo" cx="50%" cy="60%" r="50%">
-      <stop offset="0%" stop-color="#D8C5F0" stop-opacity="0.45"/>
-      <stop offset="100%" stop-color="#A78BCA" stop-opacity="0"/>
-    </radialGradient>
     <linearGradient id="ft-fog" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#C9A8D6" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#E8D5FF" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#E8D5FF" stop-opacity="0.7"/>
     </linearGradient>
     <linearGradient id="ft-text" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#E8D5FF"/>
-      <stop offset="100%" stop-color="#8B6BB5"/>
+      <stop offset="0%" stop-color="#f4e7ff"/>
+      <stop offset="55%" stop-color="#C9A8D6"/>
+      <stop offset="100%" stop-color="#6b4ba0"/>
     </linearGradient>
-    <filter id="ft-glow"><feGaussianBlur stdDeviation="2"/></filter>
+    <filter id="ft-glow"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="ft-soft"><feGaussianBlur stdDeviation="0.8"/></filter>
   </defs>
 
   <rect width="1200" height="280" fill="url(#ft-sky)"/>
 
-  <!-- Stars -->
-  <g fill="#E8D5FF" opacity="0.8">
-    <circle cx="80" cy="30" r="0.6"/>
-    <circle cx="160" cy="50" r="0.5"/>
-    <circle cx="240" cy="20" r="0.7"/>
-    <circle cx="320" cy="40" r="0.5"/>
-    <circle cx="400" cy="60" r="0.5"/>
-    <circle cx="480" cy="30" r="0.6"/>
-    <circle cx="560" cy="50" r="0.5"/>
-    <circle cx="640" cy="25" r="0.6"/>
-    <circle cx="720" cy="60" r="0.5"/>
-    <circle cx="800" cy="40" r="0.5"/>
-    <circle cx="880" cy="30" r="0.7"/>
-    <circle cx="960" cy="55" r="0.5"/>
-    <circle cx="1040" cy="20" r="0.6"/>
-    <circle cx="1120" cy="50" r="0.5"/>
+  <!-- Sparse stars -->
+  <g fill="#D8C5F0" opacity="0.5">
+    <circle cx="100" cy="20" r="0.4"/>
+    <circle cx="300" cy="32" r="0.5"/>
+    <circle cx="500" cy="18" r="0.4"/>
+    <circle cx="700" cy="28" r="0.5"/>
+    <circle cx="900" cy="22" r="0.4"/>
+    <circle cx="1100" cy="36" r="0.4"/>
   </g>
 
-  <!-- Halo behind cathedral -->
-  <ellipse cx="600" cy="160" rx="380" ry="120" fill="url(#ft-halo)"/>
-
-  <!-- Distant cathedral (small, centered) -->
-  <g fill="#04020a" opacity="0.95">
-    <path d="M 540 200 L 540 150 L 552 150 L 552 138 L 547 138 L 558 122 L 569 138 L 564 138 L 564 150 L 580 150 L 580 130 L 595 110 L 595 88 L 588 88 L 600 60 L 612 88 L 605 88 L 605 110 L 620 130 L 620 150 L 636 150 L 636 138 L 631 138 L 642 122 L 653 138 L 648 138 L 648 150 L 660 150 L 660 200 Z"/>
-  </g>
-  <!-- Rose window mini -->
-  <circle cx="600" cy="160" r="6" fill="#1a0a2e" stroke="#A78BCA" stroke-width="0.5"/>
-  <circle cx="600" cy="160" r="1.5" fill="#D8C5F0"/>
-  <!-- Cross atop spire -->
-  <line x1="600" y1="60" x2="600" y2="52" stroke="#A78BCA" stroke-width="0.8"/>
-  <line x1="596" y1="56" x2="604" y2="56" stroke="#A78BCA" stroke-width="0.8"/>
-
-  <!-- Side mini cathedrals -->
-  <g fill="#0a0510" opacity="0.85">
-    <path d="M 360 200 L 360 165 L 368 165 L 368 155 L 372 145 L 376 155 L 376 165 L 388 165 L 388 145 L 398 130 L 408 145 L 408 165 L 420 165 L 420 155 L 424 145 L 428 155 L 428 165 L 436 165 L 436 200 Z"/>
-    <path d="M 764 200 L 764 165 L 772 165 L 772 155 L 776 145 L 780 155 L 780 165 L 792 165 L 792 145 L 802 130 L 812 145 L 812 165 L 824 165 L 824 155 L 828 145 L 832 155 L 832 165 L 840 165 L 840 200 Z"/>
+  <!-- Power lines -->
+  <g stroke="#5d3a8a" stroke-width="0.35" opacity="0.65" fill="none">
+    <path d="M 0 60 Q 600 78 1200 56"/>
+    <path d="M 0 80 Q 600 100 1200 76"/>
   </g>
 
-  <!-- Trees / dark mass at bottom -->
-  <g fill="#04020a" opacity="0.9">
-    <path d="M 0 240 L 0 200 Q 80 180 160 200 Q 240 220 320 200 Q 400 190 480 200 L 480 240 Z"/>
-    <path d="M 720 240 L 720 200 Q 800 190 880 200 Q 960 220 1040 200 Q 1120 180 1200 200 L 1200 240 Z"/>
+  <!-- Distant skyline (very faint background) -->
+  <g fill="#1a0a2e" opacity="0.85">
+    <rect x="80" y="150" width="80" height="80"/>
+    <rect x="170" y="160" width="50" height="70"/>
+    <rect x="240" y="140" width="70" height="90"/>
+    <rect x="980" y="155" width="60" height="75"/>
+    <rect x="1050" y="148" width="80" height="82"/>
+    <rect x="1140" y="160" width="50" height="70"/>
   </g>
+  <!-- Tiny windows on bg buildings -->
+  <g fill="#5d3a8a" opacity="0.7">
+    <rect x="92" y="162" width="3" height="5"/><rect x="104" y="162" width="3" height="5"/><rect x="116" y="162" width="3" height="5"/><rect x="128" y="162" width="3" height="5"/><rect x="140" y="162" width="3" height="5"/>
+    <rect x="92" y="178" width="3" height="5"/><rect x="116" y="178" width="3" height="5"/><rect x="140" y="178" width="3" height="5"/>
+    <rect x="252" y="156" width="3" height="5"/><rect x="266" y="156" width="3" height="5"/><rect x="280" y="156" width="3" height="5"/><rect x="294" y="156" width="3" height="5"/>
+    <rect x="252" y="172" width="3" height="5"/><rect x="280" y="172" width="3" height="5"/>
+    <rect x="1062" y="160" width="3" height="5"/><rect x="1076" y="160" width="3" height="5"/><rect x="1092" y="160" width="3" height="5"/><rect x="1108" y="160" width="3" height="5"/>
+    <rect x="1062" y="176" width="3" height="5"/><rect x="1108" y="176" width="3" height="5"/>
+  </g>
+
+  <!-- Central TV tower (Ostankino-style silhouette) -->
+  <g fill="#04020a">
+    <!-- Base -->
+    <path d="M 580 230 L 620 230 L 614 200 L 586 200 Z"/>
+    <!-- Mid -->
+    <rect x="592" y="100" width="16" height="100"/>
+    <!-- Observation pod -->
+    <path d="M 580 96 L 620 96 L 616 84 L 584 84 Z"/>
+    <rect x="588" y="76" width="24" height="8"/>
+    <!-- Upper antenna -->
+    <rect x="598" y="44" width="4" height="32"/>
+    <rect x="596" y="40" width="8" height="6"/>
+  </g>
+  <!-- Antenna spike -->
+  <line x1="600" y1="44" x2="600" y2="6" stroke="#3d2050" stroke-width="0.9"/>
+  <line x1="595" y1="22" x2="605" y2="22" stroke="#3d2050" stroke-width="0.6"/>
+  <line x1="597" y1="14" x2="603" y2="14" stroke="#3d2050" stroke-width="0.5"/>
+  <!-- Beacon -->
+  <circle cx="600" cy="6" r="2" fill="#f4e7ff" filter="url(#ft-soft)"/>
+  <!-- Pod windows -->
+  <g fill="#A78BCA" opacity="0.85" filter="url(#ft-soft)">
+    <rect x="586" y="88" width="3" height="4"/>
+    <rect x="592" y="88" width="3" height="4"/>
+    <rect x="598" y="88" width="3" height="4"/>
+    <rect x="604" y="88" width="3" height="4"/>
+    <rect x="610" y="88" width="3" height="4"/>
+  </g>
+
+  <!-- Left main slab -->
+  <g fill="#04020a">
+    <rect x="380" y="130" width="80" height="100"/>
+  </g>
+  <g stroke="#1a0a2e" stroke-width="0.4" opacity="0.7">
+    <line x1="400" y1="130" x2="400" y2="230"/>
+    <line x1="420" y1="130" x2="420" y2="230"/>
+    <line x1="440" y1="130" x2="440" y2="230"/>
+  </g>
+  <g fill="#3d2050">
+    <rect x="386" y="138" width="6" height="8"/><rect x="402" y="138" width="6" height="8"/><rect x="418" y="138" width="6" height="8"/><rect x="434" y="138" width="6" height="8"/><rect x="450" y="138" width="6" height="8"/>
+    <rect x="386" y="156" width="6" height="8"/><rect x="402" y="156" width="6" height="8"/><rect x="418" y="156" width="6" height="8"/><rect x="434" y="156" width="6" height="8"/><rect x="450" y="156" width="6" height="8"/>
+    <rect x="386" y="174" width="6" height="8"/><rect x="418" y="174" width="6" height="8"/><rect x="434" y="174" width="6" height="8"/>
+    <rect x="386" y="192" width="6" height="8"/><rect x="402" y="192" width="6" height="8"/><rect x="450" y="192" width="6" height="8"/>
+    <rect x="402" y="210" width="6" height="8"/><rect x="418" y="210" width="6" height="8"/><rect x="450" y="210" width="6" height="8"/>
+  </g>
+  <g fill="#C9A8D6" filter="url(#ft-soft)" opacity="0.85">
+    <rect x="402" y="156" width="6" height="8"/>
+    <rect x="434" y="174" width="6" height="8"/>
+    <rect x="386" y="192" width="6" height="8"/>
+  </g>
+  <line x1="420" y1="130" x2="420" y2="115" stroke="#3d2050" stroke-width="0.6"/>
+  <rect x="417" y="113" width="6" height="3" fill="#04020a"/>
+
+  <!-- Right main slab -->
+  <g fill="#04020a">
+    <rect x="740" y="125" width="90" height="105"/>
+  </g>
+  <g stroke="#1a0a2e" stroke-width="0.4" opacity="0.7">
+    <line x1="762" y1="125" x2="762" y2="230"/>
+    <line x1="785" y1="125" x2="785" y2="230"/>
+    <line x1="808" y1="125" x2="808" y2="230"/>
+  </g>
+  <g fill="#3d2050">
+    <rect x="748" y="134" width="6" height="8"/><rect x="766" y="134" width="6" height="8"/><rect x="788" y="134" width="6" height="8"/><rect x="810" y="134" width="6" height="8"/>
+    <rect x="748" y="152" width="6" height="8"/><rect x="766" y="152" width="6" height="8"/><rect x="788" y="152" width="6" height="8"/><rect x="810" y="152" width="6" height="8"/>
+    <rect x="748" y="170" width="6" height="8"/><rect x="788" y="170" width="6" height="8"/><rect x="810" y="170" width="6" height="8"/>
+    <rect x="748" y="188" width="6" height="8"/><rect x="766" y="188" width="6" height="8"/><rect x="810" y="188" width="6" height="8"/>
+    <rect x="748" y="206" width="6" height="8"/><rect x="788" y="206" width="6" height="8"/>
+  </g>
+  <g fill="#C9A8D6" filter="url(#ft-soft)" opacity="0.85">
+    <rect x="788" y="152" width="6" height="8"/>
+    <rect x="766" y="188" width="6" height="8"/>
+    <rect x="810" y="170" width="6" height="8"/>
+  </g>
+  <line x1="785" y1="125" x2="785" y2="108" stroke="#3d2050" stroke-width="0.6"/>
+  <rect x="782" y="106" width="6" height="3" fill="#04020a"/>
 
   <!-- Ravens -->
   <g stroke="#04020a" stroke-width="1.4" fill="none" stroke-linecap="round">
-    <path d="M 120 90 q 4 -3 8 0 q 4 -3 8 0"/>
-    <path d="M 200 70 q 3 -2 6 0 q 3 -2 6 0"/>
-    <path d="M 280 100 q 4 -3 8 0 q 4 -3 8 0"/>
-    <path d="M 360 80 q 3 -2 6 0 q 3 -2 6 0"/>
-    <path d="M 460 50 q 4 -3 8 0 q 4 -3 8 0"/>
-    <path d="M 760 60 q 4 -3 8 0 q 4 -3 8 0"/>
-    <path d="M 840 90 q 3 -2 6 0 q 3 -2 6 0"/>
-    <path d="M 920 70 q 4 -3 8 0 q 4 -3 8 0"/>
-    <path d="M 1000 100 q 3 -2 6 0 q 3 -2 6 0"/>
-    <path d="M 1080 80 q 4 -3 8 0 q 4 -3 8 0"/>
+    <path d="M 220 70 q 4 -3 8 0 q 4 -3 8 0"/>
+    <path d="M 320 50 q 3 -2 6 0 q 3 -2 6 0"/>
+    <path d="M 460 80 q 4 -3 8 0 q 4 -3 8 0"/>
+    <path d="M 700 60 q 4 -3 8 0 q 4 -3 8 0"/>
+    <path d="M 820 90 q 3 -2 6 0 q 3 -2 6 0"/>
+    <path d="M 950 70 q 4 -3 8 0 q 4 -3 8 0"/>
   </g>
 
-  <!-- Fog -->
+  <!-- Heavy fog -->
   <rect x="0" y="160" width="1200" height="120" fill="url(#ft-fog)"/>
-  <ellipse cx="600" cy="210" rx="600" ry="30" fill="#D8C5F0" opacity="0.25"/>
+  <ellipse cx="600" cy="220" rx="700" ry="30" fill="#D8C5F0" opacity="0.3"/>
 
-  <!-- Closing inscription -->
-  <text x="600" y="248" text-anchor="middle"
-        font-family="Georgia, serif" font-size="22" font-weight="700"
-        fill="url(#ft-text)" letter-spacing="14" filter="url(#ft-glow)">
-    EX  TENEBRIS,  CODICEM
+  <!-- Title plate -->
+  <rect x="0" y="232" width="1200" height="48" fill="#06030d" opacity="0.85"/>
+  <line x1="0" y1="232" x2="1200" y2="232" stroke="#3d2050" stroke-width="0.6"/>
+
+  <text x="600" y="262" text-anchor="middle"
+        font-family="Impact, 'Arial Black', Haettenschweiler, sans-serif"
+        font-size="26" font-weight="900" letter-spacing="20"
+        fill="url(#ft-text)" filter="url(#ft-glow)">
+    EX TENEBRIS, CODICEM
   </text>
 
-  <!-- Sub line -->
-  <text x="600" y="270" text-anchor="middle"
-        font-family="Georgia, serif" font-size="10"
-        fill="#A78BCA" letter-spacing="6" opacity="0.85">
-    &#x2720; forjado a la luz de un solo cirio violeta · refactorizado al alba &#x2720;
+  <!-- Tiny mono line -->
+  <text x="600" y="276" text-anchor="middle"
+        font-family="Consolas, 'Courier New', monospace"
+        font-size="8" letter-spacing="6"
+        fill="#8B6BB5" opacity="0.85">
+    [ DORITOS0 / OPERATOR / END.OF.TRANSMISSION ]
   </text>
 </svg>
