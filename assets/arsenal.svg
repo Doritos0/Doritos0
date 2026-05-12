@@ -175,10 +175,7 @@
       <text x="472" y="262"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">exec</tspan> DJANGO_____5.x</text>
       <text x="472" y="292"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">exec</tspan> FASTAPI____&#x25A0;&#x25A0;&#x25A0;</text>
       <text x="472" y="322"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">exec</tspan> REST_APIs__OK</text>
-      <text x="472" y="352"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">exec</tspan> NODE.JS____20.x</text>
-      <text x="472" y="382"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">exec</tspan> WEBSOCKETS__&#x25A0;</text>
-      <text x="472" y="412"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">exec</tspan> CELERY_____&#x25A0;&#x25A0;</text>
-      <text x="472" y="432" fill="#6b4ba0">_ idle.</text>
+      <text x="472" y="352" fill="#6b4ba0">_ idle.</text>
     </g>
 
     <rect x="452" y="464" width="296" height="40" fill="#0a0510" stroke="#3d2050" stroke-width="0.5"/>
@@ -236,12 +233,9 @@
     <g font-family="Consolas, monospace" font-size="14" fill="#D8C5F0">
       <text x="852" y="232"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">mount</tspan> POSTGRES_16</text>
       <text x="852" y="262"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">mount</tspan> MYSQL____8.x</text>
-      <text x="852" y="292"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">mount</tspan> DOCKER___&#x25A0;&#x25A0;&#x25A0;</text>
-      <text x="852" y="322"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">mount</tspan> REDIS____&#x25A0;&#x25A0;</text>
-      <text x="852" y="352"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">mount</tspan> GIT______OK</text>
-      <text x="852" y="382"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">mount</tspan> GITHUB___OK</text>
-      <text x="852" y="412"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">mount</tspan> LINUX____&#x25A0;&#x25A0;&#x25A0;&#x25A0;</text>
-      <text x="852" y="432" fill="#6b4ba0">_ sealed.</text>
+      <text x="852" y="292"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">mount</tspan> GIT______OK</text>
+      <text x="852" y="322"><tspan fill="#8B6BB5">&gt;</tspan> <tspan fill="#A78BCA">mount</tspan> GITHUB___OK</text>
+      <text x="852" y="352" fill="#6b4ba0">_ sealed.</text>
     </g>
 
     <rect x="832" y="464" width="296" height="40" fill="#0a0510" stroke="#3d2050" stroke-width="0.5"/>
